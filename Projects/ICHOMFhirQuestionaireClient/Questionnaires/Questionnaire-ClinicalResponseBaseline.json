@@ -1,0 +1,643 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "ClinicalResponseBaseline",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><b>Structure</b><table border=\"1\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"The linkId for the item\">LinkId</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Text for the item\">Text</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the the itemcan appear in the instance\">Cardinality</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"The type of the item\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Additional information about the item\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_q_root.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"QuestionnaireRoot\" class=\"hierarchy\"/> ClinicalResponseBaseline</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Questionnaire</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">https://connect.ichom.org/fhir/Questionnaire/ClinicalResponseBaseline#0.0.1</td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" id=\"item.General-Information-Clinical\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-group.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Group\" class=\"hierarchy\"/> General-Information-Clinical</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">General information</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group\">group</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.N/A-Clinical\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-integer.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Integer\" class=\"hierarchy\"/> N/A-Clinical</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">What is the patient's medical record number?</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-integer\">integer</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" id=\"item.LastName-Clinical\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"String\" class=\"hierarchy\"/> LastName-Clinical</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">What is the patient's last name?</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" id=\"item.Demographics\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-group.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Group\" class=\"hierarchy\"/> Demographics</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Demographic factors</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group\">group</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.Sex\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> Sex</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Please indicate the sex of the patient at birth:</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Value Set: <a href=\"Bundle-DebugBundlePatient-01-Baseline.html\">The patient's sex at birth</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" id=\"item.YearOfBirth\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-integer.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Integer\" class=\"hierarchy\"/> YearOfBirth</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">In what year was the patient born?</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-integer\">integer</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Max Length: 4</td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" id=\"item.Clinical-Factors\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-group.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Group\" class=\"hierarchy\"/> Clinical-Factors</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Clinical factors</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group\">group</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.HeightValue\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-integer.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Integer\" class=\"hierarchy\"/> HeightValue</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Please indicate the patient's body height:</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-integer\">integer</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Max Length: 3</td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.HeightUnit\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> HeightUnit</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Please indicate the units of measurement you recorded the patient's height in:</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.HeightUnit\">2 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.WeightValue\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-integer.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Integer\" class=\"hierarchy\"/> WeightValue</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Please indicate the patient's body weight:</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-integer\">integer</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Max Length: 3</td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.WeightUnit\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> WeightUnit</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Please indicate the units of measurement you recorded the patient's weight in:</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.WeightUnit\">2 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.LATERAL\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> LATERAL</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Please indicate the laterality of breast cancer:</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.LATERAL\">3 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" id=\"item.FIRSTBC\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> FIRSTBC</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Please indicate if this is first breast cancer or new cancer on contralateral or ipsilateral breast:</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.FIRSTBC\">3 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)\" id=\"item.Tumor-Factors\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-group.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Group\" class=\"hierarchy\"/> Tumor-Factors</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Tumor factors</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group\">group</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" id=\"item.HistologicalDateKnown\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Boolean\" class=\"hierarchy\"/> HistologicalDateKnown</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Is the date of histological diagnosis known?</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" id=\"item.HistologicalDiagnosisDate\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-date.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Date\" class=\"hierarchy\"/> HistologicalDiagnosisDate</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Please indicate the initial date of histological diagnosis:</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-date\">date</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" id=\"item.HISTOTYPE\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> HISTOTYPE</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Please indicate the histologic type of the tumor (select all that apply):</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..*</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.HISTOTYPE\">5 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" id=\"item.MUTBC\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> MUTBC</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Please indicate if the patient carries a genetic mutation predisposing breast cancer:</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.MUTBC\">5 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" id=\"item.GRADEINV\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> GRADEINV</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Please indicate the grade of the invasive component of tumor:</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.GRADEINV\">4 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" id=\"item.GRADEDCIS\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> GRADEDCIS</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Please indicate the tumor grade of DCIS component of tumor:</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.GRADEDCIS\">4 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" id=\"item.TNMCT_BREAST\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> TNMCT_BREAST</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Please indicate the clinical tumor stage (per AJCC 5th - 7th Ed.):</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.TNMCT_BREAST\">8 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" id=\"item.TNMCN_BREAST\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> TNMCN_BREAST</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Please indicate the clinical nodal stage (per AJCC 5th - 7th Ed.):</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.TNMCN_BREAST\">6 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" id=\"item.TNMCM_BREAST\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> TNMCM_BREAST</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Please indicate the clinical distant metastasis (per AJCC 5th - 7th Ed.):</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.TNMCM_BREAST\">4 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" id=\"item.ERSTATUS\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> ERSTATUS</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Please indicate if the estrogen receptor status is positive:</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.ERSTATUS\">4 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" id=\"item.PRSTATUS\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> PRSTATUS</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Please indicate if the progesterone receptor status is positive:</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.PRSTATUS\">4 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)\" id=\"item.HER2STATUS\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> HER2STATUS</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Please indicate if the HER2 receptor status is positive:</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.HER2STATUS\">4 options</a></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table><hr/><p><b>Option Sets</b></p><a name=\"opt-item.HeightUnit\"> </a><p><b>Answer options for HeightUnit</b></p><ul><li style=\"font-size: 11px\">urn:uuid:f36dcb8d-aede-4634-9194-f0f948d87ddd#1 (&quot;cm&quot;)</li><li style=\"font-size: 11px\">urn:uuid:f36dcb8d-aede-4634-9194-f0f948d87ddd#2 (&quot;inches&quot;)</li></ul><a name=\"opt-item.WeightUnit\"> </a><p><b>Answer options for WeightUnit</b></p><ul><li style=\"font-size: 11px\">urn:uuid:6d020c76-9ac1-4dfd-bfad-c084afd9f045#1 (&quot;kilograms&quot;)</li><li style=\"font-size: 11px\">urn:uuid:6d020c76-9ac1-4dfd-bfad-c084afd9f045#2 (&quot;lbs&quot;)</li></ul><a name=\"opt-item.LATERAL\"> </a><p><b>Answer options for LATERAL</b></p><ul><li style=\"font-size: 11px\">urn:uuid:e7d240f0-ea4c-4206-b488-f83c055fc1d4#0 (&quot;Left breast&quot;)</li><li style=\"font-size: 11px\">urn:uuid:e7d240f0-ea4c-4206-b488-f83c055fc1d4#1 (&quot;Right breast&quot;)</li><li style=\"font-size: 11px\">urn:uuid:e7d240f0-ea4c-4206-b488-f83c055fc1d4#3 (&quot;Both breasts&quot;)</li></ul><a name=\"opt-item.FIRSTBC\"> </a><p><b>Answer options for FIRSTBC</b></p><ul><li style=\"font-size: 11px\">urn:uuid:23e2a296-dce5-447d-9a7c-7f4ac97b6ebe#0 (&quot;Primary tumor&quot;)</li><li style=\"font-size: 11px\">urn:uuid:23e2a296-dce5-447d-9a7c-7f4ac97b6ebe#1 (&quot;New ipsilateral&quot;)</li><li style=\"font-size: 11px\">urn:uuid:23e2a296-dce5-447d-9a7c-7f4ac97b6ebe#2 (&quot;New contralateral&quot;)</li></ul><a name=\"opt-item.HISTOTYPE\"> </a><p><b>Answer options for HISTOTYPE</b></p><ul><li style=\"font-size: 11px\">urn:uuid:54f3b593-e92c-49c2-838a-5e59196de2f0#0 (&quot;Ductal carcinoma in situ&quot;)</li><li style=\"font-size: 11px\">urn:uuid:54f3b593-e92c-49c2-838a-5e59196de2f0#1 (&quot;Invasive ductal carcinoma&quot;)</li><li style=\"font-size: 11px\">urn:uuid:54f3b593-e92c-49c2-838a-5e59196de2f0#2 (&quot;Invasive lobular carcinoma&quot;)</li><li style=\"font-size: 11px\">urn:uuid:54f3b593-e92c-49c2-838a-5e59196de2f0#3 (&quot;Other&quot;)</li><li style=\"font-size: 11px\">urn:uuid:54f3b593-e92c-49c2-838a-5e59196de2f0#999 (&quot;Unknown&quot;)</li></ul><a name=\"opt-item.MUTBC\"> </a><p><b>Answer options for MUTBC</b></p><ul><li style=\"font-size: 11px\">urn:uuid:4574904d-f3a9-44c4-9349-40ea58076505#0 (&quot;No mutation&quot;)</li><li style=\"font-size: 11px\">urn:uuid:4574904d-f3a9-44c4-9349-40ea58076505#1 (&quot;BRCA 1&quot;)</li><li style=\"font-size: 11px\">urn:uuid:4574904d-f3a9-44c4-9349-40ea58076505#2 (&quot;BRCA 2&quot;)</li><li style=\"font-size: 11px\">urn:uuid:4574904d-f3a9-44c4-9349-40ea58076505#3 (&quot;Other mutation&quot;)</li><li style=\"font-size: 11px\">urn:uuid:4574904d-f3a9-44c4-9349-40ea58076505#4 (&quot;Not tested&quot;)</li></ul><a name=\"opt-item.GRADEINV\"> </a><p><b>Answer options for GRADEINV</b></p><ul><li style=\"font-size: 11px\">urn:uuid:ce2aba40-12ae-41cd-85a6-fa8ae68d3284#0 (&quot;Grade 1&quot;)</li><li style=\"font-size: 11px\">urn:uuid:ce2aba40-12ae-41cd-85a6-fa8ae68d3284#1 (&quot;Grade 2&quot;)</li><li style=\"font-size: 11px\">urn:uuid:ce2aba40-12ae-41cd-85a6-fa8ae68d3284#2 (&quot;Grade 3&quot;)</li><li style=\"font-size: 11px\">urn:uuid:ce2aba40-12ae-41cd-85a6-fa8ae68d3284#3 (&quot;Not reported&quot;)</li></ul><a name=\"opt-item.GRADEDCIS\"> </a><p><b>Answer options for GRADEDCIS</b></p><ul><li style=\"font-size: 11px\">urn:uuid:28afa2eb-fab0-4985-85c0-b560b1de5cb4#0 (&quot;Low&quot;)</li><li style=\"font-size: 11px\">urn:uuid:28afa2eb-fab0-4985-85c0-b560b1de5cb4#1 (&quot;Intermediate&quot;)</li><li style=\"font-size: 11px\">urn:uuid:28afa2eb-fab0-4985-85c0-b560b1de5cb4#2 (&quot;High&quot;)</li><li style=\"font-size: 11px\">urn:uuid:28afa2eb-fab0-4985-85c0-b560b1de5cb4#3 (&quot;Not reported&quot;)</li></ul><a name=\"opt-item.TNMCT_BREAST\"> </a><p><b>Answer options for TNMCT_BREAST</b></p><ul><li style=\"font-size: 11px\">urn:uuid:bbf043ae-77f6-4d72-9c26-54120c64877a#0 (&quot;cTX&quot;)</li><li style=\"font-size: 11px\">urn:uuid:bbf043ae-77f6-4d72-9c26-54120c64877a#1 (&quot;cT0&quot;)</li><li style=\"font-size: 11px\">urn:uuid:bbf043ae-77f6-4d72-9c26-54120c64877a#2 (&quot;cTis&quot;)</li><li style=\"font-size: 11px\">urn:uuid:bbf043ae-77f6-4d72-9c26-54120c64877a#3 (&quot;cT1&quot;)</li><li style=\"font-size: 11px\">urn:uuid:bbf043ae-77f6-4d72-9c26-54120c64877a#4 (&quot;cT2&quot;)</li><li style=\"font-size: 11px\">urn:uuid:bbf043ae-77f6-4d72-9c26-54120c64877a#5 (&quot;cT3&quot;)</li><li style=\"font-size: 11px\">urn:uuid:bbf043ae-77f6-4d72-9c26-54120c64877a#6 (&quot;cT4&quot;)</li><li style=\"font-size: 11px\">urn:uuid:bbf043ae-77f6-4d72-9c26-54120c64877a#999 (&quot;Unknown&quot;)</li></ul><a name=\"opt-item.TNMCN_BREAST\"> </a><p><b>Answer options for TNMCN_BREAST</b></p><ul><li style=\"font-size: 11px\">urn:uuid:aac07446-dc50-4dfe-a241-77d0fa203591#0 (&quot;cNX&quot;)</li><li style=\"font-size: 11px\">urn:uuid:aac07446-dc50-4dfe-a241-77d0fa203591#1 (&quot;cN0&quot;)</li><li style=\"font-size: 11px\">urn:uuid:aac07446-dc50-4dfe-a241-77d0fa203591#2 (&quot;cN1&quot;)</li><li style=\"font-size: 11px\">urn:uuid:aac07446-dc50-4dfe-a241-77d0fa203591#3 (&quot;cN2&quot;)</li><li style=\"font-size: 11px\">urn:uuid:aac07446-dc50-4dfe-a241-77d0fa203591#4 (&quot;cN3&quot;)</li><li style=\"font-size: 11px\">urn:uuid:aac07446-dc50-4dfe-a241-77d0fa203591#999 (&quot;Unknown&quot;)</li></ul><a name=\"opt-item.TNMCM_BREAST\"> </a><p><b>Answer options for TNMCM_BREAST</b></p><ul><li style=\"font-size: 11px\">urn:uuid:5f8d75d7-3fd5-4899-a6af-6e1ea80520b3#1 (&quot;cMX&quot;)</li><li style=\"font-size: 11px\">urn:uuid:5f8d75d7-3fd5-4899-a6af-6e1ea80520b3#2 (&quot;cM0&quot;)</li><li style=\"font-size: 11px\">urn:uuid:5f8d75d7-3fd5-4899-a6af-6e1ea80520b3#3 (&quot;cM1&quot;)</li><li style=\"font-size: 11px\">urn:uuid:5f8d75d7-3fd5-4899-a6af-6e1ea80520b3#999 (&quot;Unknown&quot;)</li></ul><a name=\"opt-item.ERSTATUS\"> </a><p><b>Answer options for ERSTATUS</b></p><ul><li style=\"font-size: 11px\">urn:uuid:93e05a33-3b00-4ae9-b4cd-ba7ba3e1f54e#0 (&quot;No&quot;)</li><li style=\"font-size: 11px\">urn:uuid:93e05a33-3b00-4ae9-b4cd-ba7ba3e1f54e#1 (&quot;Yes&quot;)</li><li style=\"font-size: 11px\">urn:uuid:93e05a33-3b00-4ae9-b4cd-ba7ba3e1f54e#2 (&quot;Not performed&quot;)</li><li style=\"font-size: 11px\">urn:uuid:93e05a33-3b00-4ae9-b4cd-ba7ba3e1f54e#999 (&quot;Unkown&quot;)</li></ul><a name=\"opt-item.PRSTATUS\"> </a><p><b>Answer options for PRSTATUS</b></p><ul><li style=\"font-size: 11px\">urn:uuid:02d110fd-1183-41fa-bacb-a689e0c67149#0 (&quot;No&quot;)</li><li style=\"font-size: 11px\">urn:uuid:02d110fd-1183-41fa-bacb-a689e0c67149#1 (&quot;Yes&quot;)</li><li style=\"font-size: 11px\">urn:uuid:02d110fd-1183-41fa-bacb-a689e0c67149#2 (&quot;Not performed&quot;)</li><li style=\"font-size: 11px\">urn:uuid:02d110fd-1183-41fa-bacb-a689e0c67149#999 (&quot;Unkown&quot;)</li></ul><a name=\"opt-item.HER2STATUS\"> </a><p><b>Answer options for HER2STATUS</b></p><ul><li style=\"font-size: 11px\">urn:uuid:17b96500-8800-4371-87d3-1498c8d2e039#0 (&quot;Negative&quot;)</li><li style=\"font-size: 11px\">urn:uuid:17b96500-8800-4371-87d3-1498c8d2e039#1 (&quot;Positive&quot;)</li><li style=\"font-size: 11px\">urn:uuid:17b96500-8800-4371-87d3-1498c8d2e039#2 (&quot;Equivocal&quot;)</li><li style=\"font-size: 11px\">urn:uuid:17b96500-8800-4371-87d3-1498c8d2e039#3 (&quot;HER2 receptor status not tested&quot;)</li></ul></div>"
+  },
+  "url": "https://connect.ichom.org/fhir/Questionnaire/ClinicalResponseBaseline",
+  "version": "0.0.1",
+  "name": "ClinicalResponseBaseline",
+  "title": "Clinical response questionnaire at baseline",
+  "status": "draft",
+  "experimental": true,
+  "date": "2022-09-09T06:13:08+00:00",
+  "publisher": "ICHOM",
+  "contact": [
+    {
+      "name": "ICHOM",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://ichom.org"
+        }
+      ]
+    }
+  ],
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001",
+          "display": "World"
+        }
+      ]
+    }
+  ],
+  "item": [
+    {
+      "linkId": "General-Information-Clinical",
+      "text": "General information",
+      "type": "group",
+      "required": true,
+      "item": [
+        {
+          "linkId": "N/A-Clinical",
+          "text": "What is the patient's medical record number?",
+          "type": "integer",
+          "required": true
+        },
+        {
+          "linkId": "LastName-Clinical",
+          "text": "What is the patient's last name?",
+          "type": "string",
+          "required": true
+        }
+      ]
+    },
+    {
+      "linkId": "Demographics",
+      "text": "Demographic factors",
+      "type": "group",
+      "required": true,
+      "item": [
+        {
+          "linkId": "Sex",
+          "text": "Please indicate the sex of the patient at birth:",
+          "type": "choice",
+          "required": true,
+          "answerValueSet": "https://connect.ichom.org/fhir/ValueSet/DemographicFactorsSexAtBirth"
+        },
+        {
+          "linkId": "YearOfBirth",
+          "text": "In what year was the patient born?",
+          "type": "integer",
+          "required": true,
+          "maxLength": 4
+        }
+      ]
+    },
+    {
+      "linkId": "Clinical-Factors",
+      "text": "Clinical factors",
+      "type": "group",
+      "required": true,
+      "item": [
+        {
+          "linkId": "HeightValue",
+          "text": "Please indicate the patient's body height:",
+          "type": "integer",
+          "required": true,
+          "maxLength": 3
+        },
+        {
+          "linkId": "HeightUnit",
+          "text": "Please indicate the units of measurement you recorded the patient's height in:",
+          "type": "choice",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "urn:uuid:f36dcb8d-aede-4634-9194-f0f948d87ddd",
+                "code": "1",
+                "display": "cm"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:f36dcb8d-aede-4634-9194-f0f948d87ddd",
+                "code": "2",
+                "display": "inches"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "WeightValue",
+          "text": "Please indicate the patient's body weight:",
+          "type": "integer",
+          "required": true,
+          "maxLength": 3
+        },
+        {
+          "linkId": "WeightUnit",
+          "text": "Please indicate the units of measurement you recorded the patient's weight in:",
+          "type": "choice",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "urn:uuid:6d020c76-9ac1-4dfd-bfad-c084afd9f045",
+                "code": "1",
+                "display": "kilograms"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:6d020c76-9ac1-4dfd-bfad-c084afd9f045",
+                "code": "2",
+                "display": "lbs"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "LATERAL",
+          "text": "Please indicate the laterality of breast cancer:",
+          "type": "choice",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "urn:uuid:e7d240f0-ea4c-4206-b488-f83c055fc1d4",
+                "code": "0",
+                "display": "Left breast"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:e7d240f0-ea4c-4206-b488-f83c055fc1d4",
+                "code": "1",
+                "display": "Right breast"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:e7d240f0-ea4c-4206-b488-f83c055fc1d4",
+                "code": "3",
+                "display": "Both breasts"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "FIRSTBC",
+          "text": "Please indicate if this is first breast cancer or new cancer on contralateral or ipsilateral breast:",
+          "type": "choice",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "urn:uuid:23e2a296-dce5-447d-9a7c-7f4ac97b6ebe",
+                "code": "0",
+                "display": "Primary tumor"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:23e2a296-dce5-447d-9a7c-7f4ac97b6ebe",
+                "code": "1",
+                "display": "New ipsilateral"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:23e2a296-dce5-447d-9a7c-7f4ac97b6ebe",
+                "code": "2",
+                "display": "New contralateral"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "Tumor-Factors",
+      "text": "Tumor factors",
+      "type": "group",
+      "required": true,
+      "item": [
+        {
+          "linkId": "HistologicalDateKnown",
+          "text": "Is the date of histological diagnosis known?",
+          "type": "boolean",
+          "required": true
+        },
+        {
+          "linkId": "HistologicalDiagnosisDate",
+          "text": "Please indicate the initial date of histological diagnosis:",
+          "type": "date",
+          "required": true
+        },
+        {
+          "linkId": "HISTOTYPE",
+          "text": "Please indicate the histologic type of the tumor (select all that apply):",
+          "type": "choice",
+          "required": true,
+          "repeats": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "urn:uuid:54f3b593-e92c-49c2-838a-5e59196de2f0",
+                "code": "0",
+                "display": "Ductal carcinoma in situ"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:54f3b593-e92c-49c2-838a-5e59196de2f0",
+                "code": "1",
+                "display": "Invasive ductal carcinoma"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:54f3b593-e92c-49c2-838a-5e59196de2f0",
+                "code": "2",
+                "display": "Invasive lobular carcinoma"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:54f3b593-e92c-49c2-838a-5e59196de2f0",
+                "code": "3",
+                "display": "Other"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:54f3b593-e92c-49c2-838a-5e59196de2f0",
+                "code": "999",
+                "display": "Unknown"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "MUTBC",
+          "text": "Please indicate if the patient carries a genetic mutation predisposing breast cancer:",
+          "type": "choice",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "urn:uuid:4574904d-f3a9-44c4-9349-40ea58076505",
+                "code": "0",
+                "display": "No mutation"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:4574904d-f3a9-44c4-9349-40ea58076505",
+                "code": "1",
+                "display": "BRCA 1"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:4574904d-f3a9-44c4-9349-40ea58076505",
+                "code": "2",
+                "display": "BRCA 2"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:4574904d-f3a9-44c4-9349-40ea58076505",
+                "code": "3",
+                "display": "Other mutation"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:4574904d-f3a9-44c4-9349-40ea58076505",
+                "code": "4",
+                "display": "Not tested"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "GRADEINV",
+          "text": "Please indicate the grade of the invasive component of tumor:",
+          "type": "choice",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "urn:uuid:ce2aba40-12ae-41cd-85a6-fa8ae68d3284",
+                "code": "0",
+                "display": "Grade 1"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:ce2aba40-12ae-41cd-85a6-fa8ae68d3284",
+                "code": "1",
+                "display": "Grade 2"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:ce2aba40-12ae-41cd-85a6-fa8ae68d3284",
+                "code": "2",
+                "display": "Grade 3"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:ce2aba40-12ae-41cd-85a6-fa8ae68d3284",
+                "code": "3",
+                "display": "Not reported"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "GRADEDCIS",
+          "text": "Please indicate the tumor grade of DCIS component of tumor:",
+          "type": "choice",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "urn:uuid:28afa2eb-fab0-4985-85c0-b560b1de5cb4",
+                "code": "0",
+                "display": "Low"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:28afa2eb-fab0-4985-85c0-b560b1de5cb4",
+                "code": "1",
+                "display": "Intermediate"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:28afa2eb-fab0-4985-85c0-b560b1de5cb4",
+                "code": "2",
+                "display": "High"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:28afa2eb-fab0-4985-85c0-b560b1de5cb4",
+                "code": "3",
+                "display": "Not reported"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "TNMCT_BREAST",
+          "text": "Please indicate the clinical tumor stage (per AJCC 5th - 7th Ed.):",
+          "type": "choice",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "urn:uuid:bbf043ae-77f6-4d72-9c26-54120c64877a",
+                "code": "0",
+                "display": "cTX"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:bbf043ae-77f6-4d72-9c26-54120c64877a",
+                "code": "1",
+                "display": "cT0"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:bbf043ae-77f6-4d72-9c26-54120c64877a",
+                "code": "2",
+                "display": "cTis"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:bbf043ae-77f6-4d72-9c26-54120c64877a",
+                "code": "3",
+                "display": "cT1"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:bbf043ae-77f6-4d72-9c26-54120c64877a",
+                "code": "4",
+                "display": "cT2"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:bbf043ae-77f6-4d72-9c26-54120c64877a",
+                "code": "5",
+                "display": "cT3"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:bbf043ae-77f6-4d72-9c26-54120c64877a",
+                "code": "6",
+                "display": "cT4"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:bbf043ae-77f6-4d72-9c26-54120c64877a",
+                "code": "999",
+                "display": "Unknown"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "TNMCN_BREAST",
+          "text": "Please indicate the clinical nodal stage (per AJCC 5th - 7th Ed.):",
+          "type": "choice",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "urn:uuid:aac07446-dc50-4dfe-a241-77d0fa203591",
+                "code": "0",
+                "display": "cNX"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:aac07446-dc50-4dfe-a241-77d0fa203591",
+                "code": "1",
+                "display": "cN0"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:aac07446-dc50-4dfe-a241-77d0fa203591",
+                "code": "2",
+                "display": "cN1"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:aac07446-dc50-4dfe-a241-77d0fa203591",
+                "code": "3",
+                "display": "cN2"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:aac07446-dc50-4dfe-a241-77d0fa203591",
+                "code": "4",
+                "display": "cN3"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:aac07446-dc50-4dfe-a241-77d0fa203591",
+                "code": "999",
+                "display": "Unknown"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "TNMCM_BREAST",
+          "text": "Please indicate the clinical distant metastasis (per AJCC 5th - 7th Ed.):",
+          "type": "choice",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "urn:uuid:5f8d75d7-3fd5-4899-a6af-6e1ea80520b3",
+                "code": "1",
+                "display": "cMX"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:5f8d75d7-3fd5-4899-a6af-6e1ea80520b3",
+                "code": "2",
+                "display": "cM0"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:5f8d75d7-3fd5-4899-a6af-6e1ea80520b3",
+                "code": "3",
+                "display": "cM1"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:5f8d75d7-3fd5-4899-a6af-6e1ea80520b3",
+                "code": "999",
+                "display": "Unknown"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "ERSTATUS",
+          "text": "Please indicate if the estrogen receptor status is positive:",
+          "type": "choice",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "urn:uuid:93e05a33-3b00-4ae9-b4cd-ba7ba3e1f54e",
+                "code": "0",
+                "display": "No"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:93e05a33-3b00-4ae9-b4cd-ba7ba3e1f54e",
+                "code": "1",
+                "display": "Yes"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:93e05a33-3b00-4ae9-b4cd-ba7ba3e1f54e",
+                "code": "2",
+                "display": "Not performed"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:93e05a33-3b00-4ae9-b4cd-ba7ba3e1f54e",
+                "code": "999",
+                "display": "Unkown"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "PRSTATUS",
+          "text": "Please indicate if the progesterone receptor status is positive:",
+          "type": "choice",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "urn:uuid:02d110fd-1183-41fa-bacb-a689e0c67149",
+                "code": "0",
+                "display": "No"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:02d110fd-1183-41fa-bacb-a689e0c67149",
+                "code": "1",
+                "display": "Yes"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:02d110fd-1183-41fa-bacb-a689e0c67149",
+                "code": "2",
+                "display": "Not performed"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:02d110fd-1183-41fa-bacb-a689e0c67149",
+                "code": "999",
+                "display": "Unkown"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "HER2STATUS",
+          "text": "Please indicate if the HER2 receptor status is positive:",
+          "type": "choice",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "urn:uuid:17b96500-8800-4371-87d3-1498c8d2e039",
+                "code": "0",
+                "display": "Negative"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:17b96500-8800-4371-87d3-1498c8d2e039",
+                "code": "1",
+                "display": "Positive"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:17b96500-8800-4371-87d3-1498c8d2e039",
+                "code": "2",
+                "display": "Equivocal"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:17b96500-8800-4371-87d3-1498c8d2e039",
+                "code": "3",
+                "display": "HER2 receptor status not tested"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

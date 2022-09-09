@@ -1,0 +1,1359 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "ClinicalResponseAnnualUpdate",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><b>Structure</b><table border=\"1\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"The linkId for the item\">LinkId</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Text for the item\">Text</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the the itemcan appear in the instance\">Cardinality</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"The type of the item\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Additional information about the item\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_q_root.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"QuestionnaireRoot\" class=\"hierarchy\"/> AnnualClinicalResponse</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Questionnaire</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">https://connect.ichom.org/fhir/Questionnaire/ClinicalResponseAnnualUpdate#0.0.1</td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" id=\"item.General-Information-Clinical\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-group.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Group\" class=\"hierarchy\"/> General-Information-Clinical</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">General information</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group\">group</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.N/A-Clinical\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-integer.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Integer\" class=\"hierarchy\"/> N/A-Clinical</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">What is the patient's medical record number?</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-integer\">integer</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" id=\"item.LastName-Clinical\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"String\" class=\"hierarchy\"/> LastName-Clinical</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">What is the patient's last name?</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" id=\"item.Treatment-Variables\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-group.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Group\" class=\"hierarchy\"/> Treatment-Variables</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Treatment Variables</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group\">group</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.TREATMENT_BREAST\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> TREATMENT_BREAST</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Please indicate whether the patient received one of the following treatment during the last year: (select all that apply)</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..*</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Value Set: <a href=\"Bundle-DebugBundleEverything.html\">Type of treatments</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.SURGERY_BREAST\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> SURGERY_BREAST</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Please indicate the type of surgery the patient received during the last year:</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <span><a href=\"#item.TREATMENT_BREAST\">TREATMENT_BREAST</a> = Surgical procedure (procedure) (SNOMED CT#387713003)</span><br/>Value Set: <a href=\"Bundle-DebugBundlePatient-03-Year1and2.html\">Types of breast surgery</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.SurgeryDateKnown\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Boolean\" class=\"hierarchy\"/> SurgeryDateKnown</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Is the date of surgery known?</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <span><a href=\"#item.TREATMENT_BREAST\">TREATMENT_BREAST</a> = Surgical procedure (procedure) (SNOMED CT#387713003)</span></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.SurgeryDate\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-date.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Date\" class=\"hierarchy\"/> SurgeryDate</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Provide the date of surgery:</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-date\">date</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <span><a href=\"#item.SurgeryDateKnown\">SurgeryDateKnown</a> = true</span></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.SURGERYAX\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> SURGERYAX</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Please indicate the type of surgery to the axilla the patient received during the last year:</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <span><a href=\"#item.TREATMENT_BREAST\">TREATMENT_BREAST</a> = Operative procedure on axilla (SNOMED CT#699455008)</span><br/>Options: <a href=\"#opt-item.SURGERYAX\">4 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.SURGERYAXDATE-Known\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Boolean\" class=\"hierarchy\"/> SURGERYAXDATE-Known</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Is the date of surgery to the axilla known?</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <span><a href=\"#item.TREATMENT_BREAST\">TREATMENT_BREAST</a> = Operative procedure on axilla (SNOMED CT#699455008)</span></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.SURGERYAXDATE\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-date.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Date\" class=\"hierarchy\"/> SURGERYAXDATE</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Please provide the date of surgery to the axilla:</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-date\">date</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <span><a href=\"#item.SURGERYAXDATE-Known\">SURGERYAXDATE-Known</a> = true</span></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.SURGERYAX2\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> SURGERYAX2</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Please indicate whether the patient received axillary clearance due to lymph node involvement after sentinel lymph node biopsy during the last year:</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <ul><li><a href=\"#item.SURGERYAX\">SURGERYAX</a> = 0 (unknown#0)</li><li><a href=\"#item.SURGERYAX\">SURGERYAX</a> = 1 (unknown#1)</li></ul><br/>Options: <a href=\"#opt-item.SURGERYAX2\">3 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.SURGERYAX2DATE-Known\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Boolean\" class=\"hierarchy\"/> SURGERYAX2DATE-Known</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Is the date of axillary clearance known?</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <span><a href=\"#item.SURGERYAX2\">SURGERYAX2</a> = 1 (unknown#1)</span></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.SURGERYAX2DATE\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-date.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Date\" class=\"hierarchy\"/> SURGERYAX2DATE</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Please provide the date of axillary clearance:</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-date\">date</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <span><a href=\"#item.SURGERYAX2DATE-Known\">SURGERYAX2DATE-Known</a> = true</span></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.RECONSTRUCT\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> RECONSTRUCT</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Please indicate the type of delayed reconstruction the patient received during the last year:</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <span><a href=\"#item.TREATMENT_BREAST\">TREATMENT_BREAST</a> = Mammoplasty (SNOMED CT#33496007)</span><br/>Options: <a href=\"#opt-item.RECONSTRUCT\">4 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.RECONSTRUCTDATE-Known\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Boolean\" class=\"hierarchy\"/> RECONSTRUCTDATE-Known</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Is the date of the delayed reconstruction known?</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <span><a href=\"#item.TREATMENT_BREAST\">TREATMENT_BREAST</a> = Mammoplasty (SNOMED CT#33496007)</span></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.RECONSTRUCTDATE\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-date.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Date\" class=\"hierarchy\"/> RECONSTRUCTDATE</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Please provide the date of delayed reconstruction:</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-date\">date</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <span><a href=\"#item.RECONSTRUCTDATE-Known\">RECONSTRUCTDATE-Known</a> = true</span></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.RADIOTX_BREAST\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> RADIOTX_BREAST</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Please indicate the intent of radiotherapy:</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <span><a href=\"#item.TREATMENT_BREAST\">TREATMENT_BREAST</a> = Radiation oncology AND/OR radiotherapy (SNOMED CT#108290001)</span><br/>Options: <a href=\"#opt-item.RADIOTX_BREAST\">3 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.RADIOTXTYPE_BREAST\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> RADIOTXTYPE_BREAST</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Please indicate location/type of radiotherapy:</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <span><a href=\"#item.TREATMENT_BREAST\">TREATMENT_BREAST</a> = Radiation oncology AND/OR radiotherapy (SNOMED CT#108290001)</span><br/>Options: <a href=\"#opt-item.RADIOTXTYPE_BREAST\">11 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.RadioTxStartDate-Known\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Boolean\" class=\"hierarchy\"/> RadioTxStartDate-Known</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Is the start date of radiotherapy known?</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <span><a href=\"#item.TREATMENT_BREAST\">TREATMENT_BREAST</a> = Radiation oncology AND/OR radiotherapy (SNOMED CT#108290001)</span></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.RadioTxStartDate\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-date.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Date\" class=\"hierarchy\"/> RadioTxStartDate</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Please provide the start date of radiotherapy:</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-date\">date</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <span><a href=\"#item.RadioTxStartDate-Known\">RadioTxStartDate-Known</a> = true</span></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.RadioTxStopDate-Known\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Boolean\" class=\"hierarchy\"/> RadioTxStopDate-Known</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Is the stop date of radiotherapy known?</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <span><a href=\"#item.TREATMENT_BREAST\">TREATMENT_BREAST</a> = Radiation oncology AND/OR radiotherapy (SNOMED CT#108290001)</span></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.RadioTxStopDate\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-date.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Date\" class=\"hierarchy\"/> RadioTxStopDate</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Please provide the stop date of radiotherapy:</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-date\">date</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <span><a href=\"#item.RadioTxStopDate-Known\">RadioTxStopDate-Known</a> = true</span></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.CHEMOTXINTENT\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> CHEMOTXINTENT</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Please indicate the intent of chemotherapy:</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <ul><li><a href=\"#item.TREATMENT_BREAST\">TREATMENT_BREAST</a> = Adjuvant chemotherapy (Treatment variables#A_chemo)</li><li><a href=\"#item.TREATMENT_BREAST\">TREATMENT_BREAST</a> = Neoadjuvant chemotherapy (Treatment variables#N_A_chemo)</li></ul><br/>Options: <a href=\"#opt-item.CHEMOTXINTENT\">3 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.CHEMOTXTYPE_BREAST\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> CHEMOTXTYPE_BREAST</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Please indicate the type of chemotherapy (select all that apply):</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..*</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <ul><li><a href=\"#item.TREATMENT_BREAST\">TREATMENT_BREAST</a> = Adjuvant chemotherapy (Treatment variables#A_chemo)</li><li><a href=\"#item.TREATMENT_BREAST\">TREATMENT_BREAST</a> = Neoadjuvant chemotherapy (Treatment variables#N_A_chemo)</li></ul><br/>Options: <a href=\"#opt-item.CHEMOTXTYPE_BREAST\">5 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ChemoTxStartDate-Known\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Boolean\" class=\"hierarchy\"/> ChemoTxStartDate-Known</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Is the start date of chemotherapy known?</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <ul><li><a href=\"#item.TREATMENT_BREAST\">TREATMENT_BREAST</a> = Adjuvant chemotherapy (Treatment variables#A_chemo)</li><li><a href=\"#item.TREATMENT_BREAST\">TREATMENT_BREAST</a> = Neoadjuvant chemotherapy (Treatment variables#N_A_chemo)</li></ul></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ChemoTxStartDate\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-date.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Date\" class=\"hierarchy\"/> ChemoTxStartDate</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Please provide the start date of chemotherapy:</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-date\">date</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <span><a href=\"#item.ChemoTxStartDate-Known\">ChemoTxStartDate-Known</a> = true</span></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ChemoTxStopdate-Known\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Boolean\" class=\"hierarchy\"/> ChemoTxStopdate-Known</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Is the stop date of chemotherapy known?</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <ul><li><a href=\"#item.TREATMENT_BREAST\">TREATMENT_BREAST</a> = Adjuvant chemotherapy (Treatment variables#A_chemo)</li><li><a href=\"#item.TREATMENT_BREAST\">TREATMENT_BREAST</a> = Neoadjuvant chemotherapy (Treatment variables#N_A_chemo)</li></ul></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.ChemoTxStopdate\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-date.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Date\" class=\"hierarchy\"/> ChemoTxStopdate</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Please provide the stop date of chemotherapy:</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-date\">date</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <span><a href=\"#item.ChemoTxStopdate-Known\">ChemoTxStopdate-Known</a> = true</span></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.HORMONTX_BREAST\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> HORMONTX_BREAST</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Please indicate the intent of hormonal therapy:</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <span><a href=\"#item.TREATMENT_BREAST\">TREATMENT_BREAST</a> = Hormone therapy (SNOMED CT#169413002)</span><br/>Options: <a href=\"#opt-item.HORMONTX_BREAST\">3 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.HORMONTXTYPE\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> HORMONTXTYPE</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Please indicate the type of hormonal therapy (select all that apply):</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..*</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <span><a href=\"#item.TREATMENT_BREAST\">TREATMENT_BREAST</a> = Hormone therapy (SNOMED CT#169413002)</span><br/>Options: <a href=\"#opt-item.HORMONTXTYPE\">6 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.HORMONTXSTARTDATE-Known\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Boolean\" class=\"hierarchy\"/> HORMONTXSTARTDATE-Known</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Is the start date of hormonal therapy known?</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <span><a href=\"#item.TREATMENT_BREAST\">TREATMENT_BREAST</a> = Hormone therapy (SNOMED CT#169413002)</span></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.HORMONTXSTARTDATE\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-date.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Date\" class=\"hierarchy\"/> HORMONTXSTARTDATE</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Please provide the start date of hormonal therapy:</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-date\">date</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <span><a href=\"#item.HORMONTXSTARTDATE-Known\">HORMONTXSTARTDATE-Known</a> = true</span></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.HORMONTXSTOPDATE-Known\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Boolean\" class=\"hierarchy\"/> HORMONTXSTOPDATE-Known</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Is the stop date of hormonal therapy known?</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <span><a href=\"#item.TREATMENT_BREAST\">TREATMENT_BREAST</a> = Hormone therapy (SNOMED CT#169413002)</span></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.HORMONTXSTOPDATE\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-date.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Date\" class=\"hierarchy\"/> HORMONTXSTOPDATE</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Please provide the stop date of hormonal therapy, if applicable:</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-date\">date</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <span><a href=\"#item.HORMONTXSTOPDATE-Known\">HORMONTXSTOPDATE-Known</a> = true</span></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.TARGETTX_BREAST\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> TARGETTX_BREAST</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Please indicate the type of targeted therapy:</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <span><a href=\"#item.TREATMENT_BREAST\">TREATMENT_BREAST</a> = Targeted therapy (Treatment variables#Targ_Thrpy)</span><br/>Options: <a href=\"#opt-item.TARGETTX_BREAST\">3 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.TargetTxStartDate-Known\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Boolean\" class=\"hierarchy\"/> TargetTxStartDate-Known</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Is the start date of targeted therapy known?</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <span><a href=\"#item.TREATMENT_BREAST\">TREATMENT_BREAST</a> = Targeted therapy (Treatment variables#Targ_Thrpy)</span></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.TargetTxStartDate\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-date.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Date\" class=\"hierarchy\"/> TargetTxStartDate</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Please provide the start date of targeted therapy:</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-date\">date</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <span><a href=\"#item.TargetTxStartDate-Known\">TargetTxStartDate-Known</a> = true</span></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.TargetTxStopDate-Known\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Boolean\" class=\"hierarchy\"/> TargetTxStopDate-Known</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Is the stop date of targeted therapy known?</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <span><a href=\"#item.TREATMENT_BREAST\">TREATMENT_BREAST</a> = Targeted therapy (Treatment variables#Targ_Thrpy)</span></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.TargetTxStopDate\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-date.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Date\" class=\"hierarchy\"/> TargetTxStopDate</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Please provide the stop date of targeted therapy:</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-date\">date</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <span><a href=\"#item.TargetTxStopDate-Known\">TargetTxStopDate-Known</a> = true</span></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.SURGERYPATIENT\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> SURGERYPATIENT</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Please indicate if the patient has had one of the following re-operations since their surgery for breast cancer (select all that apply):</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..*</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.SURGERYPATIENT\">5 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.SURGERYDATEPATIENT-Known\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Boolean\" class=\"hierarchy\"/> SURGERYDATEPATIENT-Known</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Is the date of the reoperation known?</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <ul><li><a href=\"#item.SURGERYPATIENT\">SURGERYPATIENT</a> != 0 (unknown#0)</li><li><a href=\"#item.SURGERYPATIENT\">SURGERYPATIENT</a> != 999 (unknown#999)</li></ul></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.SURGERYDATEPATIENT\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-date.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Date\" class=\"hierarchy\"/> SURGERYDATEPATIENT</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">When was the reoperation?</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-date\">date</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <span><a href=\"#item.SURGERYDATEPATIENT-Known\">SURGERYDATEPATIENT-Known</a> = true</span></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.SYSTPATIENT\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> SYSTPATIENT</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Is the patient currently receiving systemic (ie drug) treatment for breast cancer?</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.SYSTPATIENT\">6 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" id=\"item.SYSTDATEPATIENT-Known\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Boolean\" class=\"hierarchy\"/> SYSTDATEPATIENT-Known</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Is the stop date of the systemic treatment known?</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <span><a href=\"#item.SYSTPATIENT\">SYSTPATIENT</a> = 1 (unknown#1)</span></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" id=\"item.SYSTDATEPATIENT\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-date.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Date\" class=\"hierarchy\"/> SYSTDATEPATIENT</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">When did the systemic treatment stop?</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-date\">date</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <span><a href=\"#item.SYSTDATEPATIENT-Known\">SYSTDATEPATIENT-Known</a> = true</span></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)\" id=\"item.Survival-and-Disease-control\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-group.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Group\" class=\"hierarchy\"/> Survival-and-Disease-control</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Survival and disease control</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group\">group</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" id=\"item.Survival-Q0\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Boolean\" class=\"hierarchy\"/> Survival-Q0</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Was the intent of the treatment curative?</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" id=\"item.MalignancyRecur\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> MalignancyRecur</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Is there evidence of local, regional or distant recurrence of neoplasm? (In case of multiple recurrences, please report the most severe)</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <span><a href=\"#item.Survival-Q0\">Survival-Q0</a> = true</span><br/>Options: <a href=\"#opt-item.MalignancyRecur\">5 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" id=\"item.RecurMethod\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Coding\" class=\"hierarchy\"/> RecurMethod</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">What was the method of confirming recurrence of neoplasm?</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <ul><li><a href=\"#item.MalignancyRecur\">MalignancyRecur</a> = 1 (unknown#1)</li><li><a href=\"#item.MalignancyRecur\">MalignancyRecur</a> = 2 (unknown#2)</li><li><a href=\"#item.MalignancyRecur\">MalignancyRecur</a> = 3 (unknown#3)</li></ul><br/>Options: <a href=\"#opt-item.RecurMethod\">4 options</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" id=\"item.RecurDateCancer-Known\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Boolean\" class=\"hierarchy\"/> RecurDateCancer-Known</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Is the date of cancer recurrence known?</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <ul><li><a href=\"#item.MalignancyRecur\">MalignancyRecur</a> = 1 (unknown#1)</li><li><a href=\"#item.MalignancyRecur\">MalignancyRecur</a> = 2 (unknown#2)</li><li><a href=\"#item.MalignancyRecur\">MalignancyRecur</a> = 3 (unknown#3)</li></ul></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" id=\"item.RecurDateCancer\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-date.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Date\" class=\"hierarchy\"/> RecurDateCancer</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">What is the date of cancer recurrence?</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-date\">date</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <span><a href=\"#item.RecurDateCancer-Known\">RecurDateCancer-Known</a> = true</span></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" id=\"item.VitalStatus\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Boolean\" class=\"hierarchy\"/> VitalStatus</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Has the patient deceased?</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" id=\"item.DeceasedDate-Known\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Boolean\" class=\"hierarchy\"/> DeceasedDate-Known</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Is the date of death of the patient known?</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <span><a href=\"#item.VitalStatus\">VitalStatus</a> = true</span></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" id=\"item.DeceasedDate\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-date.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Date\" class=\"hierarchy\"/> DeceasedDate</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">What was the date of death of the patient?</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-date\">date</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <span><a href=\"#item.DeceasedDate-Known\">DeceasedDate-Known</a> = true</span></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)\" id=\"item.DEATHBC\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Boolean\" class=\"hierarchy\"/> DEATHBC</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Is the death attributable to breast cancer?</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Enable When: <span><a href=\"#item.VitalStatus\">VitalStatus</a> = true</span></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table><hr/><p><b>Option Sets</b></p><a name=\"opt-item.SURGERYAX\"> </a><p><b>Answer options for SURGERYAX</b></p><ul><li style=\"font-size: 11px\">urn:uuid:8c808fb0-0b36-4623-9c13-e2caee216df4#0 (&quot;Sentinel lymph node biopsy&quot;)</li><li style=\"font-size: 11px\">urn:uuid:8c808fb0-0b36-4623-9c13-e2caee216df4#1 (&quot;Axillary sampling&quot;)</li><li style=\"font-size: 11px\">urn:uuid:8c808fb0-0b36-4623-9c13-e2caee216df4#2 (&quot;Axillary clearance&quot;)</li><li style=\"font-size: 11px\">urn:uuid:8c808fb0-0b36-4623-9c13-e2caee216df4#999 (&quot;Unknown&quot;)</li></ul><a name=\"opt-item.SURGERYAX2\"> </a><p><b>Answer options for SURGERYAX2</b></p><ul><li style=\"font-size: 11px\">urn:uuid:9fa16cf2-ad20-46d9-b4d6-b4782a222370#0 (&quot;No&quot;)</li><li style=\"font-size: 11px\">urn:uuid:9fa16cf2-ad20-46d9-b4d6-b4782a222370#1 (&quot;Yes&quot;)</li><li style=\"font-size: 11px\">urn:uuid:9fa16cf2-ad20-46d9-b4d6-b4782a222370#999 (&quot;Unkown&quot;)</li></ul><a name=\"opt-item.RECONSTRUCT\"> </a><p><b>Answer options for RECONSTRUCT</b></p><ul><li style=\"font-size: 11px\">urn:uuid:ee9a6809-ec45-43be-9070-8a7c4b364269#0 (&quot;Delayed reconstruction (direct/staged implant)&quot;)</li><li style=\"font-size: 11px\">urn:uuid:ee9a6809-ec45-43be-9070-8a7c4b364269#1 (&quot;Delayed reconstruction ( autologous)&quot;)</li><li style=\"font-size: 11px\">urn:uuid:ee9a6809-ec45-43be-9070-8a7c4b364269#2 (&quot;Delayed reconstruction (implant/autologous)&quot;)</li><li style=\"font-size: 11px\">urn:uuid:ee9a6809-ec45-43be-9070-8a7c4b364269#999 (&quot;Unknown&quot;)</li></ul><a name=\"opt-item.RADIOTX_BREAST\"> </a><p><b>Answer options for RADIOTX_BREAST</b></p><ul><li style=\"font-size: 11px\">urn:uuid:dff8b0ba-47f8-48bd-9e81-021783c9d0d0#0 (&quot;Neoadjuvant&quot;)</li><li style=\"font-size: 11px\">urn:uuid:dff8b0ba-47f8-48bd-9e81-021783c9d0d0#1 (&quot;Adjuvant&quot;)</li><li style=\"font-size: 11px\">urn:uuid:dff8b0ba-47f8-48bd-9e81-021783c9d0d0#999 (&quot;Unknown&quot;)</li></ul><a name=\"opt-item.RADIOTXTYPE_BREAST\"> </a><p><b>Answer options for RADIOTXTYPE_BREAST</b></p><ul><li style=\"font-size: 11px\">urn:uuid:848b3292-4a18-43c8-a0dc-a133443a4b33#0 (&quot;Breast&quot;)</li><li style=\"font-size: 11px\">urn:uuid:848b3292-4a18-43c8-a0dc-a133443a4b33#1 (&quot;Chest wall&quot;)</li><li style=\"font-size: 11px\">urn:uuid:848b3292-4a18-43c8-a0dc-a133443a4b33#2 (&quot;Axillary nodal irradiation&quot;)</li><li style=\"font-size: 11px\">urn:uuid:848b3292-4a18-43c8-a0dc-a133443a4b33#3 (&quot;Supraclavicular irradiation&quot;)</li><li style=\"font-size: 11px\">urn:uuid:848b3292-4a18-43c8-a0dc-a133443a4b33#4 (&quot;Internal mammary node irradiation&quot;)</li><li style=\"font-size: 11px\">urn:uuid:848b3292-4a18-43c8-a0dc-a133443a4b33#5 (&quot;Tumor bed boost&quot;)</li><li style=\"font-size: 11px\">urn:uuid:848b3292-4a18-43c8-a0dc-a133443a4b33#6 (&quot;Brain metastases&quot;)</li><li style=\"font-size: 11px\">urn:uuid:848b3292-4a18-43c8-a0dc-a133443a4b33#7 (&quot;Bone metastases&quot;)</li><li style=\"font-size: 11px\">urn:uuid:848b3292-4a18-43c8-a0dc-a133443a4b33#8 (&quot;Any metastatic site&quot;)</li><li style=\"font-size: 11px\">urn:uuid:848b3292-4a18-43c8-a0dc-a133443a4b33#9 (&quot;Other&quot;)</li><li style=\"font-size: 11px\">urn:uuid:848b3292-4a18-43c8-a0dc-a133443a4b33#999 (&quot;Unknown&quot;)</li></ul><a name=\"opt-item.CHEMOTXINTENT\"> </a><p><b>Answer options for CHEMOTXINTENT</b></p><ul><li style=\"font-size: 11px\">urn:uuid:de25b812-330d-4e4e-9791-22efa124c222#0 (&quot;Neoadjuvant&quot;)</li><li style=\"font-size: 11px\">urn:uuid:de25b812-330d-4e4e-9791-22efa124c222#1 (&quot;Adjuvant&quot;)</li><li style=\"font-size: 11px\">urn:uuid:de25b812-330d-4e4e-9791-22efa124c222#999 (&quot;Unknown&quot;)</li></ul><a name=\"opt-item.CHEMOTXTYPE_BREAST\"> </a><p><b>Answer options for CHEMOTXTYPE_BREAST</b></p><ul><li style=\"font-size: 11px\">urn:uuid:de25b812-330d-4e4e-9791-22efa124c222#0 (&quot;Anthracycline containing&quot;)</li><li style=\"font-size: 11px\">urn:uuid:de25b812-330d-4e4e-9791-22efa124c222#1 (&quot;Taxane containing&quot;)</li><li style=\"font-size: 11px\">urn:uuid:de25b812-330d-4e4e-9791-22efa124c222#2 (&quot;Platinum containing&quot;)</li><li style=\"font-size: 11px\">urn:uuid:de25b812-330d-4e4e-9791-22efa124c222#3 (&quot;Other&quot;)</li><li style=\"font-size: 11px\">urn:uuid:de25b812-330d-4e4e-9791-22efa124c222#999 (&quot;Unknown&quot;)</li></ul><a name=\"opt-item.HORMONTX_BREAST\"> </a><p><b>Answer options for HORMONTX_BREAST</b></p><ul><li style=\"font-size: 11px\">urn:uuid:103a95b9-d961-4ef1-8cd2-21d21a60dd15#0 (&quot;Neoadjuvant&quot;)</li><li style=\"font-size: 11px\">urn:uuid:103a95b9-d961-4ef1-8cd2-21d21a60dd15#1 (&quot;Adjuvant&quot;)</li><li style=\"font-size: 11px\">urn:uuid:103a95b9-d961-4ef1-8cd2-21d21a60dd15#999 (&quot;Unknown&quot;)</li></ul><a name=\"opt-item.HORMONTXTYPE\"> </a><p><b>Answer options for HORMONTXTYPE</b></p><ul><li style=\"font-size: 11px\">urn:uuid:e5a35a65-0b47-4c3b-bbd8-8682d9064abb#0 (&quot;Aromatase inhibitor&quot;)</li><li style=\"font-size: 11px\">urn:uuid:e5a35a65-0b47-4c3b-bbd8-8682d9064abb#1 (&quot;Selective estrogen-receptor modulator (e.g. Tamoxifen)&quot;)</li><li style=\"font-size: 11px\">urn:uuid:e5a35a65-0b47-4c3b-bbd8-8682d9064abb#2 (&quot;Oophorectomy&quot;)</li><li style=\"font-size: 11px\">urn:uuid:e5a35a65-0b47-4c3b-bbd8-8682d9064abb#3 (&quot;LHRH agonist&quot;)</li><li style=\"font-size: 11px\">urn:uuid:e5a35a65-0b47-4c3b-bbd8-8682d9064abb#4 (&quot;Other&quot;)</li><li style=\"font-size: 11px\">urn:uuid:e5a35a65-0b47-4c3b-bbd8-8682d9064abb#999 (&quot;Unknown&quot;)</li></ul><a name=\"opt-item.TARGETTX_BREAST\"> </a><p><b>Answer options for TARGETTX_BREAST</b></p><ul><li style=\"font-size: 11px\">urn:uuid:7e263f5e-2bfc-45d7-a4fb-19078a3c0a8d#0 (&quot;Her-2 targeting therapy&quot;)</li><li style=\"font-size: 11px\">urn:uuid:7e263f5e-2bfc-45d7-a4fb-19078a3c0a8d#1 (&quot;Other&quot;)</li><li style=\"font-size: 11px\">urn:uuid:7e263f5e-2bfc-45d7-a4fb-19078a3c0a8d#999 (&quot;Unknown&quot;)</li></ul><a name=\"opt-item.SURGERYPATIENT\"> </a><p><b>Answer options for SURGERYPATIENT</b></p><ul><li style=\"font-size: 11px\">urn:uuid:c6d1ad7a-4a40-4f06-b518-88a34063bdf3#0 (&quot;No&quot;)</li><li style=\"font-size: 11px\">urn:uuid:c6d1ad7a-4a40-4f06-b518-88a34063bdf3#1 (&quot;Breast reconstruction surgery&quot;)</li><li style=\"font-size: 11px\">urn:uuid:c6d1ad7a-4a40-4f06-b518-88a34063bdf3#2 (&quot;Mastectomy&quot;)</li><li style=\"font-size: 11px\">urn:uuid:c6d1ad7a-4a40-4f06-b518-88a34063bdf3#3 (&quot;Axillary dissection&quot;)</li><li style=\"font-size: 11px\">urn:uuid:c6d1ad7a-4a40-4f06-b518-88a34063bdf3#999 (&quot;Unknown&quot;)</li></ul><a name=\"opt-item.SYSTPATIENT\"> </a><p><b>Answer options for SYSTPATIENT</b></p><ul><li style=\"font-size: 11px\">urn:uuid:f59e0a1c-f0a0-4d12-b5ed-9720c91cf862#0 (&quot;no, never had systemic treatment&quot;)</li><li style=\"font-size: 11px\">urn:uuid:f59e0a1c-f0a0-4d12-b5ed-9720c91cf862#1 (&quot;yes, but the treatment has stopped&quot;)</li><li style=\"font-size: 11px\">urn:uuid:f59e0a1c-f0a0-4d12-b5ed-9720c91cf862#2 (&quot;yes, on chemotherapy&quot;)</li><li style=\"font-size: 11px\">urn:uuid:f59e0a1c-f0a0-4d12-b5ed-9720c91cf862#3 (&quot;yes, on targeted therapy&quot;)</li><li style=\"font-size: 11px\">urn:uuid:f59e0a1c-f0a0-4d12-b5ed-9720c91cf862#4 (&quot;yes, on hormone therapy&quot;)</li><li style=\"font-size: 11px\">urn:uuid:f59e0a1c-f0a0-4d12-b5ed-9720c91cf862#999 (&quot;unkown&quot;)</li></ul><a name=\"opt-item.MalignancyRecur\"> </a><p><b>Answer options for MalignancyRecur</b></p><ul><li style=\"font-size: 11px\">urn:uuid:dc449654-ad57-40af-ae6c-2bcf6b570add#0 (&quot;No&quot;)</li><li style=\"font-size: 11px\">urn:uuid:dc449654-ad57-40af-ae6c-2bcf6b570add#1 (&quot;Yes, local recurrence&quot;)</li><li style=\"font-size: 11px\">urn:uuid:dc449654-ad57-40af-ae6c-2bcf6b570add#2 (&quot;Yes, regional recurrence&quot;)</li><li style=\"font-size: 11px\">urn:uuid:dc449654-ad57-40af-ae6c-2bcf6b570add#3 (&quot;Yes, distant recurrence&quot;)</li><li style=\"font-size: 11px\">urn:uuid:dc449654-ad57-40af-ae6c-2bcf6b570add#999 (&quot;Unknown&quot;)</li></ul><a name=\"opt-item.RecurMethod\"> </a><p><b>Answer options for RecurMethod</b></p><ul><li style=\"font-size: 11px\">urn:uuid:ff0e5d9c-aeba-4415-9f52-f4b36179c648#0 (&quot;Radiological diagnosis&quot;)</li><li style=\"font-size: 11px\">urn:uuid:ff0e5d9c-aeba-4415-9f52-f4b36179c648#1 (&quot;Histological diagnosis&quot;)</li><li style=\"font-size: 11px\">urn:uuid:ff0e5d9c-aeba-4415-9f52-f4b36179c648#2 (&quot;Radiological and histological diagnosis&quot;)</li><li style=\"font-size: 11px\">urn:uuid:ff0e5d9c-aeba-4415-9f52-f4b36179c648#999 (&quot;Unknown&quot;)</li></ul></div>"
+  },
+  "url": "https://connect.ichom.org/fhir/Questionnaire/ClinicalResponseAnnualUpdate",
+  "version": "0.0.1",
+  "name": "AnnualClinicalResponse",
+  "title": "Annual follow-up of clinical questionnaire response",
+  "status": "draft",
+  "experimental": true,
+  "date": "2022-09-09T06:13:08+00:00",
+  "publisher": "ICHOM",
+  "contact": [
+    {
+      "name": "ICHOM",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://ichom.org"
+        }
+      ]
+    }
+  ],
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001",
+          "display": "World"
+        }
+      ]
+    }
+  ],
+  "item": [
+    {
+      "linkId": "General-Information-Clinical",
+      "text": "General information",
+      "type": "group",
+      "required": true,
+      "item": [
+        {
+          "linkId": "N/A-Clinical",
+          "text": "What is the patient's medical record number?",
+          "type": "integer",
+          "required": true
+        },
+        {
+          "linkId": "LastName-Clinical",
+          "text": "What is the patient's last name?",
+          "type": "string",
+          "required": true
+        }
+      ]
+    },
+    {
+      "linkId": "Treatment-Variables",
+      "text": "Treatment Variables",
+      "type": "group",
+      "required": true,
+      "item": [
+        {
+          "linkId": "TREATMENT_BREAST",
+          "text": "Please indicate whether the patient received one of the following treatment during the last year: (select all that apply)",
+          "type": "choice",
+          "required": true,
+          "repeats": true,
+          "answerValueSet": "https://connect.ichom.org/fhir/ValueSet/TreatmentTypeValueSet"
+        },
+        {
+          "linkId": "SURGERY_BREAST",
+          "text": "Please indicate the type of surgery the patient received during the last year:",
+          "type": "choice",
+          "enableWhen": [
+            {
+              "question": "TREATMENT_BREAST",
+              "operator": "=",
+              "answerCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "387713003"
+              }
+            }
+          ],
+          "required": true,
+          "answerValueSet": "https://connect.ichom.org/fhir/ValueSet/BreastSurgeryTypeVS"
+        },
+        {
+          "linkId": "SurgeryDateKnown",
+          "text": "Is the date of surgery known?",
+          "type": "boolean",
+          "enableWhen": [
+            {
+              "question": "TREATMENT_BREAST",
+              "operator": "=",
+              "answerCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "387713003"
+              }
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "SurgeryDate",
+          "text": "Provide the date of surgery:",
+          "type": "date",
+          "enableWhen": [
+            {
+              "question": "SurgeryDateKnown",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "SURGERYAX",
+          "text": "Please indicate the type of surgery to the axilla the patient received during the last year:",
+          "type": "choice",
+          "enableWhen": [
+            {
+              "question": "TREATMENT_BREAST",
+              "operator": "=",
+              "answerCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "699455008"
+              }
+            }
+          ],
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "urn:uuid:8c808fb0-0b36-4623-9c13-e2caee216df4",
+                "code": "0",
+                "display": "Sentinel lymph node biopsy"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:8c808fb0-0b36-4623-9c13-e2caee216df4",
+                "code": "1",
+                "display": "Axillary sampling"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:8c808fb0-0b36-4623-9c13-e2caee216df4",
+                "code": "2",
+                "display": "Axillary clearance"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:8c808fb0-0b36-4623-9c13-e2caee216df4",
+                "code": "999",
+                "display": "Unknown"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "SURGERYAXDATE-Known",
+          "text": "Is the date of surgery to the axilla known?",
+          "type": "boolean",
+          "enableWhen": [
+            {
+              "question": "TREATMENT_BREAST",
+              "operator": "=",
+              "answerCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "699455008"
+              }
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "SURGERYAXDATE",
+          "text": "Please provide the date of surgery to the axilla:",
+          "type": "date",
+          "enableWhen": [
+            {
+              "question": "SURGERYAXDATE-Known",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "SURGERYAX2",
+          "text": "Please indicate whether the patient received axillary clearance due to lymph node involvement after sentinel lymph node biopsy during the last year:",
+          "type": "choice",
+          "enableWhen": [
+            {
+              "question": "SURGERYAX",
+              "operator": "=",
+              "answerCoding": {
+                "system": "urn:uuid:8c808fb0-0b36-4623-9c13-e2caee216df4",
+                "code": "0"
+              }
+            },
+            {
+              "question": "SURGERYAX",
+              "operator": "=",
+              "answerCoding": {
+                "system": "urn:uuid:8c808fb0-0b36-4623-9c13-e2caee216df4",
+                "code": "1"
+              }
+            }
+          ],
+          "enableBehavior": "any",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "urn:uuid:9fa16cf2-ad20-46d9-b4d6-b4782a222370",
+                "code": "0",
+                "display": "No"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:9fa16cf2-ad20-46d9-b4d6-b4782a222370",
+                "code": "1",
+                "display": "Yes"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:9fa16cf2-ad20-46d9-b4d6-b4782a222370",
+                "code": "999",
+                "display": "Unkown"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "SURGERYAX2DATE-Known",
+          "text": "Is the date of axillary clearance known?",
+          "type": "boolean",
+          "enableWhen": [
+            {
+              "question": "SURGERYAX2",
+              "operator": "=",
+              "answerCoding": {
+                "system": "urn:uuid:9fa16cf2-ad20-46d9-b4d6-b4782a222370",
+                "code": "1"
+              }
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "SURGERYAX2DATE",
+          "text": "Please provide the date of axillary clearance:",
+          "type": "date",
+          "enableWhen": [
+            {
+              "question": "SURGERYAX2DATE-Known",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "RECONSTRUCT",
+          "text": "Please indicate the type of delayed reconstruction the patient received during the last year:",
+          "type": "choice",
+          "enableWhen": [
+            {
+              "question": "TREATMENT_BREAST",
+              "operator": "=",
+              "answerCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "33496007"
+              }
+            }
+          ],
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "urn:uuid:ee9a6809-ec45-43be-9070-8a7c4b364269",
+                "code": "0",
+                "display": "Delayed reconstruction (direct/staged implant)"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:ee9a6809-ec45-43be-9070-8a7c4b364269",
+                "code": "1",
+                "display": "Delayed reconstruction ( autologous)"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:ee9a6809-ec45-43be-9070-8a7c4b364269",
+                "code": "2",
+                "display": "Delayed reconstruction (implant/autologous)"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:ee9a6809-ec45-43be-9070-8a7c4b364269",
+                "code": "999",
+                "display": "Unknown"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "RECONSTRUCTDATE-Known",
+          "text": "Is the date of the delayed reconstruction known?",
+          "type": "boolean",
+          "enableWhen": [
+            {
+              "question": "TREATMENT_BREAST",
+              "operator": "=",
+              "answerCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "33496007"
+              }
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "RECONSTRUCTDATE",
+          "text": "Please provide the date of delayed reconstruction:",
+          "type": "date",
+          "enableWhen": [
+            {
+              "question": "RECONSTRUCTDATE-Known",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "RADIOTX_BREAST",
+          "text": "Please indicate the intent of radiotherapy:",
+          "type": "choice",
+          "enableWhen": [
+            {
+              "question": "TREATMENT_BREAST",
+              "operator": "=",
+              "answerCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "108290001"
+              }
+            }
+          ],
+          "required": true,
+          "repeats": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "urn:uuid:dff8b0ba-47f8-48bd-9e81-021783c9d0d0",
+                "code": "0",
+                "display": "Neoadjuvant"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:dff8b0ba-47f8-48bd-9e81-021783c9d0d0",
+                "code": "1",
+                "display": "Adjuvant"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:dff8b0ba-47f8-48bd-9e81-021783c9d0d0",
+                "code": "999",
+                "display": "Unknown"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "RADIOTXTYPE_BREAST",
+          "text": "Please indicate location/type of radiotherapy:",
+          "type": "choice",
+          "enableWhen": [
+            {
+              "question": "TREATMENT_BREAST",
+              "operator": "=",
+              "answerCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "108290001"
+              }
+            }
+          ],
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "urn:uuid:848b3292-4a18-43c8-a0dc-a133443a4b33",
+                "code": "0",
+                "display": "Breast"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:848b3292-4a18-43c8-a0dc-a133443a4b33",
+                "code": "1",
+                "display": "Chest wall"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:848b3292-4a18-43c8-a0dc-a133443a4b33",
+                "code": "2",
+                "display": "Axillary nodal irradiation"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:848b3292-4a18-43c8-a0dc-a133443a4b33",
+                "code": "3",
+                "display": "Supraclavicular irradiation"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:848b3292-4a18-43c8-a0dc-a133443a4b33",
+                "code": "4",
+                "display": "Internal mammary node irradiation"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:848b3292-4a18-43c8-a0dc-a133443a4b33",
+                "code": "5",
+                "display": "Tumor bed boost"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:848b3292-4a18-43c8-a0dc-a133443a4b33",
+                "code": "6",
+                "display": "Brain metastases"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:848b3292-4a18-43c8-a0dc-a133443a4b33",
+                "code": "7",
+                "display": "Bone metastases"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:848b3292-4a18-43c8-a0dc-a133443a4b33",
+                "code": "8",
+                "display": "Any metastatic site"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:848b3292-4a18-43c8-a0dc-a133443a4b33",
+                "code": "9",
+                "display": "Other"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:848b3292-4a18-43c8-a0dc-a133443a4b33",
+                "code": "999",
+                "display": "Unknown"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "RadioTxStartDate-Known",
+          "text": "Is the start date of radiotherapy known?",
+          "type": "boolean",
+          "enableWhen": [
+            {
+              "question": "TREATMENT_BREAST",
+              "operator": "=",
+              "answerCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "108290001"
+              }
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "RadioTxStartDate",
+          "text": "Please provide the start date of radiotherapy:",
+          "type": "date",
+          "enableWhen": [
+            {
+              "question": "RadioTxStartDate-Known",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "RadioTxStopDate-Known",
+          "text": "Is the stop date of radiotherapy known?",
+          "type": "boolean",
+          "enableWhen": [
+            {
+              "question": "TREATMENT_BREAST",
+              "operator": "=",
+              "answerCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "108290001"
+              }
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "RadioTxStopDate",
+          "text": "Please provide the stop date of radiotherapy:",
+          "type": "date",
+          "enableWhen": [
+            {
+              "question": "RadioTxStopDate-Known",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "CHEMOTXINTENT",
+          "text": "Please indicate the intent of chemotherapy:",
+          "type": "choice",
+          "enableWhen": [
+            {
+              "question": "TREATMENT_BREAST",
+              "operator": "=",
+              "answerCoding": {
+                "system": "http://connect.ichom.org/fhir/CodeSystem/treatment-variables",
+                "code": "A_chemo"
+              }
+            },
+            {
+              "question": "TREATMENT_BREAST",
+              "operator": "=",
+              "answerCoding": {
+                "system": "http://connect.ichom.org/fhir/CodeSystem/treatment-variables",
+                "code": "N_A_chemo"
+              }
+            }
+          ],
+          "enableBehavior": "any",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "urn:uuid:de25b812-330d-4e4e-9791-22efa124c222",
+                "code": "0",
+                "display": "Neoadjuvant"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:de25b812-330d-4e4e-9791-22efa124c222",
+                "code": "1",
+                "display": "Adjuvant"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:de25b812-330d-4e4e-9791-22efa124c222",
+                "code": "999",
+                "display": "Unknown"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "CHEMOTXTYPE_BREAST",
+          "text": "Please indicate the type of chemotherapy (select all that apply):",
+          "type": "choice",
+          "enableWhen": [
+            {
+              "question": "TREATMENT_BREAST",
+              "operator": "=",
+              "answerCoding": {
+                "system": "http://connect.ichom.org/fhir/CodeSystem/treatment-variables",
+                "code": "A_chemo"
+              }
+            },
+            {
+              "question": "TREATMENT_BREAST",
+              "operator": "=",
+              "answerCoding": {
+                "system": "http://connect.ichom.org/fhir/CodeSystem/treatment-variables",
+                "code": "N_A_chemo"
+              }
+            }
+          ],
+          "enableBehavior": "any",
+          "required": true,
+          "repeats": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "urn:uuid:de25b812-330d-4e4e-9791-22efa124c222",
+                "code": "0",
+                "display": "Anthracycline containing"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:de25b812-330d-4e4e-9791-22efa124c222",
+                "code": "1",
+                "display": "Taxane containing"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:de25b812-330d-4e4e-9791-22efa124c222",
+                "code": "2",
+                "display": "Platinum containing"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:de25b812-330d-4e4e-9791-22efa124c222",
+                "code": "3",
+                "display": "Other"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:de25b812-330d-4e4e-9791-22efa124c222",
+                "code": "999",
+                "display": "Unknown"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "ChemoTxStartDate-Known",
+          "text": "Is the start date of chemotherapy known?",
+          "type": "boolean",
+          "enableWhen": [
+            {
+              "question": "TREATMENT_BREAST",
+              "operator": "=",
+              "answerCoding": {
+                "system": "http://connect.ichom.org/fhir/CodeSystem/treatment-variables",
+                "code": "A_chemo"
+              }
+            },
+            {
+              "question": "TREATMENT_BREAST",
+              "operator": "=",
+              "answerCoding": {
+                "system": "http://connect.ichom.org/fhir/CodeSystem/treatment-variables",
+                "code": "N_A_chemo"
+              }
+            }
+          ],
+          "enableBehavior": "any",
+          "required": true
+        },
+        {
+          "linkId": "ChemoTxStartDate",
+          "text": "Please provide the start date of chemotherapy:",
+          "type": "date",
+          "enableWhen": [
+            {
+              "question": "ChemoTxStartDate-Known",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "ChemoTxStopdate-Known",
+          "text": "Is the stop date of chemotherapy known?",
+          "type": "boolean",
+          "enableWhen": [
+            {
+              "question": "TREATMENT_BREAST",
+              "operator": "=",
+              "answerCoding": {
+                "system": "http://connect.ichom.org/fhir/CodeSystem/treatment-variables",
+                "code": "A_chemo"
+              }
+            },
+            {
+              "question": "TREATMENT_BREAST",
+              "operator": "=",
+              "answerCoding": {
+                "system": "http://connect.ichom.org/fhir/CodeSystem/treatment-variables",
+                "code": "N_A_chemo"
+              }
+            }
+          ],
+          "enableBehavior": "any",
+          "required": true
+        },
+        {
+          "linkId": "ChemoTxStopdate",
+          "text": "Please provide the stop date of chemotherapy:",
+          "type": "date",
+          "enableWhen": [
+            {
+              "question": "ChemoTxStopdate-Known",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "HORMONTX_BREAST",
+          "text": "Please indicate the intent of hormonal therapy:",
+          "type": "choice",
+          "enableWhen": [
+            {
+              "question": "TREATMENT_BREAST",
+              "operator": "=",
+              "answerCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "169413002"
+              }
+            }
+          ],
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "urn:uuid:103a95b9-d961-4ef1-8cd2-21d21a60dd15",
+                "code": "0",
+                "display": "Neoadjuvant"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:103a95b9-d961-4ef1-8cd2-21d21a60dd15",
+                "code": "1",
+                "display": "Adjuvant"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:103a95b9-d961-4ef1-8cd2-21d21a60dd15",
+                "code": "999",
+                "display": "Unknown"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "HORMONTXTYPE",
+          "text": "Please indicate the type of hormonal therapy (select all that apply):",
+          "type": "choice",
+          "enableWhen": [
+            {
+              "question": "TREATMENT_BREAST",
+              "operator": "=",
+              "answerCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "169413002"
+              }
+            }
+          ],
+          "required": true,
+          "repeats": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "urn:uuid:e5a35a65-0b47-4c3b-bbd8-8682d9064abb",
+                "code": "0",
+                "display": "Aromatase inhibitor"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:e5a35a65-0b47-4c3b-bbd8-8682d9064abb",
+                "code": "1",
+                "display": "Selective estrogen-receptor modulator (e.g. Tamoxifen)"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:e5a35a65-0b47-4c3b-bbd8-8682d9064abb",
+                "code": "2",
+                "display": "Oophorectomy"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:e5a35a65-0b47-4c3b-bbd8-8682d9064abb",
+                "code": "3",
+                "display": "LHRH agonist"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:e5a35a65-0b47-4c3b-bbd8-8682d9064abb",
+                "code": "4",
+                "display": "Other"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:e5a35a65-0b47-4c3b-bbd8-8682d9064abb",
+                "code": "999",
+                "display": "Unknown"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "HORMONTXSTARTDATE-Known",
+          "text": "Is the start date of hormonal therapy known?",
+          "type": "boolean",
+          "enableWhen": [
+            {
+              "question": "TREATMENT_BREAST",
+              "operator": "=",
+              "answerCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "169413002"
+              }
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "HORMONTXSTARTDATE",
+          "text": "Please provide the start date of hormonal therapy:",
+          "type": "date",
+          "enableWhen": [
+            {
+              "question": "HORMONTXSTARTDATE-Known",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "HORMONTXSTOPDATE-Known",
+          "text": "Is the stop date of hormonal therapy known?",
+          "type": "boolean",
+          "enableWhen": [
+            {
+              "question": "TREATMENT_BREAST",
+              "operator": "=",
+              "answerCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "169413002"
+              }
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "HORMONTXSTOPDATE",
+          "text": "Please provide the stop date of hormonal therapy, if applicable:",
+          "type": "date",
+          "enableWhen": [
+            {
+              "question": "HORMONTXSTOPDATE-Known",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "TARGETTX_BREAST",
+          "text": "Please indicate the type of targeted therapy:",
+          "type": "choice",
+          "enableWhen": [
+            {
+              "question": "TREATMENT_BREAST",
+              "operator": "=",
+              "answerCoding": {
+                "system": "http://connect.ichom.org/fhir/CodeSystem/treatment-variables",
+                "code": "Targ_Thrpy"
+              }
+            }
+          ],
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "urn:uuid:7e263f5e-2bfc-45d7-a4fb-19078a3c0a8d",
+                "code": "0",
+                "display": "Her-2 targeting therapy"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:7e263f5e-2bfc-45d7-a4fb-19078a3c0a8d",
+                "code": "1",
+                "display": "Other"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:7e263f5e-2bfc-45d7-a4fb-19078a3c0a8d",
+                "code": "999",
+                "display": "Unknown"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "TargetTxStartDate-Known",
+          "text": "Is the start date of targeted therapy known?",
+          "type": "boolean",
+          "enableWhen": [
+            {
+              "question": "TREATMENT_BREAST",
+              "operator": "=",
+              "answerCoding": {
+                "system": "http://connect.ichom.org/fhir/CodeSystem/treatment-variables",
+                "code": "Targ_Thrpy"
+              }
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "TargetTxStartDate",
+          "text": "Please provide the start date of targeted therapy:",
+          "type": "date",
+          "enableWhen": [
+            {
+              "question": "TargetTxStartDate-Known",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "TargetTxStopDate-Known",
+          "text": "Is the stop date of targeted therapy known?",
+          "type": "boolean",
+          "enableWhen": [
+            {
+              "question": "TREATMENT_BREAST",
+              "operator": "=",
+              "answerCoding": {
+                "system": "http://connect.ichom.org/fhir/CodeSystem/treatment-variables",
+                "code": "Targ_Thrpy"
+              }
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "TargetTxStopDate",
+          "text": "Please provide the stop date of targeted therapy:",
+          "type": "date",
+          "enableWhen": [
+            {
+              "question": "TargetTxStopDate-Known",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "SURGERYPATIENT",
+          "text": "Please indicate if the patient has had one of the following re-operations since their surgery for breast cancer (select all that apply):",
+          "type": "choice",
+          "required": true,
+          "repeats": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "urn:uuid:c6d1ad7a-4a40-4f06-b518-88a34063bdf3",
+                "code": "0",
+                "display": "No"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:c6d1ad7a-4a40-4f06-b518-88a34063bdf3",
+                "code": "1",
+                "display": "Breast reconstruction surgery"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:c6d1ad7a-4a40-4f06-b518-88a34063bdf3",
+                "code": "2",
+                "display": "Mastectomy"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:c6d1ad7a-4a40-4f06-b518-88a34063bdf3",
+                "code": "3",
+                "display": "Axillary dissection"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:c6d1ad7a-4a40-4f06-b518-88a34063bdf3",
+                "code": "999",
+                "display": "Unknown"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "SURGERYDATEPATIENT-Known",
+          "text": "Is the date of the reoperation known?",
+          "type": "boolean",
+          "enableWhen": [
+            {
+              "question": "SURGERYPATIENT",
+              "operator": "!=",
+              "answerCoding": {
+                "system": "urn:uuid:c6d1ad7a-4a40-4f06-b518-88a34063bdf3",
+                "code": "0"
+              }
+            },
+            {
+              "question": "SURGERYPATIENT",
+              "operator": "!=",
+              "answerCoding": {
+                "system": "urn:uuid:c6d1ad7a-4a40-4f06-b518-88a34063bdf3",
+                "code": "999"
+              }
+            }
+          ],
+          "enableBehavior": "all",
+          "required": true
+        },
+        {
+          "linkId": "SURGERYDATEPATIENT",
+          "text": "When was the reoperation?",
+          "type": "date",
+          "enableWhen": [
+            {
+              "question": "SURGERYDATEPATIENT-Known",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "SYSTPATIENT",
+          "text": "Is the patient currently receiving systemic (ie drug) treatment for breast cancer?",
+          "type": "choice",
+          "required": true,
+          "repeats": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "urn:uuid:f59e0a1c-f0a0-4d12-b5ed-9720c91cf862",
+                "code": "0",
+                "display": "no, never had systemic treatment"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:f59e0a1c-f0a0-4d12-b5ed-9720c91cf862",
+                "code": "1",
+                "display": "yes, but the treatment has stopped"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:f59e0a1c-f0a0-4d12-b5ed-9720c91cf862",
+                "code": "2",
+                "display": "yes, on chemotherapy"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:f59e0a1c-f0a0-4d12-b5ed-9720c91cf862",
+                "code": "3",
+                "display": "yes, on targeted therapy"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:f59e0a1c-f0a0-4d12-b5ed-9720c91cf862",
+                "code": "4",
+                "display": "yes, on hormone therapy"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:f59e0a1c-f0a0-4d12-b5ed-9720c91cf862",
+                "code": "999",
+                "display": "unkown"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "SYSTDATEPATIENT-Known",
+          "text": "Is the stop date of the systemic treatment known?",
+          "type": "boolean",
+          "enableWhen": [
+            {
+              "question": "SYSTPATIENT",
+              "operator": "=",
+              "answerCoding": {
+                "system": "urn:uuid:f59e0a1c-f0a0-4d12-b5ed-9720c91cf862",
+                "code": "1"
+              }
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "SYSTDATEPATIENT",
+          "text": "When did the systemic treatment stop?",
+          "type": "date",
+          "enableWhen": [
+            {
+              "question": "SYSTDATEPATIENT-Known",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ],
+          "required": true
+        }
+      ]
+    },
+    {
+      "linkId": "Survival-and-Disease-control",
+      "text": "Survival and disease control",
+      "type": "group",
+      "required": true,
+      "item": [
+        {
+          "linkId": "Survival-Q0",
+          "text": "Was the intent of the treatment curative?",
+          "type": "boolean",
+          "required": true
+        },
+        {
+          "linkId": "MalignancyRecur",
+          "text": "Is there evidence of local, regional or distant recurrence of neoplasm? (In case of multiple recurrences, please report the most severe)",
+          "type": "choice",
+          "enableWhen": [
+            {
+              "question": "Survival-Q0",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ],
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "urn:uuid:dc449654-ad57-40af-ae6c-2bcf6b570add",
+                "code": "0",
+                "display": "No"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:dc449654-ad57-40af-ae6c-2bcf6b570add",
+                "code": "1",
+                "display": "Yes, local recurrence"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:dc449654-ad57-40af-ae6c-2bcf6b570add",
+                "code": "2",
+                "display": "Yes, regional recurrence"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:dc449654-ad57-40af-ae6c-2bcf6b570add",
+                "code": "3",
+                "display": "Yes, distant recurrence"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:dc449654-ad57-40af-ae6c-2bcf6b570add",
+                "code": "999",
+                "display": "Unknown"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "RecurMethod",
+          "text": "What was the method of confirming recurrence of neoplasm?",
+          "type": "choice",
+          "enableWhen": [
+            {
+              "question": "MalignancyRecur",
+              "operator": "=",
+              "answerCoding": {
+                "system": "urn:uuid:dc449654-ad57-40af-ae6c-2bcf6b570add",
+                "code": "1"
+              }
+            },
+            {
+              "question": "MalignancyRecur",
+              "operator": "=",
+              "answerCoding": {
+                "system": "urn:uuid:dc449654-ad57-40af-ae6c-2bcf6b570add",
+                "code": "2"
+              }
+            },
+            {
+              "question": "MalignancyRecur",
+              "operator": "=",
+              "answerCoding": {
+                "system": "urn:uuid:dc449654-ad57-40af-ae6c-2bcf6b570add",
+                "code": "3"
+              }
+            }
+          ],
+          "enableBehavior": "any",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "urn:uuid:ff0e5d9c-aeba-4415-9f52-f4b36179c648",
+                "code": "0",
+                "display": "Radiological diagnosis"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:ff0e5d9c-aeba-4415-9f52-f4b36179c648",
+                "code": "1",
+                "display": "Histological diagnosis"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:ff0e5d9c-aeba-4415-9f52-f4b36179c648",
+                "code": "2",
+                "display": "Radiological and histological diagnosis"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "urn:uuid:ff0e5d9c-aeba-4415-9f52-f4b36179c648",
+                "code": "999",
+                "display": "Unknown"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "RecurDateCancer-Known",
+          "text": "Is the date of cancer recurrence known?",
+          "type": "boolean",
+          "enableWhen": [
+            {
+              "question": "MalignancyRecur",
+              "operator": "=",
+              "answerCoding": {
+                "system": "urn:uuid:dc449654-ad57-40af-ae6c-2bcf6b570add",
+                "code": "1"
+              }
+            },
+            {
+              "question": "MalignancyRecur",
+              "operator": "=",
+              "answerCoding": {
+                "system": "urn:uuid:dc449654-ad57-40af-ae6c-2bcf6b570add",
+                "code": "2"
+              }
+            },
+            {
+              "question": "MalignancyRecur",
+              "operator": "=",
+              "answerCoding": {
+                "system": "urn:uuid:dc449654-ad57-40af-ae6c-2bcf6b570add",
+                "code": "3"
+              }
+            }
+          ],
+          "enableBehavior": "any",
+          "required": true
+        },
+        {
+          "linkId": "RecurDateCancer",
+          "text": "What is the date of cancer recurrence?",
+          "type": "date",
+          "enableWhen": [
+            {
+              "question": "RecurDateCancer-Known",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ]
+        },
+        {
+          "linkId": "VitalStatus",
+          "text": "Has the patient deceased?",
+          "type": "boolean",
+          "required": true
+        },
+        {
+          "linkId": "DeceasedDate-Known",
+          "text": "Is the date of death of the patient known?",
+          "type": "boolean",
+          "enableWhen": [
+            {
+              "question": "VitalStatus",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "DeceasedDate",
+          "text": "What was the date of death of the patient?",
+          "type": "date",
+          "enableWhen": [
+            {
+              "question": "DeceasedDate-Known",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ]
+        },
+        {
+          "linkId": "DEATHBC",
+          "text": "Is the death attributable to breast cancer?",
+          "type": "boolean",
+          "enableWhen": [
+            {
+              "question": "VitalStatus",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
