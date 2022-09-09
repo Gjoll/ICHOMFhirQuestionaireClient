@@ -23,6 +23,7 @@ namespace ICHOMFhirQuestionaireClient
         public MainWindow()
         {
             InitializeComponent();
+            wbMain.Navigate(new Uri("file:C:\\Development\\HL7\\ICHOMFhirQuestionaireClient\\Projects\\ICHOMFhirQuestionaireClient\\WebPages\\index.html", UriKind.RelativeOrAbsolute));
         }
     }
 }
