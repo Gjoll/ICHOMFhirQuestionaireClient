@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,7 +24,9 @@ namespace ICHOMFhirQuestionaireClient
         public MainWindow()
         {
             InitializeComponent();
-            wbMain.Navigate(new Uri("file:C:\\Development\\HL7\\ICHOMFhirQuestionaireClient\\Projects\\ICHOMFhirQuestionaireClient\\WebPages\\index.html", UriKind.RelativeOrAbsolute));
+            string curDir = Directory.GetCurrentDirectory();
+            //wbMain.Source = $"file://127.0.0.1/c$/path/to/the/file";
+            wbMain.Navigate(new Uri($"file:///{curDir}/WebPages/index.html", UriKind.RelativeOrAbsolute));
         }
     }
 }
