@@ -96,7 +96,7 @@ namespace ICHOMFhirQuestionaireClient
                 if (null == qResp)
                     throw new Exception($"Error deserializing questionaire response");
                 var client = new FhirClient("http://server.fire.ly");
-                client.Create(patient);
+                client.Create(qResp);
             }
             catch (Exception err)
             {
