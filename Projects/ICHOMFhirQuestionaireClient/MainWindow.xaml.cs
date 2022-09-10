@@ -1,4 +1,7 @@
-﻿using Microsoft.Web.WebView2.Core;
+﻿using Hl7.Fhir.Model;
+using Hl7.Fhir.Rest;
+using Hl7.Fhir.Serialization;
+using Microsoft.Web.WebView2.Core;
 using Microsoft.Win32;
 using Newtonsoft.Json;
 using System;
@@ -88,8 +91,14 @@ namespace ICHOMFhirQuestionaireClient
             try
             {
                 String results = await this.webView.ExecuteScriptAsync($"saveQuestionaire()");
+                FhirJsonParser fjp = new FhirJsonParser();
+                QuestionnaireResponse qResp = fjp.Parse<QuestionnaireResponse>(results);
+                if (null == qResp)
+                    throw new Exception($"Error deserializing questionaire response");
+                var client = new FhirClient("http://server.fire.ly");
+                client.Create(patient);
             }
-            catch(Exception err)
+            catch (Exception err)
             {
                 MessageBox.Show(err.Message);
             }
