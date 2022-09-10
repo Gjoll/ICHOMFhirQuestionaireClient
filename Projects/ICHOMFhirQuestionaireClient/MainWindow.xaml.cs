@@ -1,6 +1,9 @@
 ﻿using Microsoft.Web.WebView2.Core;
+using Microsoft.Win32;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Dynamic;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -60,5 +63,37 @@ namespace ICHOMFhirQuestionaireClient
             Microsoft.Web.WebView2.Core.CoreWebView2NavigationCompletedEventArgs e)
         {
         }
+
+        private async void mnuLoadQuestionaire_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                OpenFileDialog ofd = new OpenFileDialog();
+                ofd.Multiselect = false;
+                if (ofd.ShowDialog() != true)
+                    return;
+                dynamic obj = new ExpandoObject();
+                obj.questionaire = File.ReadAllText(ofd.FileName);
+                string data = JsonConvert.SerializeObject(obj);
+                await this.webView.ExecuteScriptAsync($"loadQuestionaire({data})");
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show(err.Message);
+            }
+        }
+
+        private async void mnuSaveQuestionaire_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                String results = await this.webView.ExecuteScriptAsync($"saveQuestionaire()");
+            }
+            catch(Exception err)
+            {
+                MessageBox.Show(err.Message);
+            }
+        }
+        
     }
 }

@@ -7,7 +7,16 @@
         mc:Ignorable="d"
     	xmlns:wv2="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <DockPanel Margin="5">
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="_File">
+                <MenuItem x:Name="LoadQuestionaire" Header="_Load Questionaire" Click="mnuLoadQuestionaire_Click" />
+                <MenuItem x:Name="SaveQuestionaire" Header="_Save Questionaire" Click="mnuSaveQuestionaire_Click" />
+                <Separator />
+                <MenuItem x:Name="Exit" Header="_Exit" />
+            </MenuItem>
+        </Menu>
+        
         <wv2:WebView2 Name="webView" />
-    </Grid>
+    </DockPanel>
 </Window>
