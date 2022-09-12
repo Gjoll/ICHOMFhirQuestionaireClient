@@ -38,6 +38,15 @@ When you start the program, you will see a screen like the following.
 
 ![Startup](ScreenShots/Startup.png)
 
+To load a questionaire, select File/Load Questionaire menu item and select any of the ICHOM questionaire files.
+
+This will load the questionaire into the window, and you should see something like this.
+
+![Startup](ScreenShots/LoadedQuestionaire.png)
+
+Here you can enter the data into the form.
+
+
 ## Final
 This is a work in progress, and is not meant to be a fully functioning system.
 
