@@ -50,7 +50,7 @@ namespace ICHOMFhirQuestionaireClient
             await webView.EnsureCoreWebView2Async(env);
 
             //if (Model.Options.AutoOpenDevTools)
-            webView.CoreWebView2.OpenDevToolsWindow();
+            //webView.CoreWebView2.OpenDevToolsWindow();
 
             // Almost always need this event for something    
             webView.NavigationCompleted += WebView_NavigationCompleted;

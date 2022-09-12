@@ -109,6 +109,9 @@ namespace ICHOMFhirQuestionaireClient.WSInstaller
                     // install start menu items
                     new Dir(new Id("MENUDIR"),
                         Path.Combine("%ProgramMenu%", Manufacturer, ProductName),
+                        new ExeFileShortcut("ICHOM Fhir Questionaire Client",
+                            $"[INSTALLDIR]{ApplicationExeName}",
+                            ""),
                         new ExeFileShortcut("Uninstall ICHOM Fhir Questionaire Client", "[System64Folder]msiexec.exe", "/x [ProductCode]")
                     )
                 )
