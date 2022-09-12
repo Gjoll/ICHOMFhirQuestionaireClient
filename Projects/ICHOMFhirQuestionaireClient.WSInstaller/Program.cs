@@ -12,7 +12,7 @@ namespace ICHOMFhirQuestionaireClient.WSInstaller
 
     public class Program
     {
-        public static String Manufacturer = "PenRad Technologies";
+        public static String Manufacturer = "HL7";
         public static readonly String ProductName = "ICHOM Fhir Questionaire Client";
 
         public static readonly String ApplicationName = "ICHOMFhirQuestionaireClient";
@@ -104,12 +104,12 @@ namespace ICHOMFhirQuestionaireClient.WSInstaller
                         // Install program files
                         new Files(Path.Combine(buildDir, "*.*")),
                         // Add uninstall shortcut to program files folder
-                        new ExeFileShortcut("Uninstall PenRad Dicom SCP Service", "[System64Folder]msiexec.exe", "/x [ProductCode]")
+                        new ExeFileShortcut("Uninstall ICHOM Fhir Questionaire Client", "[System64Folder]msiexec.exe", "/x [ProductCode]")
                     ),
                     // install start menu items
                     new Dir(new Id("MENUDIR"),
                         Path.Combine("%ProgramMenu%", Manufacturer, ProductName),
-                        new ExeFileShortcut("Uninstall PenRad Dicom SCP Service", "[System64Folder]msiexec.exe", "/x [ProductCode]")
+                        new ExeFileShortcut("Uninstall ICHOM Fhir Questionaire Client", "[System64Folder]msiexec.exe", "/x [ProductCode]")
                     )
                 )
             );

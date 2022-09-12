@@ -18,3 +18,5 @@ Projects/ICHOMFhirQuestionaireClient.WSInstaller/bin/
 Projects/ICHOMFhirQuestionaireClient.WSInstaller/obj/
 
 Projects/ICHOMFhirQuestionaireClient.WSInstaller/wix/
+
+*.msi
