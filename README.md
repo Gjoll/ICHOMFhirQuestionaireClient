@@ -34,7 +34,7 @@ To run this program in the debugger,
 
 To run as a standalone program, on a windows machine, download and install the following msi.
 
-<a href="Installs/ICHOM Fhir Questionaire Client.Release.0.3.0.0.msi" download>Click to Download Installer</a>
+[Download Minion](https://github.com/Gjoll/ICHOMFhirQuestionaireClient/blob/Development/Installs/ICHOM%20Fhir%20Questionaire%20Client.Release.0.3.0.0.msi "download")
 
 ## Execution
 When you start the program, you will see a screen like the following.
