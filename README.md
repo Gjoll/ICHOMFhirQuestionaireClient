@@ -42,9 +42,12 @@ To load a questionaire, select File/Load Questionaire menu item and select any o
 
 This will load the questionaire into the window, and you should see something like this.
 
+Here you can enter the data into the form.
+
 ![Startup](ScreenShots/LoadedQuestionaire.png)
 
-Here you can enter the data into the form.
+To load a questionaire answers, select File/Save Questionaire menu item and select the output file to save
+thhe FHIR QuestionaireResponse json resource to.
 
 
 ## Final

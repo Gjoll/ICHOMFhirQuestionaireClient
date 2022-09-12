@@ -86,17 +86,34 @@ namespace ICHOMFhirQuestionaireClient
             }
         }
 
+        //private async void mnuSaveQuestionaire_Click(object sender, RoutedEventArgs e)
+        //{
+        //    try
+        //    {
+        //        String results = await this.webView.ExecuteScriptAsync($"saveQuestionaire()");
+        //        FhirJsonParser fjp = new FhirJsonParser();
+        //        QuestionnaireResponse qResp = fjp.Parse<QuestionnaireResponse>(results);
+        //        if (null == qResp)
+        //            throw new Exception($"Error deserializing questionaire response");
+        //        var client = new FhirClient("http://server.fire.ly");
+        //        client.Create(qResp);
+        //    }
+        //    catch (Exception err)
+        //    {
+        //        MessageBox.Show(err.Message);
+        //    }
+        //}
+
         private async void mnuSaveQuestionaire_Click(object sender, RoutedEventArgs e)
         {
             try
             {
                 String results = await this.webView.ExecuteScriptAsync($"saveQuestionaire()");
-                FhirJsonParser fjp = new FhirJsonParser();
-                QuestionnaireResponse qResp = fjp.Parse<QuestionnaireResponse>(results);
-                if (null == qResp)
-                    throw new Exception($"Error deserializing questionaire response");
-                var client = new FhirClient("http://server.fire.ly");
-                client.Create(qResp);
+                SaveFileDialog ofd = new SaveFileDialog();
+                ofd.DefaultExt = ".json";
+                if (ofd.ShowDialog() != true)
+                    return;
+                await File.WriteAllTextAsync(ofd.FileName, results);
             }
             catch (Exception err)
             {
