@@ -31,7 +31,11 @@ To run this program in the debugger,
 5. Debug the ICHOMFhirQuestionaireClient project.
 
 ## Install Executable
-This is still being worked on.
+
+To run as a standalone program, on a windows machine, download and install the following msi.
+
+![ICHOM Fhir Questionaire Client.Release.0.3.0.0](Installs/ICHOM Fhir Questionaire Client.Release.0.3.0.0.msi)
+
 
 ## Executon
 When you start the program, you will see a screen like the following.
