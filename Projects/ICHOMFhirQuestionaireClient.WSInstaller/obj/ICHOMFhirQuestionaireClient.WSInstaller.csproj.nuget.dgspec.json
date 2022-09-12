@@ -1,0 +1,75 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Development\\HL7\\ICHOMFhirQuestionaireClient\\Projects\\ICHOMFhirQuestionaireClient.WSInstaller\\ICHOMFhirQuestionaireClient.WSInstaller.csproj": {}
+  },
+  "projects": {
+    "C:\\Development\\HL7\\ICHOMFhirQuestionaireClient\\Projects\\ICHOMFhirQuestionaireClient.WSInstaller\\ICHOMFhirQuestionaireClient.WSInstaller.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Development\\HL7\\ICHOMFhirQuestionaireClient\\Projects\\ICHOMFhirQuestionaireClient.WSInstaller\\ICHOMFhirQuestionaireClient.WSInstaller.csproj",
+        "projectName": "ICHOMFhirQuestionaireClient.WSInstaller",
+        "projectPath": "C:\\Development\\HL7\\ICHOMFhirQuestionaireClient\\Projects\\ICHOMFhirQuestionaireClient.WSInstaller\\ICHOMFhirQuestionaireClient.WSInstaller.csproj",
+        "packagesPath": "C:\\Users\\Kurt\\.nuget\\packages\\",
+        "outputPath": "C:\\Development\\HL7\\ICHOMFhirQuestionaireClient\\Projects\\ICHOMFhirQuestionaireClient.WSInstaller\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Kurt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.pkg.github.com/PenRadTech/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "targetAlias": "net472",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "targetAlias": "net472",
+          "dependencies": {
+            "WixSharp": {
+              "target": "Package",
+              "version": "[1.20.0, )"
+            },
+            "WixSharp.bin": {
+              "target": "Package",
+              "version": "[1.20.0, )"
+            },
+            "WixSharp.wix.bin": {
+              "target": "Package",
+              "version": "[3.11.2, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win7-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

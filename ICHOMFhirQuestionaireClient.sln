@@ -3,7 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32819.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ICHOMFhirQuestionaireClient", "Projects\ICHOMFhirQuestionaireClient\ICHOMFhirQuestionaireClient.csproj", "{1CCA091B-13D3-498D-9DE8-9834A90BE5D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ICHOMFhirQuestionaireClient", "Projects\ICHOMFhirQuestionaireClient\ICHOMFhirQuestionaireClient.csproj", "{1CCA091B-13D3-498D-9DE8-9834A90BE5D8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{96D2E9CC-5F2A-44D8-8F4B-178B25B3BA86}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_build", "build\_build.csproj", "{83CE3C81-19C3-441C-A50A-A7B010CDCAC4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ICHOMFhirQuestionaireClient.WSInstaller", "Projects\ICHOMFhirQuestionaireClient.WSInstaller\ICHOMFhirQuestionaireClient.WSInstaller.csproj", "{01557109-7706-401A-9595-45A0A8304C58}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1CCA091B-13D3-498D-9DE8-9834A90BE5D8} = {1CCA091B-13D3-498D-9DE8-9834A90BE5D8}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +27,12 @@ Global
 		{1CCA091B-13D3-498D-9DE8-9834A90BE5D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1CCA091B-13D3-498D-9DE8-9834A90BE5D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1CCA091B-13D3-498D-9DE8-9834A90BE5D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83CE3C81-19C3-441C-A50A-A7B010CDCAC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83CE3C81-19C3-441C-A50A-A7B010CDCAC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01557109-7706-401A-9595-45A0A8304C58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01557109-7706-401A-9595-45A0A8304C58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01557109-7706-401A-9595-45A0A8304C58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01557109-7706-401A-9595-45A0A8304C58}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,3 +4,11 @@
 Projects/ICHOMFhirQuestionaireClient/obj/
 
 Projects/ICHOMFhirQuestionaireClient/bin/
+
+.nuke/temp/
+
+build/bin/
+
+build/obj/
+
+output/

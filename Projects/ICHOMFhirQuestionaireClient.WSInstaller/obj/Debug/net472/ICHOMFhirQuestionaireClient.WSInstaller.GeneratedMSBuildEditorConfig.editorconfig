@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = ICHOMFhirQuestionaireClient.WSInstaller
+build_property.ProjectDir = C:\Development\HL7\ICHOMFhirQuestionaireClient\Projects\ICHOMFhirQuestionaireClient.WSInstaller\
