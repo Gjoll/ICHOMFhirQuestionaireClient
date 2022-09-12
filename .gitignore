@@ -12,3 +12,9 @@ build/bin/
 build/obj/
 
 output/
+
+Projects/ICHOMFhirQuestionaireClient.WSInstaller/bin/
+
+Projects/ICHOMFhirQuestionaireClient.WSInstaller/obj/
+
+Projects/ICHOMFhirQuestionaireClient.WSInstaller/wix/

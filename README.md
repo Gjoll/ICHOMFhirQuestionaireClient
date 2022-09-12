@@ -30,7 +30,13 @@ To run this program in the debugger,
 4. Compile
 5. Debug the ICHOMFhirQuestionaireClient project.
 
+## Install Executable
+This is still being worked on.
 
+## Executon
+When you start the program, you will see a screen like the following.
+
+![Startup](ScreenShots/Startup.png)
 
 ## Final
 This is a work in progress, and is not meant to be a fully functioning system.
