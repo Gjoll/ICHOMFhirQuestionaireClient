@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ICHOMFhirQuestionaireClient
 		{1CCA091B-13D3-498D-9DE8-9834A90BE5D8} = {1CCA091B-13D3-498D-9DE8-9834A90BE5D8}
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BulkStoreApp", "Projects\BulkStoreApp\BulkStoreApp.csproj", "{574604B6-2F13-4732-9778-78C8ED4DEA0C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,10 @@ Global
 		{01557109-7706-401A-9595-45A0A8304C58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{01557109-7706-401A-9595-45A0A8304C58}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{01557109-7706-401A-9595-45A0A8304C58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{574604B6-2F13-4732-9778-78C8ED4DEA0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{574604B6-2F13-4732-9778-78C8ED4DEA0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{574604B6-2F13-4732-9778-78C8ED4DEA0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{574604B6-2F13-4732-9778-78C8ED4DEA0C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
