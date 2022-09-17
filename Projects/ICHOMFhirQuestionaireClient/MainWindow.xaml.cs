@@ -1,5 +1,6 @@
 ﻿using Hl7.Fhir.Model;
 using Hl7.Fhir.Rest;
+using Hl7.Fhir.Rest.Legacy;
 using Hl7.Fhir.Serialization;
 using Microsoft.Web.WebView2.Core;
 using Microsoft.Win32;
@@ -9,8 +10,11 @@ using System.Collections.Generic;
 using System.Dynamic;
 using System.IO;
 using System.Linq;
+using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Reflection;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -92,7 +96,26 @@ namespace ICHOMFhirQuestionaireClient
             }
         }
 
-        private async System.Threading.Tasks.Task Store(String baseStoreUrl, String apiToken)
+        public class AuthorizationMessageHandler : HttpClientHandler
+        {
+            AuthenticationHeaderValue? authorization;
+
+            public AuthorizationMessageHandler(String bearerToken)
+            {
+                authorization = new AuthenticationHeaderValue("Bearer", bearerToken);
+            }
+
+
+            protected override Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+            {
+                request.Headers.Authorization = authorization;
+                return base.SendAsync(request, cancellationToken);
+            }
+        }
+
+        private async System.Threading.Tasks.Task Store(String baseStoreUrl,
+            String patientId,
+            String apiToken)
         {
             if (this.loadedQuestionaire == null)
                 throw new Exception($"Load a questionaire first!");
@@ -102,19 +125,19 @@ namespace ICHOMFhirQuestionaireClient
             if (null == qResp)
                 throw new Exception($"Error deserializing questionaire response");
 
-            var client = new FhirClient($"{baseStoreUrl}");
+            AuthorizationMessageHandler auth = null;
             if (String.IsNullOrEmpty(apiToken) == false)
-            {
-                // client.`.AddHeader("Authorization", $"Bearer {this.ApiToken}");
-            }
+                auth = new AuthorizationMessageHandler(apiToken);
+            var client = new FhirClient(baseStoreUrl, new() { PreferredFormat = ResourceFormat.Json }, auth);
 
-            Bundle patients = (Bundle)client.Get($"{baseStoreUrl}//Patient?_count=30&sort=_lastUpdated");
-            if (patients.Entry.Count == 0)
-                throw new Exception($"No patients loaded from firely!");
+            Patient patient = (Patient)client.Get($"{baseStoreUrl}/Patient/{patientId}");
+            //var patient = client.Read<Patient>(patientId);
+
+            if (patient == null)
+                throw new Exception($"Patients not loaded");
             qResp.QuestionnaireElement = this.loadedQuestionaire.Url;
             qResp.Meta.ProfileElement = null;
-            Patient patientEntry = (Patient)patients.Entry[0].Resource;
-            qResp.Subject = new ResourceReference($"{patientEntry.TypeName}/{patientEntry.Id}");
+            qResp.Subject = new ResourceReference($"{patient.TypeName}/{patient.Id}");
             client.Create(qResp);
         }
 
@@ -122,7 +145,12 @@ namespace ICHOMFhirQuestionaireClient
         {
             try
             {
-                await Store("", String.Empty);
+                String baseUrl =
+                    "https://hristo-ouch.fhir.azurehealthcareapis.com";
+                String apiToken =
+                    "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6IjJaUXBKM1VwYmpBWVhZR2FYRUpsOGxWMFRPSSIsImtpZCI6IjJaUXBKM1VwYmpBWVhZR2FYRUpsOGxWMFRPSSJ9.eyJhdWQiOiJodHRwczovL2hyaXN0by1vdWNoLmZoaXIuYXp1cmVoZWFsdGhjYXJlYXBpcy5jb20iLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC83NzRkZDg0OS04OGEyLTRjZDQtODc4My0yMjVhN2I3ZjVlMzcvIiwiaWF0IjoxNjYzNDQxNzg2LCJuYmYiOjE2NjM0NDE3ODYsImV4cCI6MTY2MzQ0NTY4NiwiYWlvIjoiRTJaZ1lGaXIxUGJzWDdMUi9MbHNpZEhmeTdvWUFBPT0iLCJhcHBpZCI6IjIxMGU5MmI1LWQ3NWYtNGUyZC04MzE3LWJjYzhmZjA4YTJiNyIsImFwcGlkYWNyIjoiMSIsImlkcCI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0Lzc3NGRkODQ5LTg4YTItNGNkNC04NzgzLTIyNWE3YjdmNWUzNy8iLCJvaWQiOiIzNTAxMGQ3Yi0wYmI2LTRjYTctOTFlYy0yNjk0Yjc4NWJmOTIiLCJyaCI6IjAuQVRrQVNkaE5kNktJMUV5SGd5SmFlMzllTjloNFowX3ZXdHhEb2Ytd2MzSkxsSlU1QUFBLiIsInN1YiI6IjM1MDEwZDdiLTBiYjYtNGNhNy05MWVjLTI2OTRiNzg1YmY5MiIsInRpZCI6Ijc3NGRkODQ5LTg4YTItNGNkNC04NzgzLTIyNWE3YjdmNWUzNyIsInV0aSI6Il9FajVoMnhHamstMHA1VGhkaEIwQUEiLCJ2ZXIiOiIxLjAifQ.XJf8o5xjeTwqckg4O62y-mQo_jnecxf1U070iUqvdfwKMLwNmbZPO6Ti_K8o4_28WclUZjXpm7vWBOoiF9BUzKJqB0cBVvxue5hdmlj-h7YhBrE0zjKBDq1eAnazew4pRaQGK2seOFkKnVDXuppUN2idVqofH_ToIWFP42yNatMEfhb6fQZryFlsfyB16UcNbTXeWtoaZCtT5f1VQ3RS8-uJNO0LIZY_HgUPLGugtHL1rQrt4yX4bzq6DLTjmkrzYzRM4se76wZQ_Je1VpaxXNhOwMRvfsMQOMQuqcA8ANo_PXKlPWNCQ9RHnbI7lZk_QQLc2l7dqNxbaBmSnzDUKw";
+                String patientId = "BreastCancerPatient121";
+                await Store(baseUrl, patientId, apiToken);
             }
             catch (Exception err)
             {
@@ -143,14 +171,25 @@ namespace ICHOMFhirQuestionaireClient
                 Bundle items = (Bundle)await fjp.ParseAsync(File.ReadAllText(ofd.FileName));
 
                 //Fixme Hard coded path!
-                String baseDir = @"D:\Development\HL7\ICHOMFhirQuestionaireClient\Projects\ICHOMFhirQuestionaireClient\Questionnaires";
                 foreach (var entry in items.Entry)
                 {
-                    Questionnaire? questionnaire = entry.Resource as Questionnaire;
-                    if (questionnaire != null)
                     {
-                        String test = await questionnaire.ToJsonAsync();
-                        File.WriteAllText(Path.Combine(baseDir, $"{questionnaire.Name}.json"), test);
+                        String baseDir = @"D:\Development\HL7\ICHOMFhirQuestionaireClient\Projects\ICHOMFhirQuestionaireClient\Questionnaires";
+                        Questionnaire? questionnaire = entry.Resource as Questionnaire;
+                        if (questionnaire != null)
+                        {
+                            String test = await questionnaire.ToJsonAsync();
+                            File.WriteAllText(Path.Combine(baseDir, $"{questionnaire.Name}.json"), test);
+                        }
+                    }
+                    {
+                        String baseDir = @"D:\Development\HL7\ICHOMFhirQuestionaireClient\Projects\ICHOMFhirQuestionaireClient\Patients";
+                        Patient? patient = entry.Resource as Patient;
+                        if (patient != null)
+                        {
+                            String test = await patient.ToJsonAsync();
+                            File.WriteAllText(Path.Combine(baseDir, $"{patient.Name}.json"), test);
+                        }
                     }
                 }
             }
@@ -164,7 +203,7 @@ namespace ICHOMFhirQuestionaireClient
         {
             try
             {
-                await Store("http://server.fire.ly", String.Empty);
+                await Store("http://server.fire.ly", "186c5ca5-a858-411a-8166-7b2c374e9f4b", String.Empty);
             }
             catch (Exception err)
             {
