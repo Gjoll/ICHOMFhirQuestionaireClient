@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.Dynamic;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -30,6 +31,7 @@ namespace ICHOMFhirQuestionaireClient
     public partial class MainWindow : Window
     {
         bool firstLoad = true;
+        Questionnaire? loadedQuestionaire = null;
 
         public MainWindow()
         {
@@ -62,7 +64,7 @@ namespace ICHOMFhirQuestionaireClient
                             "index.html"));
         }
 
-        private void WebView_NavigationCompleted(object? sender, 
+        private void WebView_NavigationCompleted(object? sender,
             Microsoft.Web.WebView2.Core.CoreWebView2NavigationCompletedEventArgs e)
         {
         }
@@ -77,6 +79,10 @@ namespace ICHOMFhirQuestionaireClient
                     return;
                 dynamic obj = new ExpandoObject();
                 obj.questionaire = File.ReadAllText(ofd.FileName);
+
+                FhirJsonParser fjp = new FhirJsonParser();
+                this.loadedQuestionaire = fjp.Parse<Questionnaire>(obj.questionaire);
+
                 string data = JsonConvert.SerializeObject(obj);
                 await this.webView.ExecuteScriptAsync($"loadQuestionaire({data})");
             }
@@ -86,23 +92,85 @@ namespace ICHOMFhirQuestionaireClient
             }
         }
 
-        //private async void mnuSaveQuestionaire_Click(object sender, RoutedEventArgs e)
-        //{
-        //    try
-        //    {
-        //        String results = await this.webView.ExecuteScriptAsync($"saveQuestionaire()");
-        //        FhirJsonParser fjp = new FhirJsonParser();
-        //        QuestionnaireResponse qResp = fjp.Parse<QuestionnaireResponse>(results);
-        //        if (null == qResp)
-        //            throw new Exception($"Error deserializing questionaire response");
-        //        var client = new FhirClient("http://server.fire.ly");
-        //        client.Create(qResp);
-        //    }
-        //    catch (Exception err)
-        //    {
-        //        MessageBox.Show(err.Message);
-        //    }
-        //}
+        private async System.Threading.Tasks.Task Store(String baseStoreUrl, String apiToken)
+        {
+            if (this.loadedQuestionaire == null)
+                throw new Exception($"Load a questionaire first!");
+            String results = await this.webView.ExecuteScriptAsync($"saveQuestionaire()");
+            FhirJsonParser fjp = new FhirJsonParser();
+            QuestionnaireResponse qResp = fjp.Parse<QuestionnaireResponse>(results);
+            if (null == qResp)
+                throw new Exception($"Error deserializing questionaire response");
+
+            var client = new FhirClient($"{baseStoreUrl}");
+            if (String.IsNullOrEmpty(apiToken) == false)
+            {
+                // client.`.AddHeader("Authorization", $"Bearer {this.ApiToken}");
+            }
+
+            Bundle patients = (Bundle)client.Get($"{baseStoreUrl}//Patient?_count=30&sort=_lastUpdated");
+            if (patients.Entry.Count == 0)
+                throw new Exception($"No patients loaded from firely!");
+            qResp.QuestionnaireElement = this.loadedQuestionaire.Url;
+            qResp.Meta.ProfileElement = null;
+            Patient patientEntry = (Patient)patients.Entry[0].Resource;
+            qResp.Subject = new ResourceReference($"{patientEntry.TypeName}/{patientEntry.Id}");
+            client.Create(qResp);
+        }
+
+        private async void mnuLoadStoreAzureHealthCare_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                await Store("", String.Empty);
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show(err.Message);
+            }
+        }
+
+        private async void mnuUpdateQuestionaires_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                OpenFileDialog ofd = new OpenFileDialog();
+                ofd.Multiselect = false;
+                if (ofd.ShowDialog() != true)
+                    return;
+
+                FhirJsonParser fjp = new FhirJsonParser();
+                Bundle items = (Bundle)await fjp.ParseAsync(File.ReadAllText(ofd.FileName));
+
+                //Fixme Hard coded path!
+                String baseDir = @"D:\Development\HL7\ICHOMFhirQuestionaireClient\Projects\ICHOMFhirQuestionaireClient\Questionnaires";
+                foreach (var entry in items.Entry)
+                {
+                    Questionnaire? questionnaire = entry.Resource as Questionnaire;
+                    if (questionnaire != null)
+                    {
+                        String test = await questionnaire.ToJsonAsync();
+                        File.WriteAllText(Path.Combine(baseDir, $"{questionnaire.Name}.json"), test);
+                    }
+                }
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show(err.Message);
+            }
+        }
+
+        private async void mnuLoadStoreFirely_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                await Store("http://server.fire.ly", String.Empty);
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show(err.Message);
+            }
+        }
 
         private async void mnuSaveQuestionaire_Click(object sender, RoutedEventArgs e)
         {
@@ -120,6 +188,6 @@ namespace ICHOMFhirQuestionaireClient
                 MessageBox.Show(err.Message);
             }
         }
-        
+
     }
 }
