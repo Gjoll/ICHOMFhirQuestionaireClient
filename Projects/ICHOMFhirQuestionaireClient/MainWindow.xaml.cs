@@ -34,8 +34,13 @@ namespace ICHOMFhirQuestionaireClient
     /// </summary>
     public partial class MainWindow : Window
     {
-        bool firstLoad = true;
-        Questionnaire? loadedQuestionaire = null;
+        Questionnaire? questionaire = null;
+        Patient? patient = null;
+        FhirClient? client = null;
+
+        String baseUrl = String.Empty;
+        String apiToken = String.Empty;
+        String patientId = String.Empty;
 
         public MainWindow()
         {
@@ -77,6 +82,8 @@ namespace ICHOMFhirQuestionaireClient
         {
             try
             {
+                if (this.client == null)
+                    throw new Exception($"Connect must be called first");
                 OpenFileDialog ofd = new OpenFileDialog();
                 ofd.Multiselect = false;
                 if (ofd.ShowDialog() != true)
@@ -85,10 +92,11 @@ namespace ICHOMFhirQuestionaireClient
                 obj.questionaire = File.ReadAllText(ofd.FileName);
 
                 FhirJsonParser fjp = new FhirJsonParser();
-                this.loadedQuestionaire = fjp.Parse<Questionnaire>(obj.questionaire);
+                this.questionaire = fjp.Parse<Questionnaire>(obj.questionaire);
 
+                String patientData = this.patient.ToJson();
                 string data = JsonConvert.SerializeObject(obj);
-                await this.webView.ExecuteScriptAsync($"loadQuestionaire({data})");
+                await this.webView.ExecuteScriptAsync($"loadQuestionaire({data}, {patientData})");
             }
             catch (Exception err)
             {
@@ -113,11 +121,13 @@ namespace ICHOMFhirQuestionaireClient
             }
         }
 
-        private async System.Threading.Tasks.Task Store(String baseStoreUrl,
-            String patientId,
-            String apiToken)
+        private async void mnuStoreServer_Click(object sender, RoutedEventArgs e)
         {
-            if (this.loadedQuestionaire == null)
+            if (this.client == null)
+                throw new Exception($"Connect must be called first");
+            if (this.patient == null)
+                throw new Exception($"Connect must be called first");
+            if (this.questionaire == null)
                 throw new Exception($"Load a questionaire first!");
             String results = await this.webView.ExecuteScriptAsync($"saveQuestionaire()");
             FhirJsonParser fjp = new FhirJsonParser();
@@ -125,38 +135,62 @@ namespace ICHOMFhirQuestionaireClient
             if (null == qResp)
                 throw new Exception($"Error deserializing questionaire response");
 
-            AuthorizationMessageHandler auth = null;
-            if (String.IsNullOrEmpty(apiToken) == false)
-                auth = new AuthorizationMessageHandler(apiToken);
-            var client = new FhirClient(baseStoreUrl, new() { PreferredFormat = ResourceFormat.Json }, auth);
-
-            Patient patient = (Patient)client.Get($"{baseStoreUrl}/Patient/{patientId}");
-            //var patient = client.Read<Patient>(patientId);
-
-            if (patient == null)
-                throw new Exception($"Patients not loaded");
-            qResp.QuestionnaireElement = this.loadedQuestionaire.Url;
+            qResp.QuestionnaireElement = this.questionaire.Url;
             qResp.Meta.ProfileElement = null;
             qResp.Subject = new ResourceReference($"{patient.TypeName}/{patient.Id}");
             client.Create(qResp);
         }
 
-        private async void mnuLoadStoreAzureHealthCare_Click(object sender, RoutedEventArgs e)
+
+        private void ConnectToServer(String baseUrl, String apiToken, String patientId)
+        {
+            this.baseUrl = baseUrl;
+            this.apiToken = apiToken;
+            this.patientId = patientId;
+            AuthorizationMessageHandler? auth = null;
+            if (String.IsNullOrEmpty(apiToken) == false)
+                auth = new AuthorizationMessageHandler(apiToken);
+
+            this.client = new FhirClient(this.baseUrl, new() { PreferredFormat = ResourceFormat.Json }, auth);
+            this.patient = (Patient)client.Get($"{this.baseUrl}/Patient/{patientId}");
+        }
+
+        private void mnuConnectFirely_Click(object sender, RoutedEventArgs e)
         {
             try
             {
-                String baseUrl =
-                    "https://hristo-ouch.fhir.azurehealthcareapis.com";
-                String apiToken =
-                    "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6IjJaUXBKM1VwYmpBWVhZR2FYRUpsOGxWMFRPSSIsImtpZCI6IjJaUXBKM1VwYmpBWVhZR2FYRUpsOGxWMFRPSSJ9.eyJhdWQiOiJodHRwczovL2hyaXN0by1vdWNoLmZoaXIuYXp1cmVoZWFsdGhjYXJlYXBpcy5jb20iLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC83NzRkZDg0OS04OGEyLTRjZDQtODc4My0yMjVhN2I3ZjVlMzcvIiwiaWF0IjoxNjYzNDQxNzg2LCJuYmYiOjE2NjM0NDE3ODYsImV4cCI6MTY2MzQ0NTY4NiwiYWlvIjoiRTJaZ1lGaXIxUGJzWDdMUi9MbHNpZEhmeTdvWUFBPT0iLCJhcHBpZCI6IjIxMGU5MmI1LWQ3NWYtNGUyZC04MzE3LWJjYzhmZjA4YTJiNyIsImFwcGlkYWNyIjoiMSIsImlkcCI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0Lzc3NGRkODQ5LTg4YTItNGNkNC04NzgzLTIyNWE3YjdmNWUzNy8iLCJvaWQiOiIzNTAxMGQ3Yi0wYmI2LTRjYTctOTFlYy0yNjk0Yjc4NWJmOTIiLCJyaCI6IjAuQVRrQVNkaE5kNktJMUV5SGd5SmFlMzllTjloNFowX3ZXdHhEb2Ytd2MzSkxsSlU1QUFBLiIsInN1YiI6IjM1MDEwZDdiLTBiYjYtNGNhNy05MWVjLTI2OTRiNzg1YmY5MiIsInRpZCI6Ijc3NGRkODQ5LTg4YTItNGNkNC04NzgzLTIyNWE3YjdmNWUzNyIsInV0aSI6Il9FajVoMnhHamstMHA1VGhkaEIwQUEiLCJ2ZXIiOiIxLjAifQ.XJf8o5xjeTwqckg4O62y-mQo_jnecxf1U070iUqvdfwKMLwNmbZPO6Ti_K8o4_28WclUZjXpm7vWBOoiF9BUzKJqB0cBVvxue5hdmlj-h7YhBrE0zjKBDq1eAnazew4pRaQGK2seOFkKnVDXuppUN2idVqofH_ToIWFP42yNatMEfhb6fQZryFlsfyB16UcNbTXeWtoaZCtT5f1VQ3RS8-uJNO0LIZY_HgUPLGugtHL1rQrt4yX4bzq6DLTjmkrzYzRM4se76wZQ_Je1VpaxXNhOwMRvfsMQOMQuqcA8ANo_PXKlPWNCQ9RHnbI7lZk_QQLc2l7dqNxbaBmSnzDUKw";
-                String patientId = "BreastCancerPatient121";
-                await Store(baseUrl, patientId, apiToken);
+                this.ConnectToServer("http://server.fire.ly", String.Empty, "186c5ca5-a858-411a-8166-7b2c374e9f4b");
             }
             catch (Exception err)
             {
                 MessageBox.Show(err.Message);
             }
         }
+
+
+        private void mnuConnectAzureHealthCare_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                this.ConnectToServer(
+                    "https://hristo-ouch.fhir.azurehealthcareapis.com",
+                    "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6IjJaUXBKM1VwYmpBWVhZR2FYRUpsOGxWMFRPSSIsImtpZCI6IjJaUXBKM1VwYmpBWVhZR2FYRUpsOGxWMFRPSSJ9.eyJhdWQiOiJodHRwczovL2hyaXN0by1vdWNoLmZoaXIuYXp1cmVoZWFsdGhjYXJlYXBpcy5jb20iLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC83NzRkZDg0OS04OGEyLTRjZDQtODc4My0yMjVhN2I3ZjVlMzcvIiwiaWF0IjoxNjYzNDQxNzg2LCJuYmYiOjE2NjM0NDE3ODYsImV4cCI6MTY2MzQ0NTY4NiwiYWlvIjoiRTJaZ1lGaXIxUGJzWDdMUi9MbHNpZEhmeTdvWUFBPT0iLCJhcHBpZCI6IjIxMGU5MmI1LWQ3NWYtNGUyZC04MzE3LWJjYzhmZjA4YTJiNyIsImFwcGlkYWNyIjoiMSIsImlkcCI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0Lzc3NGRkODQ5LTg4YTItNGNkNC04NzgzLTIyNWE3YjdmNWUzNy8iLCJvaWQiOiIzNTAxMGQ3Yi0wYmI2LTRjYTctOTFlYy0yNjk0Yjc4NWJmOTIiLCJyaCI6IjAuQVRrQVNkaE5kNktJMUV5SGd5SmFlMzllTjloNFowX3ZXdHhEb2Ytd2MzSkxsSlU1QUFBLiIsInN1YiI6IjM1MDEwZDdiLTBiYjYtNGNhNy05MWVjLTI2OTRiNzg1YmY5MiIsInRpZCI6Ijc3NGRkODQ5LTg4YTItNGNkNC04NzgzLTIyNWE3YjdmNWUzNyIsInV0aSI6Il9FajVoMnhHamstMHA1VGhkaEIwQUEiLCJ2ZXIiOiIxLjAifQ.XJf8o5xjeTwqckg4O62y-mQo_jnecxf1U070iUqvdfwKMLwNmbZPO6Ti_K8o4_28WclUZjXpm7vWBOoiF9BUzKJqB0cBVvxue5hdmlj-h7YhBrE0zjKBDq1eAnazew4pRaQGK2seOFkKnVDXuppUN2idVqofH_ToIWFP42yNatMEfhb6fQZryFlsfyB16UcNbTXeWtoaZCtT5f1VQ3RS8-uJNO0LIZY_HgUPLGugtHL1rQrt4yX4bzq6DLTjmkrzYzRM4se76wZQ_Je1VpaxXNhOwMRvfsMQOMQuqcA8ANo_PXKlPWNCQ9RHnbI7lZk_QQLc2l7dqNxbaBmSnzDUKw",
+                    "BreastCancerPatient121"
+                    );
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show(err.Message);
+            }
+        }
+
+
+
+
+
+
+
+
 
         private async void mnuUpdateQuestionaires_Click(object sender, RoutedEventArgs e)
         {
@@ -199,17 +233,6 @@ namespace ICHOMFhirQuestionaireClient
             }
         }
 
-        private async void mnuLoadStoreFirely_Click(object sender, RoutedEventArgs e)
-        {
-            try
-            {
-                await Store("http://server.fire.ly", "186c5ca5-a858-411a-8166-7b2c374e9f4b", String.Empty);
-            }
-            catch (Exception err)
-            {
-                MessageBox.Show(err.Message);
-            }
-        }
 
         private async void mnuSaveQuestionaire_Click(object sender, RoutedEventArgs e)
         {

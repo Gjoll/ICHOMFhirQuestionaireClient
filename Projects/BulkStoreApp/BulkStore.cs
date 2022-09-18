@@ -45,6 +45,15 @@ namespace BulkStoreApp
             var client = new FhirClient(baseStoreUrl, new() { PreferredFormat = ResourceFormat.Json }, auth);
             Resource rNew = client.Update(r);
             Console.WriteLine($"Created {r.TypeName}/{r.Id}");
+
+            //if (rNew.IsExactly(r) == false)
+            //    throw new Exception("rNew.IsExactly(r) == false");
+
+            Resource rCopy = client.Get($"{rNew.TypeName}/{rNew.Id}");
+            Console.WriteLine($"Read back {rNew.TypeName}/{rNew.Id}");
+
+            //if (rNew.IsExactly(rCopy) == false)
+            //    throw new Exception("rNew.IsExactly(rCopy) == false");
         }
 
         private void Store(String dir, 

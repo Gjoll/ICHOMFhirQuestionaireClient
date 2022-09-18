@@ -10,14 +10,14 @@
     <DockPanel Margin="5">
         <Menu DockPanel.Dock="Top" Height="100">
             <MenuItem Header="_File">
+                <MenuItem x:Name="Connect" Header="Connect">
+                    <MenuItem x:Name="Firely" Header="Firely" Click="mnuConnectFirely_Click" />
+                    <MenuItem x:Name="AzureHealthCare" Header="Azure Health Care" Click="mnuConnectAzureHealthCare_Click" />
+                </MenuItem>
                 <MenuItem x:Name="LoadQuestionaire" Header="_Load Questionaire" Click="mnuLoadQuestionaire_Click" />
                 <MenuItem x:Name="SaveQuestionaire" Header="_Save Questionaire" Click="mnuSaveQuestionaire_Click" />
                 <MenuItem x:Name="UpdateQuestionaires" Header="_Update Questionaires" Click="mnuUpdateQuestionaires_Click" />
-            </MenuItem>
-            <MenuItem Header="_Store">
-                <MenuItem x:Name="StoreQuestionaireToFirely" Header="_Store Firely" Click="mnuLoadStoreFirely_Click" />
-                <MenuItem x:Name="StoreQuestionaireToAzureHealthCare" Header="_Store AzureHealthCare" Click="mnuLoadStoreAzureHealthCare_Click" />
-                <Separator />
+                <MenuItem x:Name="StoreQuestionaire" Header="_Store to Server" Click="mnuStoreServer_Click" />
             </MenuItem>
             <MenuItem x:Name="Exit" Header="_Exit" />
         </Menu>

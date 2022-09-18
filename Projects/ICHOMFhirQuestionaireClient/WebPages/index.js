@@ -1,6 +1,12 @@
 ﻿// Load Fhir questionaire.
-function loadQuestionaire(data) {
-    LForms.Util.addFormToPage(data.questionaire, 'formContainer');
+function loadQuestionaire(data, patientData) {
+    LForms.Util.setFHIRContext(null,
+        {
+            patient: patientData
+        }
+    );
+
+    LForms.Util.addFormToPage(data.questionaire, 'formContainer', '{prepopulate: true}');
 }
 
 // return Fhir questionaire data.
