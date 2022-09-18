@@ -1,0 +1,903 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "ClinicalResponseBaseline",
+  "url": "https://connect.ichom.org/fhir/Questionnaire/ClinicalResponseBaseline",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "ICHOM",
+  "name": "ClinicalResponseBaseline",
+  "title": "Clinical response questionnaire at baseline",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext",
+      "extension": [
+        {
+          "url": "name",
+          "valueCoding": {
+            "code": "patient",
+            "system": "http://hl7.org/fhir/uv/sdc/CodeSystem/launchContext",
+            "display": "Patient"
+          }
+        },
+        {
+          "url": "type",
+          "valueCode": "Patient"
+        },
+        {
+          "url": "description",
+          "valueString": "Patient information to pre-populate the form with"
+        }
+      ]
+    }
+  ],
+  "item": [
+    {
+      "linkId": "General-Information-Clinical",
+      "type": "group",
+      "text": "General information",
+      "required": true,
+      "item": [
+        {
+          "linkId": "N/A-Clinical",
+          "type": "string",
+          "text": "What is the patient's medical record number?",
+          "required": true,
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "%patient.id"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "LastName-Clinical",
+          "type": "string",
+          "text": "What is the patient's last name?",
+          "required": true,
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "%patient.name.first().family.first()"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "Demographics",
+      "type": "group",
+      "text": "Demographic factors",
+      "required": true,
+      "item": [
+        {
+          "linkId": "Sex",
+          "type": "choice",
+          "text": "Please indicate the sex of the patient at birth:",
+          "answerValueSet": "http://hl7.org/fhir/ValueSet/administrative-gender",
+          "required": true,
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/variable",
+              "valueExpression": {
+                "name": "expandedGender",
+                "language": "application/x-fhir-query",
+                "expression": "ValueSet/$expand?url=http://hl7.org/fhir/ValueSet/administrative-gender"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "%expandedGender.expansion.contains.where(code=%patient.gender)"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "YearOfBirth",
+          "type": "integer",
+          "text": "In what year was the patient born?",
+          "required": true,
+          "maxLength": 4,
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "%patient.birthDate.substring(0,4)"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "Clinical-Factors",
+      "type": "group",
+      "text": "Clinical factors",
+      "required": true,
+      "item": [
+        {
+          "linkId": "Height",
+          "type": "quantity",
+          "text": "Please indicate your body height.",
+          "required": true,
+          "code": [
+            {
+              "code": "8302-2",
+              "system": "http://loinc.org",
+              "display": "Body height"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
+              "valueDuration": {
+                "value": 300,
+                "system": "http://unitsofmeasure.org",
+                "code": "a"
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+                  "valueBoolean": true
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+              "valueCoding": {
+                "code": "cm",
+                "system": "http://unitsofmeasure.org",
+                "display": "cm"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-minQuantity",
+              "valueQuantity": {
+                "value": 10,
+                "system": "http://unitsofmeasure.org",
+                "code": "cm"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-maxQuantity",
+              "valueQuantity": {
+                "value": 320,
+                "system": "http://unitsofmeasure.org",
+                "code": "cm"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+              "valueCoding": {
+                "code": "[in_i]",
+                "system": "http://unitsofmeasure.org",
+                "display": "[in_i]"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-minQuantity",
+              "valueQuantity": {
+                "value": 3.94,
+                "system": "http://unitsofmeasure.org",
+                "code": "[in_i]"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-maxQuantity",
+              "valueQuantity": {
+                "value": 126,
+                "system": "http://unitsofmeasure.org",
+                "code": "[in_i]"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "HeightValue",
+          "type": "integer",
+          "text": "Please indicate the patient's body height:",
+          "readOnly": true,
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "%resource.repeat(item).where(linkId='Height').answer.valueQuantity.value"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-hidden",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "linkId": "HeightUnit",
+          "type": "choice",
+          "text": "Please indicate the units of measurement you recorded the patient's height in:",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "cm",
+                "system": "http://unitsofmeasure.org",
+                "display": "cm"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "[in_i]",
+                "system": "http://unitsofmeasure.org",
+                "display": "[in_i]"
+              }
+            }
+          ],
+          "required": true,
+          "readOnly": true,
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "iif(%resource.repeat(item).where(linkId='Height').answer.valueQuantity.code = 'cm', 'urn:uuid:f36dcb8d-aede-4634-9194-f0f948d87ddd#1', 'urn:uuid:f36dcb8d-aede-4634-9194-f0f948d87ddd#2')"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-hidden",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "type": "quantity",
+          "linkId": "Weight",
+          "text": "Please indicate your body weight.",
+          "required": true,
+          "code": [
+            {
+              "code": "29463-7",
+              "system": "http://loinc.org",
+              "display": "Body weight"
+            },
+            {
+              "code": "3141-9",
+              "system": "http://loinc.org",
+              "display": "Body weight Measured"
+            },
+            {
+              "code": "27113001",
+              "system": "http://snomed.info/sct",
+              "display": "Body weight"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
+              "valueDuration": {
+                "value": 300,
+                "system": "http://unitsofmeasure.org",
+                "code": "a"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+              "valueBoolean": true
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+              "valueCoding": {
+                "code": "kg",
+                "system": "http://unitsofmeasure.org",
+                "display": "kg"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-minQuantity",
+              "valueQuantity": {
+                "value": 0.1,
+                "system": "http://unitsofmeasure.org",
+                "code": "kg"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-maxQuantity",
+              "valueQuantity": {
+                "value": 750,
+                "system": "http://unitsofmeasure.org",
+                "code": "kg"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+              "valueCoding": {
+                "code": "[lb_av]",
+                "system": "http://unitsofmeasure.org",
+                "display": "[lb_av]"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-minQuantity",
+              "valueQuantity": {
+                "value": 0.22,
+                "system": "http://unitsofmeasure.org",
+                "code": "[lb_av]"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-maxQuantity",
+              "valueQuantity": {
+                "value": 1653.47,
+                "system": "http://unitsofmeasure.org",
+                "code": "[lb_av]"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "WeightValue",
+          "type": "integer",
+          "text": "Please indicate the patient's body weight:",
+          "readOnly": true,
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
+              "valueDuration": {
+                "value": 300,
+                "system": "http://unitsofmeasure.org",
+                "code": "a"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "%resource.repeat(item).where(linkId='Weight').answer.valueQuantity.value"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-hidden",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "linkId": "WeightUnit",
+          "type": "choice",
+          "text": "Please indicate the units of measurement you recorded the patient's weight in:",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "kg",
+                "system": "http://unitsofmeasure.org",
+                "display": "kg"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "[lb_av]",
+                "system": "http://unitsofmeasure.org",
+                "display": "[lb_av]"
+              }
+            }
+          ],
+          "required": true,
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "iif(%resource.repeat(item).where(linkId='Weight').answer.valueQuantity.code = 'kg', 'urn:uuid:6d020c76-9ac1-4dfd-bfad-c084afd9f045#1', 'urn:uuid:6d020c76-9ac1-4dfd-bfad-c084afd9f045#2')"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-hidden",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "linkId": "LATERAL",
+          "type": "choice",
+          "text": "Please indicate the laterality of breast cancer:",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "0",
+                "system": "urn:uuid:e7d240f0-ea4c-4206-b488-f83c055fc1d4",
+                "display": "Left breast"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "1",
+                "system": "urn:uuid:e7d240f0-ea4c-4206-b488-f83c055fc1d4",
+                "display": "Right breast"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "3",
+                "system": "urn:uuid:e7d240f0-ea4c-4206-b488-f83c055fc1d4",
+                "display": "Both breasts"
+              }
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "FIRSTBC",
+          "type": "choice",
+          "text": "Please indicate if this is first breast cancer or new cancer on contralateral or ipsilateral breast:",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "0",
+                "system": "urn:uuid:23e2a296-dce5-447d-9a7c-7f4ac97b6ebe",
+                "display": "Primary tumor"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "1",
+                "system": "urn:uuid:23e2a296-dce5-447d-9a7c-7f4ac97b6ebe",
+                "display": "New ipsilateral"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "2",
+                "system": "urn:uuid:23e2a296-dce5-447d-9a7c-7f4ac97b6ebe",
+                "display": "New contralateral"
+              }
+            }
+          ],
+          "required": true
+        }
+      ]
+    },
+    {
+      "linkId": "Tumor-Factors",
+      "type": "group",
+      "text": "Tumor factors",
+      "required": true,
+      "item": [
+        {
+          "linkId": "HistologicalDateKnown",
+          "type": "boolean",
+          "text": "Is the date of histological diagnosis known?",
+          "required": true
+        },
+        {
+          "linkId": "HistologicalDiagnosisDate",
+          "type": "date",
+          "text": "Please indicate the initial date of histological diagnosis:",
+          "required": true
+        },
+        {
+          "linkId": "HISTOTYPE",
+          "type": "choice",
+          "text": "Please indicate the histologic type of the tumor (select all that apply):",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "0",
+                "system": "urn:uuid:54f3b593-e92c-49c2-838a-5e59196de2f0",
+                "display": "Ductal carcinoma in situ"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "1",
+                "system": "urn:uuid:54f3b593-e92c-49c2-838a-5e59196de2f0",
+                "display": "Invasive ductal carcinoma"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "2",
+                "system": "urn:uuid:54f3b593-e92c-49c2-838a-5e59196de2f0",
+                "display": "Invasive lobular carcinoma"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "3",
+                "system": "urn:uuid:54f3b593-e92c-49c2-838a-5e59196de2f0",
+                "display": "Other"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "999",
+                "system": "urn:uuid:54f3b593-e92c-49c2-838a-5e59196de2f0",
+                "display": "Unknown"
+              }
+            }
+          ],
+          "required": true,
+          "repeats": true
+        },
+        {
+          "linkId": "MUTBC",
+          "type": "choice",
+          "text": "Please indicate if the patient carries a genetic mutation predisposing breast cancer:",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "0",
+                "system": "urn:uuid:4574904d-f3a9-44c4-9349-40ea58076505",
+                "display": "No mutation"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "1",
+                "system": "urn:uuid:4574904d-f3a9-44c4-9349-40ea58076505",
+                "display": "BRCA 1"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "2",
+                "system": "urn:uuid:4574904d-f3a9-44c4-9349-40ea58076505",
+                "display": "BRCA 2"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "3",
+                "system": "urn:uuid:4574904d-f3a9-44c4-9349-40ea58076505",
+                "display": "Other mutation"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "4",
+                "system": "urn:uuid:4574904d-f3a9-44c4-9349-40ea58076505",
+                "display": "Not tested"
+              }
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "GRADEINV",
+          "type": "choice",
+          "text": "Please indicate the grade of the invasive component of tumor:",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "0",
+                "system": "urn:uuid:ce2aba40-12ae-41cd-85a6-fa8ae68d3284",
+                "display": "Grade 1"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "1",
+                "system": "urn:uuid:ce2aba40-12ae-41cd-85a6-fa8ae68d3284",
+                "display": "Grade 2"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "2",
+                "system": "urn:uuid:ce2aba40-12ae-41cd-85a6-fa8ae68d3284",
+                "display": "Grade 3"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "3",
+                "system": "urn:uuid:ce2aba40-12ae-41cd-85a6-fa8ae68d3284",
+                "display": "Not reported"
+              }
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "GRADEDCIS",
+          "type": "choice",
+          "text": "Please indicate the tumor grade of DCIS component of tumor:",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "0",
+                "system": "urn:uuid:28afa2eb-fab0-4985-85c0-b560b1de5cb4",
+                "display": "Low"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "1",
+                "system": "urn:uuid:28afa2eb-fab0-4985-85c0-b560b1de5cb4",
+                "display": "Intermediate"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "2",
+                "system": "urn:uuid:28afa2eb-fab0-4985-85c0-b560b1de5cb4",
+                "display": "High"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "3",
+                "system": "urn:uuid:28afa2eb-fab0-4985-85c0-b560b1de5cb4",
+                "display": "Not reported"
+              }
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "TNMCT_BREAST",
+          "type": "choice",
+          "text": "Please indicate the clinical tumor stage (per AJCC 5th - 7th Ed.):",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "0",
+                "system": "urn:uuid:bbf043ae-77f6-4d72-9c26-54120c64877a",
+                "display": "cTX"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "1",
+                "system": "urn:uuid:bbf043ae-77f6-4d72-9c26-54120c64877a",
+                "display": "cT0"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "2",
+                "system": "urn:uuid:bbf043ae-77f6-4d72-9c26-54120c64877a",
+                "display": "cTis"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "3",
+                "system": "urn:uuid:bbf043ae-77f6-4d72-9c26-54120c64877a",
+                "display": "cT1"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "4",
+                "system": "urn:uuid:bbf043ae-77f6-4d72-9c26-54120c64877a",
+                "display": "cT2"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "5",
+                "system": "urn:uuid:bbf043ae-77f6-4d72-9c26-54120c64877a",
+                "display": "cT3"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "6",
+                "system": "urn:uuid:bbf043ae-77f6-4d72-9c26-54120c64877a",
+                "display": "cT4"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "999",
+                "system": "urn:uuid:bbf043ae-77f6-4d72-9c26-54120c64877a",
+                "display": "Unknown"
+              }
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "TNMCN_BREAST",
+          "type": "choice",
+          "text": "Please indicate the clinical nodal stage (per AJCC 5th - 7th Ed.):",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "0",
+                "system": "urn:uuid:aac07446-dc50-4dfe-a241-77d0fa203591",
+                "display": "cNX"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "1",
+                "system": "urn:uuid:aac07446-dc50-4dfe-a241-77d0fa203591",
+                "display": "cN0"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "2",
+                "system": "urn:uuid:aac07446-dc50-4dfe-a241-77d0fa203591",
+                "display": "cN1"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "3",
+                "system": "urn:uuid:aac07446-dc50-4dfe-a241-77d0fa203591",
+                "display": "cN2"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "4",
+                "system": "urn:uuid:aac07446-dc50-4dfe-a241-77d0fa203591",
+                "display": "cN3"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "999",
+                "system": "urn:uuid:aac07446-dc50-4dfe-a241-77d0fa203591",
+                "display": "Unknown"
+              }
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "TNMCM_BREAST",
+          "type": "choice",
+          "text": "Please indicate the clinical distant metastasis (per AJCC 5th - 7th Ed.):",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "1",
+                "system": "urn:uuid:5f8d75d7-3fd5-4899-a6af-6e1ea80520b3",
+                "display": "cMX"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "2",
+                "system": "urn:uuid:5f8d75d7-3fd5-4899-a6af-6e1ea80520b3",
+                "display": "cM0"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "3",
+                "system": "urn:uuid:5f8d75d7-3fd5-4899-a6af-6e1ea80520b3",
+                "display": "cM1"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "999",
+                "system": "urn:uuid:5f8d75d7-3fd5-4899-a6af-6e1ea80520b3",
+                "display": "Unknown"
+              }
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "ERSTATUS",
+          "type": "choice",
+          "text": "Please indicate if the estrogen receptor status is positive:",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "0",
+                "system": "urn:uuid:93e05a33-3b00-4ae9-b4cd-ba7ba3e1f54e",
+                "display": "No"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "1",
+                "system": "urn:uuid:93e05a33-3b00-4ae9-b4cd-ba7ba3e1f54e",
+                "display": "Yes"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "2",
+                "system": "urn:uuid:93e05a33-3b00-4ae9-b4cd-ba7ba3e1f54e",
+                "display": "Not performed"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "999",
+                "system": "urn:uuid:93e05a33-3b00-4ae9-b4cd-ba7ba3e1f54e",
+                "display": "Unkown"
+              }
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "PRSTATUS",
+          "type": "choice",
+          "text": "Please indicate if the progesterone receptor status is positive:",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "0",
+                "system": "urn:uuid:02d110fd-1183-41fa-bacb-a689e0c67149",
+                "display": "No"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "1",
+                "system": "urn:uuid:02d110fd-1183-41fa-bacb-a689e0c67149",
+                "display": "Yes"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "2",
+                "system": "urn:uuid:02d110fd-1183-41fa-bacb-a689e0c67149",
+                "display": "Not performed"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "999",
+                "system": "urn:uuid:02d110fd-1183-41fa-bacb-a689e0c67149",
+                "display": "Unkown"
+              }
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "HER2STATUS",
+          "type": "choice",
+          "text": "Please indicate if the HER2 receptor status is positive:",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "0",
+                "system": "urn:uuid:17b96500-8800-4371-87d3-1498c8d2e039",
+                "display": "Negative"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "1",
+                "system": "urn:uuid:17b96500-8800-4371-87d3-1498c8d2e039",
+                "display": "Positive"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "2",
+                "system": "urn:uuid:17b96500-8800-4371-87d3-1498c8d2e039",
+                "display": "Equivocal"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "3",
+                "system": "urn:uuid:17b96500-8800-4371-87d3-1498c8d2e039",
+                "display": "HER2 receptor status not tested"
+              }
+            }
+          ],
+          "required": true
+        }
+      ]
+    }
+  ]
+}

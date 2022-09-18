@@ -1,0 +1,1777 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "ClinicalResponseSixMonths",
+  "url": "https://connect.ichom.org/fhir/Questionnaire/ClinicalResponseSixMonths",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "ICHOM",
+  "name": "ClinicalResponseSixMonths",
+  "title": "Clinical response at 6 months post-treatment follow-up",
+  "item": [
+    {
+      "linkId": "General-Information-Clinical",
+      "type": "group",
+      "text": "General information",
+      "required": true,
+      "item": [
+        {
+          "linkId": "N/A-Clinical",
+          "type": "integer",
+          "text": "What is the patient's medical record number?",
+          "required": true
+        },
+        {
+          "linkId": "LastName-Clinical",
+          "type": "string",
+          "text": "What is the patient's last name?",
+          "required": true
+        }
+      ]
+    },
+    {
+      "linkId": "Tumor-Factors",
+      "type": "group",
+      "text": "Tumor factors",
+      "required": true,
+      "item": [
+        {
+          "linkId": "MUTBC",
+          "type": "choice",
+          "text": "Please indicate if the patient carries a genetic mutation predisposing breast cancer:",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "0",
+                "system": "urn:uuid:3006917e-2afc-45f1-872e-b29a270a216e",
+                "display": "No mutation"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "1",
+                "system": "urn:uuid:3006917e-2afc-45f1-872e-b29a270a216e",
+                "display": "BRCA 1"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "2",
+                "system": "urn:uuid:3006917e-2afc-45f1-872e-b29a270a216e",
+                "display": "BRCA 2"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "3",
+                "system": "urn:uuid:3006917e-2afc-45f1-872e-b29a270a216e",
+                "display": "Other mutation"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "4",
+                "system": "urn:uuid:3006917e-2afc-45f1-872e-b29a270a216e",
+                "display": "Not tested"
+              }
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "received_surgery",
+          "type": "boolean",
+          "text": "Has the patient received surgery?",
+          "required": true
+        },
+        {
+          "linkId": "TNMPT_BREAST",
+          "type": "choice",
+          "text": "Please indicate the pathological tumor stage (per AJCC 5th - 7th Ed.):",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "0",
+                "system": "urn:uuid:e0d4b379-dffd-4eea-b51d-a3c4c2f7ad66",
+                "display": "pTX"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "1",
+                "system": "urn:uuid:e0d4b379-dffd-4eea-b51d-a3c4c2f7ad66",
+                "display": "pT0"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "2",
+                "system": "urn:uuid:e0d4b379-dffd-4eea-b51d-a3c4c2f7ad66",
+                "display": "pTis"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "3",
+                "system": "urn:uuid:e0d4b379-dffd-4eea-b51d-a3c4c2f7ad66",
+                "display": "pT1"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "4",
+                "system": "urn:uuid:e0d4b379-dffd-4eea-b51d-a3c4c2f7ad66",
+                "display": "pT2"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "5",
+                "system": "urn:uuid:e0d4b379-dffd-4eea-b51d-a3c4c2f7ad66",
+                "display": "pT3"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "6",
+                "system": "urn:uuid:e0d4b379-dffd-4eea-b51d-a3c4c2f7ad66",
+                "display": "pT4"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "999",
+                "system": "urn:uuid:e0d4b379-dffd-4eea-b51d-a3c4c2f7ad66",
+                "display": "Unknown"
+              }
+            }
+          ],
+          "enableWhen": [
+            {
+              "question": "received_surgery",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "TNMPN_BREAST",
+          "type": "choice",
+          "text": "Please indicate the pathological nodal stage (per AJCC 5th - 7th Ed.):",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "0",
+                "system": "urn:uuid:0818bdd3-e932-4df4-9a00-6cb719731351",
+                "display": "pNX"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "1",
+                "system": "urn:uuid:0818bdd3-e932-4df4-9a00-6cb719731351",
+                "display": "pN0"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "2",
+                "system": "urn:uuid:0818bdd3-e932-4df4-9a00-6cb719731351",
+                "display": "pN1"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "3",
+                "system": "urn:uuid:0818bdd3-e932-4df4-9a00-6cb719731351",
+                "display": "pN2"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "4",
+                "system": "urn:uuid:0818bdd3-e932-4df4-9a00-6cb719731351",
+                "display": "pN3"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "999",
+                "system": "urn:uuid:0818bdd3-e932-4df4-9a00-6cb719731351",
+                "display": "Unknown"
+              }
+            }
+          ],
+          "enableWhen": [
+            {
+              "question": "received_surgery",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "TNMPM_BREAST",
+          "type": "choice",
+          "text": "Please indicate the pathological distant metastasis (per AJCC 5th - 7th Ed.):",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "1",
+                "system": "urn:uuid:dd32d5f4-8ef8-4057-9642-9cb20a10ace1",
+                "display": "pMX"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "2",
+                "system": "urn:uuid:dd32d5f4-8ef8-4057-9642-9cb20a10ace1",
+                "display": "pM0"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "3",
+                "system": "urn:uuid:dd32d5f4-8ef8-4057-9642-9cb20a10ace1",
+                "display": "pM1"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "999",
+                "system": "urn:uuid:dd32d5f4-8ef8-4057-9642-9cb20a10ace1",
+                "display": "Unknown"
+              }
+            }
+          ],
+          "enableWhen": [
+            {
+              "question": "received_surgery",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "SIZEINV",
+          "type": "integer",
+          "text": "Please indicate size of invasive component of tumor (in mm, 999 if unknown):",
+          "required": true,
+          "enableWhen": [
+            {
+              "question": "received_surgery",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ]
+        },
+        {
+          "linkId": "NumLymphNodesResect",
+          "type": "integer",
+          "text": "Please indicate the number of lymph nodes resected (999 if unknown):",
+          "required": true,
+          "enableWhen": [
+            {
+              "question": "received_surgery",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ]
+        },
+        {
+          "linkId": "LYMPHINV_BREAST",
+          "type": "integer",
+          "text": "Please indicate the number of lymph nodes involved according to the TNM stage AJCC 7th Ed. (999 if unknown):",
+          "required": true,
+          "enableWhen": [
+            {
+              "question": "received_surgery",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "Treatment-Variables",
+      "type": "group",
+      "text": "Treatment Variables",
+      "required": true,
+      "item": [
+        {
+          "linkId": "TREATMENT_BREAST",
+          "type": "choice",
+          "text": "Please indicate whether the patient received one of the following treatment during the last year (select all that apply):",
+          "answerValueSet": "https://connect.ichom.org/fhir/ValueSet/TreatmentTypeValueSet",
+          "required": true,
+          "repeats": true
+        },
+        {
+          "linkId": "SURGERY_BREAST",
+          "type": "choice",
+          "text": "Please indicate the type of surgery the patient received during the last year:",
+          "answerValueSet": "https://connect.ichom.org/fhir/ValueSet/BreastSurgeryTypeVS",
+          "enableWhen": [
+            {
+              "question": "TREATMENT_BREAST",
+              "operator": "=",
+              "answerCoding": {
+                "code": "387713003",
+                "system": "http://snomed.info/sct"
+              }
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "SurgeryDateKnown",
+          "type": "boolean",
+          "text": "Is the date of surgery known?",
+          "enableWhen": [
+            {
+              "question": "TREATMENT_BREAST",
+              "operator": "=",
+              "answerCoding": {
+                "code": "387713003",
+                "system": "http://snomed.info/sct"
+              }
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "SurgeryDate",
+          "type": "date",
+          "text": "Provide the date of surgery:",
+          "enableWhen": [
+            {
+              "question": "SurgeryDateKnown",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "SURGERYAX",
+          "type": "choice",
+          "text": "Please indicate the type of surgery to the axilla the patient received during the last year:",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "0",
+                "system": "urn:uuid:8c808fb0-0b36-4623-9c13-e2caee216df4",
+                "display": "Sentinel lymph node biopsy"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "1",
+                "system": "urn:uuid:8c808fb0-0b36-4623-9c13-e2caee216df4",
+                "display": "Axillary sampling"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "2",
+                "system": "urn:uuid:8c808fb0-0b36-4623-9c13-e2caee216df4",
+                "display": "Axillary clearance"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "999",
+                "system": "urn:uuid:8c808fb0-0b36-4623-9c13-e2caee216df4",
+                "display": "Unknown"
+              }
+            }
+          ],
+          "enableWhen": [
+            {
+              "question": "TREATMENT_BREAST",
+              "operator": "=",
+              "answerCoding": {
+                "code": "699455008",
+                "system": "http://snomed.info/sct"
+              }
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "SURGERYAXDATE-Known",
+          "type": "boolean",
+          "text": "Is the date of surgery to the axilla known?",
+          "enableWhen": [
+            {
+              "question": "TREATMENT_BREAST",
+              "operator": "=",
+              "answerCoding": {
+                "code": "699455008",
+                "system": "http://snomed.info/sct"
+              }
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "SURGERYAXDATE",
+          "type": "date",
+          "text": "Please provide the date of surgery to the axilla:",
+          "enableWhen": [
+            {
+              "question": "SURGERYAXDATE-Known",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "SURGERYAX2",
+          "type": "choice",
+          "text": "Please indicate whether the patient received axillary clearance due to lymph node involvement after sentinel lymph node biopsy during the last year:",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "0",
+                "system": "urn:uuid:9fa16cf2-ad20-46d9-b4d6-b4782a222370",
+                "display": "No"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "1",
+                "system": "urn:uuid:9fa16cf2-ad20-46d9-b4d6-b4782a222370",
+                "display": "Yes"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "999",
+                "system": "urn:uuid:9fa16cf2-ad20-46d9-b4d6-b4782a222370",
+                "display": "Unkown"
+              }
+            }
+          ],
+          "enableWhen": [
+            {
+              "question": "SURGERYAX",
+              "operator": "=",
+              "answerCoding": {
+                "code": "0",
+                "system": "urn:uuid:8c808fb0-0b36-4623-9c13-e2caee216df4"
+              }
+            },
+            {
+              "question": "SURGERYAX",
+              "operator": "=",
+              "answerCoding": {
+                "code": "1",
+                "system": "urn:uuid:8c808fb0-0b36-4623-9c13-e2caee216df4"
+              }
+            }
+          ],
+          "enableBehavior": "any",
+          "required": true
+        },
+        {
+          "linkId": "SURGERYAX2DATE-Known",
+          "type": "boolean",
+          "text": "Is the date of axillary clearance known?",
+          "enableWhen": [
+            {
+              "question": "SURGERYAX2",
+              "operator": "=",
+              "answerCoding": {
+                "code": "1",
+                "system": "urn:uuid:9fa16cf2-ad20-46d9-b4d6-b4782a222370"
+              }
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "SURGERYAX2DATE",
+          "type": "date",
+          "text": "Please provide the date of axillary clearance:",
+          "enableWhen": [
+            {
+              "question": "SURGERYAX2DATE-Known",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "RECONSTRUCT",
+          "type": "choice",
+          "text": "Please indicate the type of delayed reconstruction the patient received during the last year:",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "0",
+                "system": "urn:uuid:ee9a6809-ec45-43be-9070-8a7c4b364269",
+                "display": "Delayed reconstruction (direct/staged implant)"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "1",
+                "system": "urn:uuid:ee9a6809-ec45-43be-9070-8a7c4b364269",
+                "display": "Delayed reconstruction ( autologous)"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "2",
+                "system": "urn:uuid:ee9a6809-ec45-43be-9070-8a7c4b364269",
+                "display": "Delayed reconstruction (implant/autologous)"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "999",
+                "system": "urn:uuid:ee9a6809-ec45-43be-9070-8a7c4b364269",
+                "display": "Unknown"
+              }
+            }
+          ],
+          "enableWhen": [
+            {
+              "question": "TREATMENT_BREAST",
+              "operator": "=",
+              "answerCoding": {
+                "code": "33496007",
+                "system": "http://snomed.info/sct"
+              }
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "RECONSTRUCTDATE-Known",
+          "type": "boolean",
+          "text": "Is the date of the delayed reconstruction known?",
+          "enableWhen": [
+            {
+              "question": "TREATMENT_BREAST",
+              "operator": "=",
+              "answerCoding": {
+                "code": "33496007",
+                "system": "http://snomed.info/sct"
+              }
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "RECONSTRUCTDATE",
+          "type": "date",
+          "text": "Please provide the date of delayed reconstruction:",
+          "enableWhen": [
+            {
+              "question": "RECONSTRUCTDATE-Known",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "RADIOTX_BREAST",
+          "type": "choice",
+          "text": "Please indicate the intent of radiotherapy:",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "0",
+                "system": "urn:uuid:dff8b0ba-47f8-48bd-9e81-021783c9d0d0",
+                "display": "Neoadjuvant"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "1",
+                "system": "urn:uuid:dff8b0ba-47f8-48bd-9e81-021783c9d0d0",
+                "display": "Adjuvant"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "999",
+                "system": "urn:uuid:dff8b0ba-47f8-48bd-9e81-021783c9d0d0",
+                "display": "Unknown"
+              }
+            }
+          ],
+          "enableWhen": [
+            {
+              "question": "TREATMENT_BREAST",
+              "operator": "=",
+              "answerCoding": {
+                "code": "108290001",
+                "system": "http://snomed.info/sct"
+              }
+            }
+          ],
+          "required": true,
+          "repeats": true
+        },
+        {
+          "linkId": "RADIOTXTYPE_BREAST",
+          "type": "choice",
+          "text": "Please indicate location/type of radiotherapy:",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "0",
+                "system": "urn:uuid:848b3292-4a18-43c8-a0dc-a133443a4b33",
+                "display": "Breast"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "1",
+                "system": "urn:uuid:848b3292-4a18-43c8-a0dc-a133443a4b33",
+                "display": "Chest wall"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "2",
+                "system": "urn:uuid:848b3292-4a18-43c8-a0dc-a133443a4b33",
+                "display": "Axillary nodal irradiation"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "3",
+                "system": "urn:uuid:848b3292-4a18-43c8-a0dc-a133443a4b33",
+                "display": "Supraclavicular irradiation"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "4",
+                "system": "urn:uuid:848b3292-4a18-43c8-a0dc-a133443a4b33",
+                "display": "Internal mammary node irradiation"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "5",
+                "system": "urn:uuid:848b3292-4a18-43c8-a0dc-a133443a4b33",
+                "display": "Tumor bed boost"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "6",
+                "system": "urn:uuid:848b3292-4a18-43c8-a0dc-a133443a4b33",
+                "display": "Brain metastases"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "7",
+                "system": "urn:uuid:848b3292-4a18-43c8-a0dc-a133443a4b33",
+                "display": "Bone metastases"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "8",
+                "system": "urn:uuid:848b3292-4a18-43c8-a0dc-a133443a4b33",
+                "display": "Any metastatic site"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "9",
+                "system": "urn:uuid:848b3292-4a18-43c8-a0dc-a133443a4b33",
+                "display": "Other"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "999",
+                "system": "urn:uuid:848b3292-4a18-43c8-a0dc-a133443a4b33",
+                "display": "Unknown"
+              }
+            }
+          ],
+          "enableWhen": [
+            {
+              "question": "TREATMENT_BREAST",
+              "operator": "=",
+              "answerCoding": {
+                "code": "108290001",
+                "system": "http://snomed.info/sct"
+              }
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "RadioTxStartDate-Known",
+          "type": "boolean",
+          "text": "Is the start date of radiotherapy known?",
+          "enableWhen": [
+            {
+              "question": "TREATMENT_BREAST",
+              "operator": "=",
+              "answerCoding": {
+                "code": "108290001",
+                "system": "http://snomed.info/sct"
+              }
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "RadioTxStartDate",
+          "type": "date",
+          "text": "Please provide the start date of radiotherapy:",
+          "enableWhen": [
+            {
+              "question": "RadioTxStartDate-Known",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "RadioTxStopDate-Known",
+          "type": "boolean",
+          "text": "Is the stop date of radiotherapy known?",
+          "enableWhen": [
+            {
+              "question": "TREATMENT_BREAST",
+              "operator": "=",
+              "answerCoding": {
+                "code": "108290001",
+                "system": "http://snomed.info/sct"
+              }
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "RadioTxStopDate",
+          "type": "date",
+          "text": "Please provide the stop date of radiotherapy:",
+          "enableWhen": [
+            {
+              "question": "RadioTxStopDate-Known",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "CHEMOTXINTENT",
+          "type": "choice",
+          "text": "Please indicate the intent of chemotherapy:",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "0",
+                "system": "urn:uuid:de25b812-330d-4e4e-9791-22efa124c222",
+                "display": "Neoadjuvant"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "1",
+                "system": "urn:uuid:de25b812-330d-4e4e-9791-22efa124c222",
+                "display": "Adjuvant"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "999",
+                "system": "urn:uuid:de25b812-330d-4e4e-9791-22efa124c222",
+                "display": "Unknown"
+              }
+            }
+          ],
+          "enableWhen": [
+            {
+              "question": "TREATMENT_BREAST",
+              "operator": "=",
+              "answerCoding": {
+                "code": "A_chemo",
+                "system": "https://connect.ichom.org/fhir/CodeSystem/TreatmentTypesCodeSystem"
+              }
+            },
+            {
+              "question": "TREATMENT_BREAST",
+              "operator": "=",
+              "answerCoding": {
+                "code": "N_A_chemo",
+                "system": "https://connect.ichom.org/fhir/CodeSystem/TreatmentTypesCodeSystem"
+              }
+            }
+          ],
+          "enableBehavior": "any",
+          "required": true
+        },
+        {
+          "linkId": "CHEMOTXTYPE_BREAST",
+          "type": "choice",
+          "text": "Please indicate the type of chemotherapy (select all that apply):",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "0",
+                "system": "urn:uuid:de25b812-330d-4e4e-9791-22efa124c222",
+                "display": "Anthracycline containing"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "1",
+                "system": "urn:uuid:de25b812-330d-4e4e-9791-22efa124c222",
+                "display": "Taxane containing"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "2",
+                "system": "urn:uuid:de25b812-330d-4e4e-9791-22efa124c222",
+                "display": "Platinum containing"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "3",
+                "system": "urn:uuid:de25b812-330d-4e4e-9791-22efa124c222",
+                "display": "Other"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "999",
+                "system": "urn:uuid:de25b812-330d-4e4e-9791-22efa124c222",
+                "display": "Unknown"
+              }
+            }
+          ],
+          "enableWhen": [
+            {
+              "question": "TREATMENT_BREAST",
+              "operator": "=",
+              "answerCoding": {
+                "code": "A_chemo",
+                "system": "https://connect.ichom.org/fhir/CodeSystem/TreatmentTypesCodeSystem"
+              }
+            },
+            {
+              "question": "TREATMENT_BREAST",
+              "operator": "=",
+              "answerCoding": {
+                "code": "N_A_chemo",
+                "system": "https://connect.ichom.org/fhir/CodeSystem/TreatmentTypesCodeSystem"
+              }
+            }
+          ],
+          "enableBehavior": "any",
+          "required": true,
+          "repeats": true
+        },
+        {
+          "linkId": "ChemoTxStartDate-Known",
+          "type": "boolean",
+          "text": "Is the start date of chemotherapy known?",
+          "enableWhen": [
+            {
+              "question": "TREATMENT_BREAST",
+              "operator": "=",
+              "answerCoding": {
+                "code": "A_chemo",
+                "system": "https://connect.ichom.org/fhir/CodeSystem/TreatmentTypesCodeSystem"
+              }
+            },
+            {
+              "question": "TREATMENT_BREAST",
+              "operator": "=",
+              "answerCoding": {
+                "code": "N_A_chemo",
+                "system": "https://connect.ichom.org/fhir/CodeSystem/TreatmentTypesCodeSystem"
+              }
+            }
+          ],
+          "enableBehavior": "any",
+          "required": true
+        },
+        {
+          "linkId": "ChemoTxStartDate",
+          "type": "date",
+          "text": "Please provide the start date of chemotherapy:",
+          "enableWhen": [
+            {
+              "question": "ChemoTxStartDate-Known",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "ChemoTxStopdate-Known",
+          "type": "boolean",
+          "text": "Is the stop date of chemotherapy known?",
+          "enableWhen": [
+            {
+              "question": "TREATMENT_BREAST",
+              "operator": "=",
+              "answerCoding": {
+                "code": "A_chemo",
+                "system": "https://connect.ichom.org/fhir/CodeSystem/TreatmentTypesCodeSystem"
+              }
+            },
+            {
+              "question": "TREATMENT_BREAST",
+              "operator": "=",
+              "answerCoding": {
+                "code": "N_A_chemo",
+                "system": "https://connect.ichom.org/fhir/CodeSystem/TreatmentTypesCodeSystem"
+              }
+            }
+          ],
+          "enableBehavior": "any",
+          "required": true
+        },
+        {
+          "linkId": "ChemoTxStopdate",
+          "type": "date",
+          "text": "Please provide the stop date of chemotherapy:",
+          "enableWhen": [
+            {
+              "question": "ChemoTxStopdate-Known",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "HORMONTX_BREAST",
+          "type": "choice",
+          "text": "Please indicate the intent of hormonal therapy:",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "0",
+                "system": "urn:uuid:103a95b9-d961-4ef1-8cd2-21d21a60dd15",
+                "display": "Neoadjuvant"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "1",
+                "system": "urn:uuid:103a95b9-d961-4ef1-8cd2-21d21a60dd15",
+                "display": "Adjuvant"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "999",
+                "system": "urn:uuid:103a95b9-d961-4ef1-8cd2-21d21a60dd15",
+                "display": "Unknown"
+              }
+            }
+          ],
+          "enableWhen": [
+            {
+              "question": "TREATMENT_BREAST",
+              "operator": "=",
+              "answerCoding": {
+                "code": "169413002",
+                "system": "http://snomed.info/sct"
+              }
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "HORMONTXTYPE",
+          "type": "choice",
+          "text": "Please indicate the type of hormonal therapy (select all that apply):",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "0",
+                "system": "urn:uuid:e5a35a65-0b47-4c3b-bbd8-8682d9064abb",
+                "display": "Aromatase inhibitor"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "1",
+                "system": "urn:uuid:e5a35a65-0b47-4c3b-bbd8-8682d9064abb",
+                "display": "Selective estrogen-receptor modulator (e.g. Tamoxifen)"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "2",
+                "system": "urn:uuid:e5a35a65-0b47-4c3b-bbd8-8682d9064abb",
+                "display": "Oophorectomy"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "3",
+                "system": "urn:uuid:e5a35a65-0b47-4c3b-bbd8-8682d9064abb",
+                "display": "LHRH agonist"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "4",
+                "system": "urn:uuid:e5a35a65-0b47-4c3b-bbd8-8682d9064abb",
+                "display": "Other"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "999",
+                "system": "urn:uuid:e5a35a65-0b47-4c3b-bbd8-8682d9064abb",
+                "display": "Unknown"
+              }
+            }
+          ],
+          "enableWhen": [
+            {
+              "question": "TREATMENT_BREAST",
+              "operator": "=",
+              "answerCoding": {
+                "code": "169413002",
+                "system": "http://snomed.info/sct"
+              }
+            }
+          ],
+          "required": true,
+          "repeats": true
+        },
+        {
+          "linkId": "HORMONTXSTARTDATE-Known",
+          "type": "boolean",
+          "text": "Is the start date of hormonal therapy known?",
+          "enableWhen": [
+            {
+              "question": "TREATMENT_BREAST",
+              "operator": "=",
+              "answerCoding": {
+                "code": "169413002",
+                "system": "http://snomed.info/sct"
+              }
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "HORMONTXSTARTDATE",
+          "type": "date",
+          "text": "Please provide the start date of hormonal therapy:",
+          "enableWhen": [
+            {
+              "question": "HORMONTXSTARTDATE-Known",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "HORMONTXSTOPDATE-Known",
+          "type": "boolean",
+          "text": "Is the stop date of hormonal therapy known?",
+          "enableWhen": [
+            {
+              "question": "TREATMENT_BREAST",
+              "operator": "=",
+              "answerCoding": {
+                "code": "169413002",
+                "system": "http://snomed.info/sct"
+              }
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "HORMONTXSTOPDATE",
+          "type": "date",
+          "text": "Please provide the stop date of hormonal therapy, if applicable:",
+          "enableWhen": [
+            {
+              "question": "HORMONTXSTOPDATE-Known",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "TARGETTX_BREAST",
+          "type": "choice",
+          "text": "Please indicate the type of targeted therapy:",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "0",
+                "system": "urn:uuid:7e263f5e-2bfc-45d7-a4fb-19078a3c0a8d",
+                "display": "Her-2 targeting therapy"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "1",
+                "system": "urn:uuid:7e263f5e-2bfc-45d7-a4fb-19078a3c0a8d",
+                "display": "Other"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "999",
+                "system": "urn:uuid:7e263f5e-2bfc-45d7-a4fb-19078a3c0a8d",
+                "display": "Unknown"
+              }
+            }
+          ],
+          "enableWhen": [
+            {
+              "question": "TREATMENT_BREAST",
+              "operator": "=",
+              "answerCoding": {
+                "code": "Targ_Thrpy",
+                "system": "https://connect.ichom.org/fhir/CodeSystem/TreatmentTypesCodeSystem"
+              }
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "TargetTxStartDate-Known",
+          "type": "boolean",
+          "text": "Is the start date of targeted therapy known?",
+          "enableWhen": [
+            {
+              "question": "TREATMENT_BREAST",
+              "operator": "=",
+              "answerCoding": {
+                "code": "Targ_Thrpy",
+                "system": "https://connect.ichom.org/fhir/CodeSystem/TreatmentTypesCodeSystem"
+              }
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "TargetTxStartDate",
+          "type": "date",
+          "text": "Please provide the start date of targeted therapy:",
+          "enableWhen": [
+            {
+              "question": "TargetTxStartDate-Known",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "TargetTxStopDate-Known",
+          "type": "boolean",
+          "text": "Is the stop date of targeted therapy known?",
+          "enableWhen": [
+            {
+              "question": "TREATMENT_BREAST",
+              "operator": "=",
+              "answerCoding": {
+                "code": "Targ_Thrpy",
+                "system": "https://connect.ichom.org/fhir/CodeSystem/TreatmentTypesCodeSystem"
+              }
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "TargetTxStopDate",
+          "type": "date",
+          "text": "Please provide the stop date of targeted therapy:",
+          "enableWhen": [
+            {
+              "question": "TargetTxStopDate-Known",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "SURGERYPATIENT",
+          "type": "choice",
+          "text": "Please indicate if the patient has had one of the following re-operations since their surgery for breast cancer (select all that apply):",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "0",
+                "system": "urn:uuid:c6d1ad7a-4a40-4f06-b518-88a34063bdf3",
+                "display": "No"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "1",
+                "system": "urn:uuid:c6d1ad7a-4a40-4f06-b518-88a34063bdf3",
+                "display": "Breast reconstruction surgery"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "2",
+                "system": "urn:uuid:c6d1ad7a-4a40-4f06-b518-88a34063bdf3",
+                "display": "Mastectomy"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "3",
+                "system": "urn:uuid:c6d1ad7a-4a40-4f06-b518-88a34063bdf3",
+                "display": "Axillary dissection"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "999",
+                "system": "urn:uuid:c6d1ad7a-4a40-4f06-b518-88a34063bdf3",
+                "display": "Unknown"
+              }
+            }
+          ],
+          "required": true,
+          "repeats": true
+        },
+        {
+          "linkId": "SURGERYDATEPATIENT-Known",
+          "type": "boolean",
+          "text": "Is the date of the reoperation known?",
+          "enableWhen": [
+            {
+              "question": "SURGERYPATIENT",
+              "operator": "!=",
+              "answerCoding": {
+                "code": "0",
+                "system": "urn:uuid:c6d1ad7a-4a40-4f06-b518-88a34063bdf3"
+              }
+            },
+            {
+              "question": "SURGERYPATIENT",
+              "operator": "!=",
+              "answerCoding": {
+                "code": "999",
+                "system": "urn:uuid:c6d1ad7a-4a40-4f06-b518-88a34063bdf3"
+              }
+            }
+          ],
+          "enableBehavior": "all",
+          "required": true
+        },
+        {
+          "linkId": "SURGERYDATEPATIENT",
+          "type": "date",
+          "text": "When was the reoperation?",
+          "enableWhen": [
+            {
+              "question": "SURGERYDATEPATIENT-Known",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "SYSTPATIENT",
+          "type": "choice",
+          "text": "Is the patient currently receiving systemic (ie drug) treatment for breast cancer?",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "0",
+                "system": "urn:uuid:f59e0a1c-f0a0-4d12-b5ed-9720c91cf862",
+                "display": "no, never had systemic treatment"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "1",
+                "system": "urn:uuid:f59e0a1c-f0a0-4d12-b5ed-9720c91cf862",
+                "display": "yes, but the treatment has stopped"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "2",
+                "system": "urn:uuid:f59e0a1c-f0a0-4d12-b5ed-9720c91cf862",
+                "display": "yes, on chemotherapy"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "3",
+                "system": "urn:uuid:f59e0a1c-f0a0-4d12-b5ed-9720c91cf862",
+                "display": "yes, on targeted therapy"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "4",
+                "system": "urn:uuid:f59e0a1c-f0a0-4d12-b5ed-9720c91cf862",
+                "display": "yes, on hormone therapy"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "999",
+                "system": "urn:uuid:f59e0a1c-f0a0-4d12-b5ed-9720c91cf862",
+                "display": "unkown"
+              }
+            }
+          ],
+          "required": true,
+          "repeats": true
+        },
+        {
+          "linkId": "SYSTDATEPATIENT-Known",
+          "type": "boolean",
+          "text": "Is the stop date of the systemic treatment known?",
+          "enableWhen": [
+            {
+              "question": "SYSTPATIENT",
+              "operator": "=",
+              "answerCoding": {
+                "code": "1",
+                "system": "urn:uuid:f59e0a1c-f0a0-4d12-b5ed-9720c91cf862"
+              }
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "SYSTDATEPATIENT",
+          "type": "date",
+          "text": "When did the systemic treatment stop?",
+          "enableWhen": [
+            {
+              "question": "SYSTDATEPATIENT-Known",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ],
+          "required": true
+        }
+      ]
+    },
+    {
+      "linkId": "DisutilityofCare",
+      "type": "group",
+      "text": "Disutility of care",
+      "required": true,
+      "item": [
+        {
+          "linkId": "REOP_BREAST",
+          "type": "choice",
+          "text": "Please indicate if the patient has undergone a reoperation due to involved margins after primary surgery:",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "0",
+                "system": "urn:uuid:267a68fb-42ea-49c8-a43d-c18c71f4ce7e",
+                "display": "No reoperation due to involved margins"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "1",
+                "system": "urn:uuid:267a68fb-42ea-49c8-a43d-c18c71f4ce7e",
+                "display": "Breast conserving surgery (BCS)"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "2",
+                "system": "urn:uuid:267a68fb-42ea-49c8-a43d-c18c71f4ce7e",
+                "display": "BCS with mammoplasty"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "3",
+                "system": "urn:uuid:267a68fb-42ea-49c8-a43d-c18c71f4ce7e",
+                "display": "Mastectomy without immediate reconstruction"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "4",
+                "system": "urn:uuid:267a68fb-42ea-49c8-a43d-c18c71f4ce7e",
+                "display": "Mastectomy with immediate reconstruction (direct/staged implant)"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "5",
+                "system": "urn:uuid:267a68fb-42ea-49c8-a43d-c18c71f4ce7e",
+                "display": "Mastectomy with immediate reconstruction (autologous)"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "6",
+                "system": "urn:uuid:267a68fb-42ea-49c8-a43d-c18c71f4ce7e",
+                "display": "Mastectomy with immediate reconstruction (direct/staged implant and autologous)"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "999",
+                "system": "urn:uuid:267a68fb-42ea-49c8-a43d-c18c71f4ce7e",
+                "display": "Unknown"
+              }
+            }
+          ],
+          "enableWhen": [
+            {
+              "question": "SURGERY_BREAST",
+              "operator": "!=",
+              "answerCoding": {
+                "code": "UNK",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+              }
+            },
+            {
+              "question": "TREATMENT_BREAST",
+              "operator": "=",
+              "answerCoding": {
+                "code": "387713003",
+                "system": "http://snomed.info/sct"
+              }
+            }
+          ],
+          "enableBehavior": "all",
+          "required": true
+        },
+        {
+          "linkId": "REOPDATE_BREAST-Known",
+          "type": "boolean",
+          "text": "Is the date of the reoperation due to positive margins known?",
+          "enableWhen": [
+            {
+              "question": "REOP_BREAST",
+              "operator": "!=",
+              "answerCoding": {
+                "code": "999",
+                "system": "urn:uuid:267a68fb-42ea-49c8-a43d-c18c71f4ce7e"
+              }
+            },
+            {
+              "question": "REOP_BREAST",
+              "operator": "!=",
+              "answerCoding": {
+                "code": "0",
+                "system": "urn:uuid:267a68fb-42ea-49c8-a43d-c18c71f4ce7e"
+              }
+            },
+            {
+              "question": "TREATMENT_BREAST",
+              "operator": "=",
+              "answerCoding": {
+                "code": "387713003",
+                "system": "http://snomed.info/sct"
+              }
+            }
+          ],
+          "enableBehavior": "all",
+          "required": true
+        },
+        {
+          "linkId": "REOPDATE_BREAST",
+          "type": "date",
+          "text": "Please provide the date of the reoperation due to positive margins:",
+          "enableWhen": [
+            {
+              "question": "REOPDATE_BREAST-Known",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "ComplicationImpact",
+          "type": "choice",
+          "text": "Please state the impact of the complication experienced by the patient:",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "0",
+                "system": "urn:uuid:c77c16c3-17ba-4f16-a3f8-afd8a24b2aad",
+                "display": "No complication"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "1",
+                "system": "urn:uuid:c77c16c3-17ba-4f16-a3f8-afd8a24b2aad",
+                "display": "Complication requiring intervention (surgical, radiological, endoscopic)"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "2",
+                "system": "urn:uuid:c77c16c3-17ba-4f16-a3f8-afd8a24b2aad",
+                "display": "Complication leading to prolonged hospitalization ( >14days)"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "3",
+                "system": "urn:uuid:c77c16c3-17ba-4f16-a3f8-afd8a24b2aad",
+                "display": "Complication leading to unplanned readmission"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "4",
+                "system": "urn:uuid:c77c16c3-17ba-4f16-a3f8-afd8a24b2aad",
+                "display": "Complication leading to ICU admission"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "5",
+                "system": "urn:uuid:c77c16c3-17ba-4f16-a3f8-afd8a24b2aad",
+                "display": "Complication leading to discontinuing of treatment"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "6",
+                "system": "urn:uuid:c77c16c3-17ba-4f16-a3f8-afd8a24b2aad",
+                "display": "Complication leading to reduced dosing"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "7",
+                "system": "urn:uuid:c77c16c3-17ba-4f16-a3f8-afd8a24b2aad",
+                "display": "Complication leading to death"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "8",
+                "system": "urn:uuid:c77c16c3-17ba-4f16-a3f8-afd8a24b2aad",
+                "display": "Complication, but did not result in any of the abovementioned"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "999",
+                "system": "urn:uuid:c77c16c3-17ba-4f16-a3f8-afd8a24b2aad",
+                "display": "Unknown"
+              }
+            }
+          ],
+          "enableWhen": [
+            {
+              "question": "TREATMENT_BREAST",
+              "operator": "!=",
+              "answerCoding": {
+                "code": "UNK",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+              }
+            }
+          ],
+          "enableBehavior": "all",
+          "required": true,
+          "repeats": true
+        },
+        {
+          "linkId": "ComplicationAttrTreatment",
+          "type": "choice",
+          "text": "Please indicate whether the complication is attributable to treatment:",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "0",
+                "system": "urn:uuid:4863f609-1024-4a63-a2a7-e949673b46bc",
+                "display": "No"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "1",
+                "system": "urn:uuid:4863f609-1024-4a63-a2a7-e949673b46bc",
+                "display": "Yes"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "999",
+                "system": "urn:uuid:4863f609-1024-4a63-a2a7-e949673b46bc",
+                "display": "Unkown"
+              }
+            }
+          ],
+          "enableWhen": [
+            {
+              "question": "TREATMENT_BREAST",
+              "operator": "!=",
+              "answerCoding": {
+                "code": "0",
+                "system": "urn:uuid:c77c16c3-17ba-4f16-a3f8-afd8a24b2aad"
+              }
+            },
+            {
+              "question": "TREATMENT_BREAST",
+              "operator": "!=",
+              "answerCoding": {
+                "code": "999",
+                "system": "urn:uuid:c77c16c3-17ba-4f16-a3f8-afd8a24b2aad"
+              }
+            }
+          ],
+          "enableBehavior": "all",
+          "required": true
+        },
+        {
+          "linkId": "COMPL_BREAST",
+          "type": "choice",
+          "text": "Please indicate the type of complication:",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "0",
+                "system": "urn:uuid:0051a06f-34ee-4db1-9270-8c4fed35dde9",
+                "display": "Wound infection"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "1",
+                "system": "urn:uuid:0051a06f-34ee-4db1-9270-8c4fed35dde9",
+                "display": "Seroma/hematoma"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "2",
+                "system": "urn:uuid:0051a06f-34ee-4db1-9270-8c4fed35dde9",
+                "display": "Hemorrhage"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "3",
+                "system": "urn:uuid:0051a06f-34ee-4db1-9270-8c4fed35dde9",
+                "display": "Mastectomy skin flap necrosis"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "4",
+                "system": "urn:uuid:0051a06f-34ee-4db1-9270-8c4fed35dde9",
+                "display": "Partial autologous graft loss"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "5",
+                "system": "urn:uuid:0051a06f-34ee-4db1-9270-8c4fed35dde9",
+                "display": "Total autologous graft loss"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "6",
+                "system": "urn:uuid:0051a06f-34ee-4db1-9270-8c4fed35dde9",
+                "display": "Loss of implant"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "7",
+                "system": "urn:uuid:0051a06f-34ee-4db1-9270-8c4fed35dde9",
+                "display": "Thromboembolic event"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "8",
+                "system": "urn:uuid:0051a06f-34ee-4db1-9270-8c4fed35dde9",
+                "display": "Nerve damage"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "9",
+                "system": "urn:uuid:0051a06f-34ee-4db1-9270-8c4fed35dde9",
+                "display": "Delay wound healing/dehiscence"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "10",
+                "system": "urn:uuid:0051a06f-34ee-4db1-9270-8c4fed35dde9",
+                "display": "Skin toxicity"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "11",
+                "system": "urn:uuid:0051a06f-34ee-4db1-9270-8c4fed35dde9",
+                "display": "Pneumonia"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "12",
+                "system": "urn:uuid:0051a06f-34ee-4db1-9270-8c4fed35dde9",
+                "display": "Neutropenic sepsis"
+              }
+            },
+            {
+              "valueCoding": {
+                "code": "999",
+                "system": "urn:uuid:0051a06f-34ee-4db1-9270-8c4fed35dde9",
+                "display": "Unknown"
+              }
+            }
+          ],
+          "enableWhen": [
+            {
+              "question": "ComplicationAttrTreatment",
+              "operator": "=",
+              "answerCoding": {
+                "code": "1",
+                "system": "urn:uuid:4863f609-1024-4a63-a2a7-e949673b46bc"
+              }
+            }
+          ],
+          "required": true,
+          "repeats": true
+        }
+      ]
+    }
+  ]
+}

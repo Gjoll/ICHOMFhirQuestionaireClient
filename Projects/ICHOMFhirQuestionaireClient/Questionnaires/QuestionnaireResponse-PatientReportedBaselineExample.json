@@ -1,0 +1,1014 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "PatientReportedBaselineExample",
+  "questionnaire": "https://connect.ichom.org/fhir/Questionnaire/PatientReportedBaseline",
+  "status": "completed",
+  "authored": "2022-09-02T15:58:58.381Z",
+  "item": [
+    {
+      "linkId": "General-Information-Clinical",
+      "text": "General information",
+      "item": [
+        {
+          "linkId": "N/A-Clinical",
+          "text": "What is the patient's medical record number?",
+          "answer": [
+            {
+              "valueInteger": 11577
+            }
+          ]
+        },
+        {
+          "linkId": "LastName-Clinical",
+          "text": "What is the patient's last name?",
+          "answer": [
+            {
+              "valueString": "Carrizosa"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "Demographics",
+      "text": "Demographic factors",
+      "item": [
+        {
+          "linkId": "Sex",
+          "text": "Please indicate your sex at birth.",
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "female",
+                "system": "http://hl7.org/fhir/administrative-gender",
+                "display": "Female"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "COUNTRY",
+          "text": "What is your country of residence?",
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "GBR",
+                "system": "urn:iso:std:iso:3166",
+                "display": "United Kingdom"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "Ethnicity",
+          "text": "Please indicate the ethnicity that you identify with.",
+          "answer": [
+            {
+              "valueString": "Hispanic/Latino/Spanish Origin"
+            }
+          ]
+        },
+        {
+          "linkId": "Race",
+          "text": "Please indicate the biological race that you identify with.",
+          "answer": [
+            {
+              "valueString": "White"
+            }
+          ]
+        },
+        {
+          "linkId": "EducationLevel",
+          "text": "Please indicate your highest level of schooling.",
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "2",
+                "system": "urn:uuid:47dcf78e-3c63-4a6b-8ac7-f4f669be2b96",
+                "display": "Secondary"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "RelationshipStatus",
+          "text": "Please indicate your current relationship status.",
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "0",
+                "system": "urn:uuid:98b0862c-ffe9-46a3-ad47-f4e2ede907c3",
+                "display": "Not married/partnered"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "MENOPAUSE",
+          "text": "Please indicate your current menopausal status:",
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "1",
+                "system": "urn:uuid:cc3b3106-bc4b-4b9b-bf15-249ae1c3443f",
+                "display": "Post-menopausei (natural/surgical): if you have not had your period >12 months, caused by natural decline of hormones or due to surgery"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "Baseline-Clinical-Factors",
+      "text": "Clinical factors",
+      "item": [
+        {
+          "linkId": "ComorbiditiesSACQ",
+          "text": "Have you been told by a doctor that you have any of the following?",
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "9",
+                "system": "https://connect.ichom.org/fhir/CodeSystem/SACQPatientComorbidityCodeSystem",
+                "display": "Cancer/Other cancer (within the last 5 years)"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "ComorbiditiesSACQ_CancerFU1",
+          "text": "Do you receive treatment for cancer/another cancer?",
+          "answer": [
+            {
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "linkId": "ComorbiditiesSACQ_CancerFU2",
+          "text": "Does your cancer/other cancer limit your activities?",
+          "answer": [
+            {
+              "valueBoolean": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "Degree-of-Health-EORTC-QLQ",
+      "text": "Degree of Health - EORTC-QLQ",
+      "item": [
+        {
+          "linkId": "EORTC-QLQ-Q01-Q05",
+          "text": "We are interested in some things about you and your health. Please answer all of the questions yourself by selecting the answer that best applies to you. There are no 'right' or 'wrong' answers. The information that you provide will remain strictly confidential.",
+          "item": [
+            {
+              "linkId": "EORTCQLQC30_Q01",
+              "text": "Do you have any trouble doing strenuous activities, like carrying a heavy shopping bag or a suitcase?",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "code": "4",
+                    "system": "https://connect.ichom.org/fhir/CodeSystem/EORTCQLQCodeSystem",
+                    "display": "Very much"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "EORTCQLQC30_Q02",
+              "text": "Do you have any trouble taking a long walk?",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "code": "4",
+                    "system": "https://connect.ichom.org/fhir/CodeSystem/EORTCQLQCodeSystem",
+                    "display": "Very much"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "EORTCQLQC30_Q03",
+              "text": "Do you have any trouble taking a short walk outside of the house?",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "code": "2",
+                    "system": "https://connect.ichom.org/fhir/CodeSystem/EORTCQLQCodeSystem",
+                    "display": "A little"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "EORTCQLQC30_Q04",
+              "text": "Do you need to stay in bed or a chair during the day?",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "code": "1",
+                    "system": "https://connect.ichom.org/fhir/CodeSystem/EORTCQLQCodeSystem",
+                    "display": "Not at all"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "EORTCQLQC30_Q05",
+              "text": "Do you need help with eating, dressing, washing yourself or using the toilet?",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "code": "3",
+                    "system": "https://connect.ichom.org/fhir/CodeSystem/EORTCQLQCodeSystem",
+                    "display": "Quite a bit"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "EORTC-QLQ-Q06-Q28",
+          "text": "During the past week:",
+          "item": [
+            {
+              "linkId": "EORTCQLQC30_Q06",
+              "text": "Were you limited in doing either your work or other daily activities?",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "code": "3",
+                    "system": "https://connect.ichom.org/fhir/CodeSystem/EORTCQLQCodeSystem",
+                    "display": "Quite a bit"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "EORTCQLQC30_Q07",
+              "text": "Were you limited in pursuing your hobbies or other leisure time activities?",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "code": "3",
+                    "system": "https://connect.ichom.org/fhir/CodeSystem/EORTCQLQCodeSystem",
+                    "display": "Quite a bit"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "EORTCQLQC30_Q08",
+              "text": "Were you short of breath?",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "code": "3",
+                    "system": "https://connect.ichom.org/fhir/CodeSystem/EORTCQLQCodeSystem",
+                    "display": "Quite a bit"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "EORTCQLQC30_Q09",
+              "text": "Have you had pain?",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "code": "4",
+                    "system": "https://connect.ichom.org/fhir/CodeSystem/EORTCQLQCodeSystem",
+                    "display": "Very much"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "EORTCQLQC30_Q10",
+              "text": "Did you need to rest?",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "code": "3",
+                    "system": "https://connect.ichom.org/fhir/CodeSystem/EORTCQLQCodeSystem",
+                    "display": "Quite a bit"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "EORTCQLQC30_Q11",
+              "text": "Have you had trouble sleeping?",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "code": "2",
+                    "system": "https://connect.ichom.org/fhir/CodeSystem/EORTCQLQCodeSystem",
+                    "display": "A little"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "EORTCQLQC30_Q12",
+              "text": "Have you felt weak?",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "code": "3",
+                    "system": "https://connect.ichom.org/fhir/CodeSystem/EORTCQLQCodeSystem",
+                    "display": "Quite a bit"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "EORTCQLQC30_Q13",
+              "text": "Have you lacked appetite?",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "code": "2",
+                    "system": "https://connect.ichom.org/fhir/CodeSystem/EORTCQLQCodeSystem",
+                    "display": "A little"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "EORTCQLQC30_Q14",
+              "text": "Have you felt nauseated?",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "code": "3",
+                    "system": "https://connect.ichom.org/fhir/CodeSystem/EORTCQLQCodeSystem",
+                    "display": "Quite a bit"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "EORTCQLQC30_Q15",
+              "text": "Have you vomited?",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "code": "2",
+                    "system": "https://connect.ichom.org/fhir/CodeSystem/EORTCQLQCodeSystem",
+                    "display": "A little"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "EORTCQLQC30_Q16",
+              "text": "Have you been constipated?",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "code": "1",
+                    "system": "https://connect.ichom.org/fhir/CodeSystem/EORTCQLQCodeSystem",
+                    "display": "Not at all"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "EORTCQLQC30_Q17",
+              "text": "Have you had diarrhea?",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "code": "2",
+                    "system": "https://connect.ichom.org/fhir/CodeSystem/EORTCQLQCodeSystem",
+                    "display": "A little"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "EORTCQLQC30_Q18",
+              "text": "Were you tired?",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "code": "2",
+                    "system": "https://connect.ichom.org/fhir/CodeSystem/EORTCQLQCodeSystem",
+                    "display": "A little"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "EORTCQLQC30_Q19",
+              "text": "Did pain interfere with your daily activities?",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "code": "4",
+                    "system": "https://connect.ichom.org/fhir/CodeSystem/EORTCQLQCodeSystem",
+                    "display": "Very much"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "EORTCQLQC30_Q20",
+              "text": "Have you had difficulty in concentrating on things, like reading a newspaper or watching television?",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "code": "1",
+                    "system": "https://connect.ichom.org/fhir/CodeSystem/EORTCQLQCodeSystem",
+                    "display": "Not at all"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "EORTCQLQC30_Q21",
+              "text": "Did you feel tense?",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "code": "2",
+                    "system": "https://connect.ichom.org/fhir/CodeSystem/EORTCQLQCodeSystem",
+                    "display": "A little"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "EORTCQLQC30_Q22",
+              "text": "Did you worry?",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "code": "2",
+                    "system": "https://connect.ichom.org/fhir/CodeSystem/EORTCQLQCodeSystem",
+                    "display": "A little"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "EORTCQLQC30_Q23",
+              "text": "Did you feel irritable?",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "code": "3",
+                    "system": "https://connect.ichom.org/fhir/CodeSystem/EORTCQLQCodeSystem",
+                    "display": "Quite a bit"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "EORTCQLQC30_Q24",
+              "text": "Did you feel depressed?",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "code": "2",
+                    "system": "https://connect.ichom.org/fhir/CodeSystem/EORTCQLQCodeSystem",
+                    "display": "A little"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "EORTCQLQC30_Q25",
+              "text": "Have you had difficulty remembering things?",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "code": "2",
+                    "system": "https://connect.ichom.org/fhir/CodeSystem/EORTCQLQCodeSystem",
+                    "display": "A little"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "EORTCQLQC30_Q26",
+              "text": "Has your physical condition or medical treatment interfered with your family life?",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "code": "1",
+                    "system": "https://connect.ichom.org/fhir/CodeSystem/EORTCQLQCodeSystem",
+                    "display": "Not at all"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "EORTCQLQC30_Q27",
+              "text": "Has your physical condition or medical treatment interfered with your social activities?",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "code": "2",
+                    "system": "https://connect.ichom.org/fhir/CodeSystem/EORTCQLQCodeSystem",
+                    "display": "A little"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "EORTCQLQC30_Q28",
+              "text": "Has your physical condition or medical treatment caused you financial difficulties?",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "code": "2",
+                    "system": "https://connect.ichom.org/fhir/CodeSystem/EORTCQLQCodeSystem",
+                    "display": "A little"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "EORTC-QLQ-Q29-Q30",
+          "text": "For the following questions please select the number between 1 and 7 that best applies to you, with 1 = Very poor and 7 = Excellent.",
+          "item": [
+            {
+              "linkId": "EORTCQLQC30_Q29",
+              "text": "How would you rate your overall health during the past week?",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "display": "5"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "EORTCQLQC30_Q30",
+              "text": "How would you rate your overall quality of life during the past week?",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "display": "5"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "EORTC-QLQ-Q31-Q43",
+          "text": "Patients sometimes report that they have the following symptoms or problems. Please indicate the extent to which you have experienced these symptoms or problems during the past week. \n  Please answer by selecting the answer that best applies to you. During the past week:",
+          "item": [
+            {
+              "linkId": "EORTCQLQBR23_Q31",
+              "text": "Did you have a dry mouth?",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "code": "1",
+                    "system": "https://connect.ichom.org/fhir/CodeSystem/EORTCQLQCodeSystem",
+                    "display": "Not at all"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "EORTCQLQBR23_Q32",
+              "text": "Did food and drink taste different than usual?",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "code": "2",
+                    "system": "https://connect.ichom.org/fhir/CodeSystem/EORTCQLQCodeSystem",
+                    "display": "A little"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "EORTCQLQBR23_Q33",
+              "text": "Were your eyes painful, irritated or watery?",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "code": "2",
+                    "system": "https://connect.ichom.org/fhir/CodeSystem/EORTCQLQCodeSystem",
+                    "display": "A little"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "EORTCQLQBR23_Q34",
+              "text": "Have you lost any hair?",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "code": "1",
+                    "system": "https://connect.ichom.org/fhir/CodeSystem/EORTCQLQCodeSystem",
+                    "display": "Not at all"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "EORTCQLQBR23_Q36",
+              "text": "Did you feel ill or unwell?",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "code": "4",
+                    "system": "https://connect.ichom.org/fhir/CodeSystem/EORTCQLQCodeSystem",
+                    "display": "Very much"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "EORTCQLQBR23_Q37",
+              "text": "Did you have hot flushes?",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "code": "4",
+                    "system": "https://connect.ichom.org/fhir/CodeSystem/EORTCQLQCodeSystem",
+                    "display": "Very much"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "EORTCQLQBR23_Q38",
+              "text": "Did you have headaches?",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "code": "4",
+                    "system": "https://connect.ichom.org/fhir/CodeSystem/EORTCQLQCodeSystem",
+                    "display": "Very much"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "EORTCQLQBR23_Q39",
+              "text": "Have you felt physically less attractive as a result of your disease or treatment?",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "code": "2",
+                    "system": "https://connect.ichom.org/fhir/CodeSystem/EORTCQLQCodeSystem",
+                    "display": "A little"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "EORTCQLQBR23_Q40",
+              "text": "Have you been feeling less feminine as a result of your disease or treatment?",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "code": "2",
+                    "system": "https://connect.ichom.org/fhir/CodeSystem/EORTCQLQCodeSystem",
+                    "display": "A little"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "EORTCQLQBR23_Q41",
+              "text": "Did you find it difficult to look at yourself naked?",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "code": "2",
+                    "system": "https://connect.ichom.org/fhir/CodeSystem/EORTCQLQCodeSystem",
+                    "display": "A little"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "EORTCQLQBR23_Q42",
+              "text": "Have you been dissatisfied with your body?",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "code": "2",
+                    "system": "https://connect.ichom.org/fhir/CodeSystem/EORTCQLQCodeSystem",
+                    "display": "A little"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "EORTCQLQBR23_Q43",
+              "text": "Were you worried about your health in the future?",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "code": "2",
+                    "system": "https://connect.ichom.org/fhir/CodeSystem/EORTCQLQCodeSystem",
+                    "display": "A little"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "EORTC-QLQ-Q44-Q46",
+          "text": "During the past four weeks:",
+          "item": [
+            {
+              "linkId": "EORTCQLQBR23_Q44",
+              "text": "To what extent were you interested in sex?",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "code": "1",
+                    "system": "https://connect.ichom.org/fhir/CodeSystem/EORTCQLQCodeSystem",
+                    "display": "Not at all"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "EORTCQLQBR23_Q45",
+              "text": "To what extent were you sexually active? (with or without intercourse)",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "code": "1",
+                    "system": "https://connect.ichom.org/fhir/CodeSystem/EORTCQLQCodeSystem",
+                    "display": "Not at all"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "EORTC-QLQ-Q47-Q53",
+          "text": "During the past week:",
+          "item": [
+            {
+              "linkId": "EORTCQLQBR23_Q48",
+              "text": "Did you have a swollen arm or hand?",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "code": "4",
+                    "system": "https://connect.ichom.org/fhir/CodeSystem/EORTCQLQCodeSystem",
+                    "display": "Very much"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "EORTCQLQBR23_Q49",
+              "text": "Was it difficult to raise your arm or to move it sideways?",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "code": "3",
+                    "system": "https://connect.ichom.org/fhir/CodeSystem/EORTCQLQCodeSystem",
+                    "display": "Quite a bit"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "EORTCQLQBR23_Q50",
+              "text": "Have you had any pain in the area of your affected breast?",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "code": "2",
+                    "system": "https://connect.ichom.org/fhir/CodeSystem/EORTCQLQCodeSystem",
+                    "display": "A little"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "EORTCQLQBR23_Q51",
+              "text": "Was the area of your affected breast swollen?",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "code": "2",
+                    "system": "https://connect.ichom.org/fhir/CodeSystem/EORTCQLQCodeSystem",
+                    "display": "A little"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "EORTCQLQBR23_Q52",
+              "text": "Was the area of your affected breast oversensitive?",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "code": "4",
+                    "system": "https://connect.ichom.org/fhir/CodeSystem/EORTCQLQCodeSystem",
+                    "display": "Very much"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "EORTCQLQBR23_Q53",
+              "text": "Have you had skin problems on or in the area of your affected breast (e.g., itchy, dry, flaky)?",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "code": "2",
+                    "system": "https://connect.ichom.org/fhir/CodeSystem/EORTCQLQCodeSystem",
+                    "display": "A little"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "EORTC QLQ-LMC21",
+              "text": "Have you had tingling hands or feet?",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "code": "3",
+                    "system": "https://connect.ichom.org/fhir/CodeSystem/EORTCQLQCodeSystem",
+                    "display": "Quite a bit"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "Degree-of-Health-BreastQ",
+      "text": "Degree of Health - BreastQ:",
+      "item": [
+        {
+          "linkId": "IntroBreastQ",
+          "text": "With your breasts in mind, or if you have had a mastectomy, with your breast area in mind, in the past 2 weeks, \n      how satisfied or dissatisfied have you been with:",
+          "item": [
+            {
+              "linkId": "BREASTQMAST_Q01",
+              "text": "How you look in the mirror clothed?",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "code": "3",
+                    "system": "https://connect.ichom.org/fhir/CodeSystem/BreastQCodeSystem",
+                    "display": "Somewhat satisfied"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "BREASTQMAST_Q02",
+              "text": "How comfortable your bras fit?",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "code": "1",
+                    "system": "https://connect.ichom.org/fhir/CodeSystem/BreastQCodeSystem",
+                    "display": "Very dissatisfied"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "BREASTQMAST_Q03",
+              "text": "Being able to wear clothing that is more fitted?",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "code": "2",
+                    "system": "https://connect.ichom.org/fhir/CodeSystem/BreastQCodeSystem",
+                    "display": "Somewhat dissatisfied"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "BREASTQMAST_Q04",
+              "text": "How you look in the mirror unclothed?",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "code": "2",
+                    "system": "https://connect.ichom.org/fhir/CodeSystem/BreastQCodeSystem",
+                    "display": "Somewhat dissatisfied"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "Degree-of-Health-FACTES",
+      "text": "Degree of Health - FACTES",
+      "item": [
+        {
+          "linkId": "IntroFactes",
+          "text": "Please indicate your response as it applies to the past 7 days:",
+          "item": [
+            {
+              "linkId": "FACTES_BRM1",
+              "text": "I have pain in my joints",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "code": "3",
+                    "system": "https://connect.ichom.org/fhir/CodeSystem/FACTESCodeSystem",
+                    "display": "Somewhat"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "FACTES_ES4",
+              "text": "I have vaginal discharge",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "code": "3",
+                    "system": "https://connect.ichom.org/fhir/CodeSystem/FACTESCodeSystem",
+                    "display": "Somewhat"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "FACTES_ES5",
+              "text": "I have vaginal itching/irritation",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "code": "4",
+                    "system": "https://connect.ichom.org/fhir/CodeSystem/FACTESCodeSystem",
+                    "display": "Quite a bit"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "FACTES_ES6",
+              "text": "I have vaginal bleeding or spotting",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "code": "1",
+                    "system": "https://connect.ichom.org/fhir/CodeSystem/FACTESCodeSystem",
+                    "display": "Not at all"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "FACTES_ES7",
+              "text": "I have vaginal dryness",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "code": "1",
+                    "system": "https://connect.ichom.org/fhir/CodeSystem/FACTESCodeSystem",
+                    "display": "Not at all"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "FACTES_ES8",
+              "text": "I have pain or discomfort with intercourse",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "code": "5",
+                    "system": "https://connect.ichom.org/fhir/CodeSystem/FACTESCodeSystem",
+                    "display": "Very much"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

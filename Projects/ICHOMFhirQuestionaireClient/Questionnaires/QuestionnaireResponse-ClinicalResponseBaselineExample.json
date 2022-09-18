@@ -1,0 +1,291 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "ClinicalResponseBaselineExample",
+  "questionnaire": "https://connect.ichom.org/fhir/Questionnaire/ClinicalResponseBaseline",
+  "status": "completed",
+  "authored": "2022-09-02T15:41:07.412Z",
+  "item": [
+    {
+      "linkId": "General-Information-Clinical",
+      "text": "General information",
+      "item": [
+        {
+          "linkId": "N/A-Clinical",
+          "text": "What is the patient's medical record number?",
+          "answer": [
+            {
+              "valueInteger": 11577
+            }
+          ]
+        },
+        {
+          "linkId": "LastName-Clinical",
+          "text": "What is the patient's last name?",
+          "answer": [
+            {
+              "valueString": "Carrizosa"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "Demographics",
+      "text": "Demographic factors",
+      "item": [
+        {
+          "linkId": "Sex",
+          "text": "Please indicate the sex of the patient at birth:",
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "female",
+                "system": "http://hl7.org/fhir/administrative-gender",
+                "display": "Female"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "YearOfBirth",
+          "text": "In what year was the patient born?",
+          "answer": [
+            {
+              "valueInteger": 1973
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "Clinical-Factors",
+      "text": "Clinical factors",
+      "item": [
+        {
+          "linkId": "HeightValue",
+          "text": "Please indicate the patient's body height:",
+          "answer": [
+            {
+              "valueInteger": 65
+            }
+          ]
+        },
+        {
+          "linkId": "HeightUnit",
+          "text": "Please indicate the units of measurement you recorded the patient's height in:",
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "2",
+                "system": "urn:uuid:f36dcb8d-aede-4634-9194-f0f948d87ddd",
+                "display": "inches"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "WeightValue",
+          "text": "Please indicate the patient's body weight:",
+          "answer": [
+            {
+              "valueInteger": 167
+            }
+          ]
+        },
+        {
+          "linkId": "WeightUnit",
+          "text": "Please indicate the units of measurement you recorded the patient's weight in:",
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "2",
+                "system": "urn:uuid:6d020c76-9ac1-4dfd-bfad-c084afd9f045",
+                "display": "lbs"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "LATERAL",
+          "text": "Please indicate the laterality of breast cancer:",
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "1",
+                "system": "urn:uuid:e7d240f0-ea4c-4206-b488-f83c055fc1d4",
+                "display": "Right breast"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "FIRSTBC",
+          "text": "Please indicate if this is first breast cancer or new cancer on contralateral or ipsilateral breast:",
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "0",
+                "system": "urn:uuid:23e2a296-dce5-447d-9a7c-7f4ac97b6ebe",
+                "display": "Primary tumor"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "Tumor-Factors",
+      "text": "Tumor factors",
+      "item": [
+        {
+          "linkId": "HistologicalDateKnown",
+          "text": "Is the date of histological diagnosis known?",
+          "answer": [
+            {
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "linkId": "HistologicalDiagnosisDate",
+          "text": "Please indicate the initial date of histological diagnosis:",
+          "answer": [
+            {
+              "valueDate": "2021-07-21"
+            }
+          ]
+        },
+        {
+          "linkId": "HISTOTYPE",
+          "text": "Please indicate the histologic type of the tumor (select all that apply):",
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "1",
+                "system": "urn:uuid:54f3b593-e92c-49c2-838a-5e59196de2f0",
+                "display": "Invasive ductal carcinoma"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "MUTBC",
+          "text": "Please indicate if the patient carries a genetic mutation predisposing breast cancer:",
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "1",
+                "system": "urn:uuid:4574904d-f3a9-44c4-9349-40ea58076505",
+                "display": "BRCA 1"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "GRADEINV",
+          "text": "Please indicate the grade of the invasive component of tumor:",
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "1",
+                "system": "urn:uuid:ce2aba40-12ae-41cd-85a6-fa8ae68d3284",
+                "display": "Grade 2"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "GRADEDCIS",
+          "text": "Please indicate the tumor grade of DCIS component of tumor:",
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "1",
+                "system": "urn:uuid:28afa2eb-fab0-4985-85c0-b560b1de5cb4",
+                "display": "Intermediate"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "TNMCT_BREAST",
+          "text": "Please indicate the clinical tumor stage (per AJCC 5th - 7th Ed.):",
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "4",
+                "system": "urn:uuid:bbf043ae-77f6-4d72-9c26-54120c64877a",
+                "display": "cT2"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "TNMCN_BREAST",
+          "text": "Please indicate the clinical nodal stage (per AJCC 5th - 7th Ed.):",
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "2",
+                "system": "urn:uuid:aac07446-dc50-4dfe-a241-77d0fa203591",
+                "display": "cN1"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "TNMCM_BREAST",
+          "text": "Please indicate the clinical distant metastasis (per AJCC 5th - 7th Ed.):",
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "2",
+                "system": "urn:uuid:5f8d75d7-3fd5-4899-a6af-6e1ea80520b3",
+                "display": "cM0"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "ERSTATUS",
+          "text": "Please indicate if the estrogen receptor status is positive:",
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "1",
+                "system": "urn:uuid:93e05a33-3b00-4ae9-b4cd-ba7ba3e1f54e",
+                "display": "Yes"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "PRSTATUS",
+          "text": "Please indicate if the progesterone receptor status is positive:",
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "999",
+                "system": "urn:uuid:02d110fd-1183-41fa-bacb-a689e0c67149",
+                "display": "Unkown"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "HER2STATUS",
+          "text": "Please indicate if the HER2 receptor status is positive:",
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "1",
+                "system": "urn:uuid:17b96500-8800-4371-87d3-1498c8d2e039",
+                "display": "Positive"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
