@@ -1,5 +1,7 @@
 ﻿// Load Fhir questionaire.
 function loadQuestionaire(data, patientData) {
+    alert("Data Type " + typeof (data));
+    alert("Patient Type " + typeof (patientData));
     LForms.Util.setFHIRContext(null,
         {
             patient: patientData

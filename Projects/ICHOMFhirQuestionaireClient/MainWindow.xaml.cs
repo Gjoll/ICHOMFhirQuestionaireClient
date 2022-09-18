@@ -71,6 +71,7 @@ namespace ICHOMFhirQuestionaireClient
                 Path.Combine(Environment.CurrentDirectory,
                             "WebPages",
                             "index.html"));
+            webView.CoreWebView2.OpenDevToolsWindow();
         }
 
         private void WebView_NavigationCompleted(object? sender,
@@ -174,8 +175,8 @@ namespace ICHOMFhirQuestionaireClient
             {
                 this.ConnectToServer(
                     "https://hristo-ouch.fhir.azurehealthcareapis.com",
-                    "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6IjJaUXBKM1VwYmpBWVhZR2FYRUpsOGxWMFRPSSIsImtpZCI6IjJaUXBKM1VwYmpBWVhZR2FYRUpsOGxWMFRPSSJ9.eyJhdWQiOiJodHRwczovL2hyaXN0by1vdWNoLmZoaXIuYXp1cmVoZWFsdGhjYXJlYXBpcy5jb20iLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC83NzRkZDg0OS04OGEyLTRjZDQtODc4My0yMjVhN2I3ZjVlMzcvIiwiaWF0IjoxNjYzNDQxNzg2LCJuYmYiOjE2NjM0NDE3ODYsImV4cCI6MTY2MzQ0NTY4NiwiYWlvIjoiRTJaZ1lGaXIxUGJzWDdMUi9MbHNpZEhmeTdvWUFBPT0iLCJhcHBpZCI6IjIxMGU5MmI1LWQ3NWYtNGUyZC04MzE3LWJjYzhmZjA4YTJiNyIsImFwcGlkYWNyIjoiMSIsImlkcCI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0Lzc3NGRkODQ5LTg4YTItNGNkNC04NzgzLTIyNWE3YjdmNWUzNy8iLCJvaWQiOiIzNTAxMGQ3Yi0wYmI2LTRjYTctOTFlYy0yNjk0Yjc4NWJmOTIiLCJyaCI6IjAuQVRrQVNkaE5kNktJMUV5SGd5SmFlMzllTjloNFowX3ZXdHhEb2Ytd2MzSkxsSlU1QUFBLiIsInN1YiI6IjM1MDEwZDdiLTBiYjYtNGNhNy05MWVjLTI2OTRiNzg1YmY5MiIsInRpZCI6Ijc3NGRkODQ5LTg4YTItNGNkNC04NzgzLTIyNWE3YjdmNWUzNyIsInV0aSI6Il9FajVoMnhHamstMHA1VGhkaEIwQUEiLCJ2ZXIiOiIxLjAifQ.XJf8o5xjeTwqckg4O62y-mQo_jnecxf1U070iUqvdfwKMLwNmbZPO6Ti_K8o4_28WclUZjXpm7vWBOoiF9BUzKJqB0cBVvxue5hdmlj-h7YhBrE0zjKBDq1eAnazew4pRaQGK2seOFkKnVDXuppUN2idVqofH_ToIWFP42yNatMEfhb6fQZryFlsfyB16UcNbTXeWtoaZCtT5f1VQ3RS8-uJNO0LIZY_HgUPLGugtHL1rQrt4yX4bzq6DLTjmkrzYzRM4se76wZQ_Je1VpaxXNhOwMRvfsMQOMQuqcA8ANo_PXKlPWNCQ9RHnbI7lZk_QQLc2l7dqNxbaBmSnzDUKw",
-                    "BreastCancerPatient121"
+                    "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6IjJaUXBKM1VwYmpBWVhZR2FYRUpsOGxWMFRPSSIsImtpZCI6IjJaUXBKM1VwYmpBWVhZR2FYRUpsOGxWMFRPSSJ9.eyJhdWQiOiJodHRwczovL2hyaXN0by1vdWNoLmZoaXIuYXp1cmVoZWFsdGhjYXJlYXBpcy5jb20iLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC83NzRkZDg0OS04OGEyLTRjZDQtODc4My0yMjVhN2I3ZjVlMzcvIiwiaWF0IjoxNjYzNTI0Mzg3LCJuYmYiOjE2NjM1MjQzODcsImV4cCI6MTY2MzUyODI4NywiYWlvIjoiRTJaZ1lQamlMTG50YVhyNS9Ka2VTbCthWis0SkFRQT0iLCJhcHBpZCI6IjIxMGU5MmI1LWQ3NWYtNGUyZC04MzE3LWJjYzhmZjA4YTJiNyIsImFwcGlkYWNyIjoiMSIsImlkcCI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0Lzc3NGRkODQ5LTg4YTItNGNkNC04NzgzLTIyNWE3YjdmNWUzNy8iLCJvaWQiOiIzNTAxMGQ3Yi0wYmI2LTRjYTctOTFlYy0yNjk0Yjc4NWJmOTIiLCJyaCI6IjAuQVRrQVNkaE5kNktJMUV5SGd5SmFlMzllTjloNFowX3ZXdHhEb2Ytd2MzSkxsSlU1QUFBLiIsInN1YiI6IjM1MDEwZDdiLTBiYjYtNGNhNy05MWVjLTI2OTRiNzg1YmY5MiIsInRpZCI6Ijc3NGRkODQ5LTg4YTItNGNkNC04NzgzLTIyNWE3YjdmNWUzNyIsInV0aSI6Il91WFl3VVVYUzBtbHNpRlBMQUI2QUEiLCJ2ZXIiOiIxLjAifQ.a782UcXe3Nk3Pkl4aigFmrBZ1Ylv__g6V13_EfQd-ehUvQE4DPS1PvjiyX8XSZgc2SceRVOAStm0nHunjIqyecXGt3hi2bjaV3kvO7affdq97EMYpXct4hLXjOYad-3Q22-sSMsCcmuHYsKcNspkXSsVl9T9kpdVviPSZ9Zhj5nkTH-9epGLl8Jb6OrBLlOLiIR3WdGABjb9RO_3VSY3q5NPVgKku35fiHa-ZNsl-9obUQ0mSaCR7IlcLUz7p7avjmixkD4qRIED0v65V0O7MqdeN5ulPKwIgGDbUGXXcCLaDYVaTZHN4rIS1yWREf7BWPel9WEW0I_HXMdimnSjzA",
+                    "BreastCancerPatient147"
                     );
             }
             catch (Exception err)

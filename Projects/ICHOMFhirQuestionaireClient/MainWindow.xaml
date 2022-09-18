@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:ICHOMFhirQuestionaireClient"
         mc:Ignorable="d"
     	xmlns:wv2="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="1820" Width="1714">
     <DockPanel Margin="5">
         <Menu DockPanel.Dock="Top" Height="100">
             <MenuItem Header="_File">
@@ -21,7 +21,7 @@
             </MenuItem>
             <MenuItem x:Name="Exit" Header="_Exit" />
         </Menu>
-        
+
         <wv2:WebView2 Name="webView" />
     </DockPanel>
 </Window>
